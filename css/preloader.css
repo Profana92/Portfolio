@@ -7,12 +7,13 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  background: #ebebeb;
+  background: #fff;
   max-height: 100vh;
   opacity: 1;
 }
 .loader--inactive {
   max-height: 0vh !important;
+  margin-top: -100px;
   opacity: 0 !important;
   transition: all 1.25s ease;
 }
@@ -73,8 +74,9 @@
 /** tekst*/
 .loader__text {
   font-family: "Montserrat", sans-serif;
-  font-size: 3em;
-  color: #20a4f3;
+  font-weight: 400;
+  font-size: 1.2em;
+  color: #3f4045;
   position: absolute;
   top: 50%;
   left: 50%;
