@@ -1,7 +1,7 @@
 window.onload = load;
 
 function load() {
-  const preloader = document.querySelector("#loader-wrapper");
+  const preloader = document.querySelector("#loader");
   console.log(preloader);
-  preloader.className = "loader__wrapper--inactive";
+  preloader.className = "loader--inactive";
 }

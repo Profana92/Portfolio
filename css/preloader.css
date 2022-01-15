@@ -1,6 +1,6 @@
 /** kropki */
 
-#loader-wrapper {
+#loader {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -8,29 +8,24 @@
   right: 0;
   z-index: 1000;
   background: #ebebeb;
-  overflow-y: hidden;
   max-height: 100vh;
   opacity: 1;
-  /* display: none; */
 }
-.loader__wrapper--inactive {
+.loader--inactive {
   max-height: 0vh !important;
   opacity: 0 !important;
-  transition-property: all;
-  transition-duration: 0.5s;
-  transition-timing-function: ease;
+  transition: all 1.25s ease;
 }
-.load {
+.loader__animation {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-35%, -50%);
   width: 100px;
   height: 100px;
-  /* display: none; */
 }
 
-.load span {
+.loader__animation span {
   border: 0;
   margin: 0;
   width: 30%;
@@ -40,22 +35,22 @@
   animation: spin 2s ease infinite;
 }
 
-.load :first-child {
+.loader__animation :first-child {
   background: #20a4f3;
   animation-delay: -1.5s;
 }
 
-.load :nth-child(2) {
+.loader__animation :nth-child(2) {
   background: #fb4b4e;
   animation-delay: -1s;
 }
 
-.load :nth-child(3) {
+.loader__animation :nth-child(3) {
   background: #de9e36;
   animation-delay: -0.5s;
 }
 
-.load :last-child {
+.loader__animation :last-child {
   background: #3f4045;
 }
 
@@ -76,26 +71,25 @@
 }
 
 /** tekst*/
-.load__text {
+.loader__text {
   font-family: "Montserrat", sans-serif;
-  font-size: 1em;
+  font-size: 3em;
   color: #20a4f3;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 500px;
-  margin-top: 60px;
+  margin-top: 90px;
   text-align: center;
-  /* display: none; */
 }
 
 /** Animowana dłoń */
-.wave {
-  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.5s; /* Change to speed up or slow down */
-  animation-iteration-count: infinite; /* Never stop waving :) */
-  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+.loader__text--wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
   display: inline-block;
 }
 
@@ -105,7 +99,7 @@
   }
   10% {
     transform: rotate(14deg);
-  } /* The following five values can be played with to make the waving more or less extreme */
+  }
   20% {
     transform: rotate(-8deg);
   }
@@ -120,7 +114,7 @@
   }
   60% {
     transform: rotate(0deg);
-  } /* Reset for the last half to pause */
+  }
   100% {
     transform: rotate(0deg);
   }
