@@ -1,0 +1,67 @@
+/** Ogólne */
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  background-color: #111827;
+  color: #9ca3af;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/** Sekcja górna */
+.sidebar__top {
+  width: 100%;
+  height: 210px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+.sidebar__top__faceimg {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin: 20px 0;
+}
+
+.sidebar__top__paragraph {
+  text-align: center;
+  font-size: 1em;
+  line-height: 25px;
+
+  font-weight: 600;
+  margin: 0;
+}
+.sidebar__top__paragraph--small {
+  text-align: center;
+  font-size: 0.8em;
+  line-height: 25px;
+  font-weight: 400;
+  margin: 0;
+}
+
+/** Sekcja środkowa */
+
+.sidebar__center {
+  padding: 0;
+  width: 80%;
+  border-top: 1px solid white;
+}
+.sidebar__center__list {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar__center__list__item {
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.sidebar__center__list__item__text {
+  font-size: 1.1em;
+}
+.sidebar__center__list__item__icon {
+  color: azure;
+}
+/** Sekcja dolna */
