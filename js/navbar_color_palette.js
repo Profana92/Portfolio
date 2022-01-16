@@ -1,20 +1,16 @@
-const dark = document.querySelector(".dark");
-const night = document.querySelector(".night");
-const light = document.querySelector(".light");
+const dark = document.querySelector(".colorbox--dark");
+const night = document.querySelector(".colorbox--night");
+const light = document.querySelector(".colorbox--light");
 const sidebar = document.querySelector(".sidebar");
-const activeListItem = document.querySelector(".list-item.active");
 
 dark.addEventListener("click", () => {
-  sidebar.className = "sidebar";
-  activeListItem.className = "list-item active";
+  sidebar.className = "sidebar colorbox--dark";
 });
 
 night.addEventListener("click", () => {
-  sidebar.className = "sidebar night";
-  activeListItem.className = "list-item night active";
+  sidebar.className = "sidebar colorbox--night";
 });
 
 light.addEventListener("click", () => {
-  sidebar.className = "sidebar light";
-  activeListItem.className = "list-item light active";
+  sidebar.className = "sidebar colorbox--light";
 });
