@@ -1,8 +1,11 @@
 /** Ogólne */
 .sidebar {
+  z-index: 1909;
   position: fixed;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
   width: 250px;
-  height: 100vh;
   background-color: #111418;
   color: #ebebeb;
   display: flex;
@@ -14,7 +17,7 @@
   display: flex;
 }
 .main {
-  margin-left: 250px;
+  margin-left: 80px;
   background-color: #3f4347;
   width: 100%;
   height: 200vh;
@@ -77,14 +80,14 @@
   font-family: "Montserrat", sans-serif;
 }
 .sidebar__center__list__item__icon {
-  color: azure;
+  color: #883677;
   font-size: 22px;
   margin-right: 10px;
 }
 
 .fas,
 .fab {
-  background-color: #333;
+  background-color: rgba(153, 153, 153, 0.075);
   border-radius: 15px;
   padding: 10px;
 }
@@ -122,4 +125,20 @@
 }
 .sidebar__bottom__colorbox:nth-child(3) {
   margin-right: 0;
+}
+
+li.sidebar__center__list__item:hover {
+  color: #312e81;
+}
+
+.sidebar--minimized {
+  position: fixed;
+  width: 80px;
+  height: 100vh;
+  background-color: #111418;
+  color: #ebebeb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 1s ease;
 }
