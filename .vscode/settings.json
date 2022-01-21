@@ -1,4 +1,5 @@
 {
   "html.format.wrapLineLength": 250,
-  "cSpell.blockCheckingWhenAverageChunkSizeGreaterThan": 250
+  "cSpell.blockCheckingWhenAverageChunkSizeGreaterThan": 250,
+  "cSpell.words": ["navi"]
 }

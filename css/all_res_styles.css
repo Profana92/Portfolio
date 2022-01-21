@@ -36,7 +36,9 @@
 .content--text-white {
   color: var(--color-light);
 }
-
+.content--text-dark {
+  color: var(--color-dark);
+}
 .sidebar__top {
   width: 100%;
   height: 210px;
