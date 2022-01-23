@@ -9,42 +9,37 @@ blue.addEventListener("click", () => {
   navi.style.backgroundColor = "var(--color-blue)";
   borderReset();
   blue.style.border = "1px solid #fff";
-  overlay_content_arr[0].classList.remove("content--text-dark");
-  overlay_content_arr[0].classList.add("content--text-white");
+  textResetToWhite();
 });
 
 dark.addEventListener("click", () => {
   navi.style.backgroundColor = "var(--color-dark)";
   borderReset();
   dark.style.border = "1px solid #fff";
-  overlay_content_arr[0].classList.remove("content--text-dark");
-  overlay_content_arr[0].classList.add("content--text-white");
+  textResetToWhite();
 });
 green.addEventListener("click", () => {
   navi.style.backgroundColor = "var(--color-green)";
   borderReset();
   green.style.border = "1px solid #fff";
-  overlay_content_arr[0].classList.remove("content--text-dark");
-  overlay_content_arr[0].classList.add("content--text-white");
+  textResetToWhite();
 });
 
 red.addEventListener("click", () => {
   navi.style.backgroundColor = "var(--color-red)";
   borderReset();
   red.style.border = "1px solid #fff";
-  overlay_content_arr[0].classList.remove("content--text-dark");
-  overlay_content_arr[0].classList.add("content--text-white");
+  textResetToWhite();
 });
 
 light.addEventListener("click", () => {
   navi.style.backgroundColor = "var(--color-light)";
   borderReset();
   light.style.border = "1px solid #000";
-  overlay_content_arr[0].classList.remove("content--text-white");
-  overlay_content_arr[0].classList.add("content--text-dark");
-  //document.getElementsByClassName("sidebar_center")[0].border-top = "1px solid var(--color-dark)";
-  // document.getElementsByClassName("sidebar_center")[0].border-bottom = "1px solid var(--color-dark)";
+  textResetToDark();
 });
+
+// Funkcje
 
 function borderReset() {
   dark.style.border = "1px solid #9ca3af";
@@ -52,6 +47,15 @@ function borderReset() {
   red.style.border = "1px solid #9ca3af";
   green.style.border = "1px solid #9ca3af";
   light.style.border = "1px solid #9ca3af";
+}
+function textResetToDark() {
+  overlay_content_arr[0].classList.remove("content--text-white");
+  overlay_content_arr[0].classList.add("content--text-dark");
+}
+
+function textResetToWhite() {
+  overlay_content_arr[0].classList.remove("content--text-dark");
+  overlay_content_arr[0].classList.add("content--text-white");
 }
 
 function openNav() {
