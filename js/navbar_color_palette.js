@@ -4,49 +4,64 @@ const green = document.querySelector(".colorbox--green");
 const red = document.querySelector(".colorbox--red");
 const light = document.querySelector(".colorbox--light");
 const navi = document.getElementById("navigation");
+const sidebarCenter = document.querySelector(".sidebar__center");
 const overlay_content_arr = document.getElementsByClassName("overlay-content");
+
 blue.addEventListener("click", () => {
   navi.style.backgroundColor = "var(--color-blue)";
-  borderReset();
+  borderBoxReset();
   blue.style.border = "1px solid #fff";
   textResetToWhite();
+  borderToWhite();
 });
 
 dark.addEventListener("click", () => {
   navi.style.backgroundColor = "var(--color-dark)";
-  borderReset();
+  borderBoxReset();
   dark.style.border = "1px solid #fff";
   textResetToWhite();
+  borderToWhite();
 });
 green.addEventListener("click", () => {
   navi.style.backgroundColor = "var(--color-green)";
-  borderReset();
+  borderBoxReset();
   green.style.border = "1px solid #fff";
   textResetToWhite();
+  borderToWhite();
 });
 
 red.addEventListener("click", () => {
   navi.style.backgroundColor = "var(--color-red)";
-  borderReset();
+  borderBoxReset();
   red.style.border = "1px solid #fff";
   textResetToWhite();
+  borderToWhite();
 });
 
 light.addEventListener("click", () => {
   navi.style.backgroundColor = "var(--color-light)";
-  borderReset();
+  borderBoxReset();
+  borderToBlack();
   light.style.border = "1px solid #000";
   textResetToDark();
 });
 
 // Funkcje
 
-function borderReset() {
+function borderBoxReset() {
   dark.style.border = "1px solid #9ca3af";
   blue.style.border = "1px solid #9ca3af";
   red.style.border = "1px solid #9ca3af";
   green.style.border = "1px solid #9ca3af";
   light.style.border = "1px solid #9ca3af";
+}
+function borderToBlack() {
+  sidebarCenter.style.borderTop = "1px solid black";
+  sidebarCenter.style.borderBottom = "1px solid black";
+}
+function borderToWhite() {
+  sidebarCenter.style.borderTop = "1px solid white";
+  sidebarCenter.style.borderBottom = "1px solid white";
 }
 function textResetToDark() {
   overlay_content_arr[0].classList.remove("content--text-white");
