@@ -75,8 +75,10 @@ function textResetToWhite() {
 
 function openNav() {
   document.getElementById("navigation").style.width = "100%";
+  document.body.style.overflow = "hidden";
 }
 
 function closeNav() {
   document.getElementById("navigation").style.width = "0%";
+  document.body.style.overflow = "visible";
 }
