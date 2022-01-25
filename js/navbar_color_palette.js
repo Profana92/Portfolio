@@ -81,11 +81,11 @@ function openNav() {
     }, 450);
     document.getElementById("navigation").style.width = "250px";
   } else {
+    setTimeout(function () {
+      document.body.style.overflow = "hidden";
+    }, 500);
     document.getElementById("navigation").style.width = "100%";
   }
-  setTimeout(function () {
-    document.body.style.overflow = "hidden";
-  }, 500);
 }
 
 function closeNav() {
