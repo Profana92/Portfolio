@@ -1,0 +1,45 @@
+.loader {
+  width: 100vw;
+}
+.loader__text {
+  font-size: 18px;
+  maring-top: 20px;
+  width: 80%;
+}
+.nav_open {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+.sidebar__faceimg {
+  height: 100px;
+  width: 100px;
+  border: 3px solid rgba(255, 255, 255, 0.486);
+  border-radius: 50%;
+  margin: 20px 0;
+}
+
+.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  line-height: 20px;
+  text-decoration: none;
+  font-size: 32px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.loader__animation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-35%, -50%);
+  width: 80px;
+  height: 80px;
+}
+.loader__animation span {
+  width: 30%;
+  height: 30%;
+}

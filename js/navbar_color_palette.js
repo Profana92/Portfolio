@@ -74,11 +74,22 @@ function textResetToWhite() {
 }
 
 function openNav() {
-  document.getElementById("navigation").style.width = "100%";
-  document.body.style.overflow = "hidden";
+  const mediaQuery = window.matchMedia("(min-width: 768px)");
+  if (mediaQuery.matches) {
+    setTimeout(function () {
+      document.body.style.marginLeft = "250px";
+    }, 450);
+    document.getElementById("navigation").style.width = "250px";
+  } else {
+    document.getElementById("navigation").style.width = "100%";
+  }
+  setTimeout(function () {
+    document.body.style.overflow = "hidden";
+  }, 500);
 }
 
 function closeNav() {
   document.getElementById("navigation").style.width = "0%";
+  document.body.style.marginLeft = "0px";
   document.body.style.overflow = "visible";
 }
