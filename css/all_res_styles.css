@@ -6,7 +6,6 @@
   --color-blue: #449dd1;
   --color-green: #1a936f;
   --color-red: #ef6461;
-  --color-blue: #449dd1;
 }
 
 /** Sidebar ogólne */
@@ -155,9 +154,13 @@
   width: 80%;
 }
 .nav_open {
+  font-family: "Playfair Display", serif;
   position: fixed;
   top: 20px;
   right: 20px;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 8px;
 }
 .sidebar__faceimg {
   height: 100px;
@@ -190,4 +193,14 @@
 .loader__animation span {
   width: 30%;
   height: 30%;
+}
+
+a.nav__link {
+  text-decoration: none;
+  color: #ebebeb;
+}
+
+a.nav__link:hover {
+  text-decoration: none;
+  color: #9ca3af;
 }
