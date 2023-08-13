@@ -16,6 +16,20 @@ const Header: React.FC = () => {
 
   return (
     <header>
+      <nav>
+        <menu>
+          <li>
+            <NavLink to={`contacts/1`}>
+              <Trans i18nKey="description.part1">
+                Edit <code>src/App.js</code> and save to reload.
+              </Trans>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to={`contacts/1`}> {t('description.part2')}</NavLink>
+          </li>
+        </menu>
+      </nav>{' '}
       <div>
         {Object.keys(lngs).map((lng) => (
           <button
@@ -28,20 +42,6 @@ const Header: React.FC = () => {
           </button>
         ))}
       </div>
-      <nav>
-        <ul>
-          <li>
-            <NavLink to={`contacts/1`}>
-              <Trans i18nKey="description.part1">
-                Edit <code>src/App.js</code> and save to reload.
-              </Trans>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to={`contacts/1`}> {t('description.part2')}</NavLink>
-          </li>
-        </ul>
-      </nav>
     </header>
   )
 }
