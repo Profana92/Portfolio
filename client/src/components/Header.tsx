@@ -1,6 +1,6 @@
 import React from 'react'
 import { Trans, useTranslation } from 'react-i18next'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 interface lngsInterface {
   [key: string]: { nativeName: string }
@@ -15,7 +15,7 @@ const Header: React.FC = () => {
   const { t, i18n } = useTranslation()
 
   return (
-    <header>
+    <header className="flex justify-between h-14 bg-red-300">
       <nav>
         <menu>
           <li>
@@ -29,7 +29,8 @@ const Header: React.FC = () => {
             <NavLink to={`contacts/1`}> {t('description.part2')}</NavLink>
           </li>
         </menu>
-      </nav>{' '}
+      </nav>
+      <Link to={'/'}>Call to action</Link>
       <div>
         {Object.keys(lngs).map((lng) => (
           <button
