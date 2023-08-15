@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-
+import Flag from 'react-world-flags'
 interface lngsInterface {
   [key: string]: { nativeName: string }
 }
@@ -11,45 +11,69 @@ const lngs: lngsInterface = {
 }
 
 const LanguageSwitcher: React.FC = () => {
+  const [languageSwitcherOpen, setlanguageSwitcherOpen] = useState(false)
   const { i18n } = useTranslation()
+
   return (
-    <>
-      <label
-        htmlFor="pet-select"
-        aria-hidden="true"
-        className="absolute -left-[10000px] top-auto w-[1px] h-[1px] overflow-hidden"
-      >
-        Language select
-      </label>
-      <select
-        name="language"
-        id="language-select"
-        onChange={(value) => {
-          i18n.changeLanguage(value.target.value)
-        }}
-        className="px-5 text-center"
-      >
-        {i18n.resolvedLanguage === 'en' ? (
-          <option>English</option>
-        ) : i18n.resolvedLanguage === 'pl' ? (
-          <option>Polski</option>
-        ) : i18n.resolvedLanguage === 'de' ? (
-          <option>Deutsch</option>
-        ) : (
-          <option>English</option>
-        )}
-        {Object.keys(lngs).map((lng) => (
-          <option
-            key={lng}
-            style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal' }}
-            onChange={() => i18n.changeLanguage(lng)}
-            value={lng}
-          >
-            {lngs[lng].nativeName}
-          </option>
-        ))}
-      </select>
-    </>
+    <div className="relative w-36 h-8">
+      <ul className="text-xl self-baseline my-auto transition-all">
+        <li
+          className={`w-full flex flex-row gap-2 items-center justify-start h-8 px-2 `}
+          onClick={() => {
+            setlanguageSwitcherOpen((prevstate) => !prevstate)
+          }}
+        >
+          <Flag
+            code={
+              i18n.resolvedLanguage === 'en'
+                ? 'usa'
+                : i18n.resolvedLanguage === 'de'
+                ? 'deu'
+                : i18n.resolvedLanguage === 'pl'
+                ? 'pol'
+                : 'usa'
+            }
+            height="16"
+            className="w-10"
+          />
+          <span className="h-6 leading-6">
+            {i18n.resolvedLanguage === 'en'
+              ? 'English'
+              : i18n.resolvedLanguage === 'de'
+              ? 'Deutsch'
+              : i18n.resolvedLanguage === 'pl'
+              ? 'Polish'
+              : 'English'}
+          </span>
+        </li>
+
+        <div
+          className={`transition-all duration-300 absolute w-full max-h-0 overflow-hidden
+            ${languageSwitcherOpen ? 'max-h-[500px] ' : 'overflow-auto duration-150'}
+          `}
+        >
+          {Object.keys(lngs).map((lng) => (
+            <li
+              className={`w-full flex flex-row gap-2 items-center justify-start h-8 px-2 ${
+                i18n.resolvedLanguage === lng ? ' bg-slate-100 bg-opacity-10' : ''
+              }`}
+              key={lng}
+              onClick={() => {
+                setlanguageSwitcherOpen((prevstate) => !prevstate)
+                i18n.changeLanguage(lng)
+              }}
+            >
+              <Flag
+                code={lng === 'en' ? 'usa' : lng === 'de' ? 'deu' : lng === 'pl' ? 'pol' : 'usa'}
+                height="16"
+                className="w-10"
+              />
+              {lngs[lng].nativeName}
+            </li>
+          ))}
+        </div>
+      </ul>
+    </div>
   )
 }
 

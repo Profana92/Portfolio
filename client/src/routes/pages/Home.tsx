@@ -4,8 +4,11 @@ const Home: React.FC = () => {
   return (
     <div>
       <Helmet>
-        <title>Learning React Helmet!</title>
-        <meta name="description" content="Beginner friendly page for learning React Helmet." />
+        <title> Home | Wojciech Marczak | Let&apos;s Build The Web Together! </title>
+        <meta
+          name="description"
+          content="Welcome to my front-end developer portfolio! Take a tour of my work, skills, and projects. Let's create stunning websites together! Enjoy your visit!"
+        />
       </Helmet>
       Home <br></br>
       Home <br></br>

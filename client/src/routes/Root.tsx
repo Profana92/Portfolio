@@ -5,7 +5,7 @@ import Header from '../components/Header/Header'
 
 const Root: React.FC = () => {
   return (
-    <div className="flex flex-col h-full">
+    <div className="flex flex-col h-full bg-background text-textBright">
       <Header />
       <main className="min-h-dvh">
         <Outlet />

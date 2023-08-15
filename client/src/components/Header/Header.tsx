@@ -6,7 +6,7 @@ import Navigation from './Navigation'
 
 const Header: React.FC = () => {
   return (
-    <header className="flex justify-between h-14 bg-red-300 sticky top-0">
+    <header className="flex justify-between items-center h-14 sticky top-0 px-3">
       <Navigation />
       <Link to={'/'}>Call to action</Link>
       <LanguageSwitcher />

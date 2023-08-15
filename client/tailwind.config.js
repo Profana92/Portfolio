@@ -6,6 +6,10 @@ export default {
       minHeight: {
         dvh: ['calc(100vh - 56px)', 'calc(100dvh - 56px)'],
       },
+      colors: {
+        background: '#111827',
+        textBright: '#F9FAFB',
+      },
     },
   },
   plugins: [],
