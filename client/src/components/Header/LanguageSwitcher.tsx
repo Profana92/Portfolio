@@ -16,7 +16,7 @@ const LanguageSwitcher: React.FC = () => {
 
   return (
     <div className="relative w-36 h-8">
-      <ul className="text-xl self-baseline my-auto transition-all">
+      <ul className="text-md self-baseline my-auto transition-all">
         <li
           className={`w-full flex flex-row gap-2 items-center justify-start h-8 px-2 `}
           onClick={() => {

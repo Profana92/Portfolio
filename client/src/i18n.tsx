@@ -20,25 +20,43 @@ i18n
     resources: {
       en: {
         translation: {
-          description: {
-            part1: 'This is a template text.',
-            part2: 'Are other languages correct?',
+          navigation: {
+            home: 'Home',
+            projects: 'Projects',
+            about: 'About',
+            skills: 'Skills',
+            offer: 'Services',
+            contact: 'Contact',
+            quote: 'Get a quote!',
+            blog: 'Blog',
           },
         },
       },
       pl: {
         translation: {
-          description: {
-            part1: 'To jest tekst szablonu.',
-            part2: 'Czy pozostałe języki działają?',
+          navigation: {
+            home: 'Start',
+            projects: 'Projekty',
+            about: 'O mnie',
+            skills: 'Umiejętności',
+            offer: 'Usługi',
+            contact: 'Kontakt',
+            quote: 'Uzyskaj wycenę!',
+            blog: 'Blog',
           },
         },
       },
       de: {
         translation: {
-          description: {
-            part1: 'Dies ist ein Vorlagentext.',
-            part2: 'Funktionieren andere Sprachen?',
+          navigation: {
+            home: 'Home',
+            projects: 'Projekte',
+            about: 'Impressum',
+            skills: 'Fähigkeiten',
+            offer: 'Leistungen',
+            contact: 'Kontakt',
+            quote: 'Angebot bekommen!',
+            blog: 'Blog',
           },
         },
       },

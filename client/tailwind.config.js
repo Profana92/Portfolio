@@ -9,6 +9,11 @@ export default {
       colors: {
         background: '#111827',
         textBright: '#F9FAFB',
+        accent: '#16F2CA',
+      },
+      fontFamily: {
+        display: ['Playfair Display', 'serif'],
+        body: ['Roboto', 'sans-serif'],
       },
     },
   },
