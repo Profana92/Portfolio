@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 const Navigation: React.FC = () => {
   const { t } = useTranslation()
   return (
-    <nav className="absolute top-0 left-1/2 h-full">
+    <nav className="h-full">
       <menu className="h-full flex justify-center items-center gap-2 ">
         <li>
           <NavLink to={`/`}>{t('navigation.home')}</NavLink>
