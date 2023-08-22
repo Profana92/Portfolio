@@ -10,23 +10,41 @@ const Navigation: React.FC = () => {
         <li>
           <NavLink to={`/`}>{t('navigation.home')}</NavLink>
         </li>
+        <div className="submenu">
+          <li>
+            <NavLink to={`/#magic`}>{t('navigation.magic')}</NavLink>
+          </li>
+          <li>
+            <NavLink to={`/#tools`}>{t('navigation.tools')}</NavLink>
+          </li>
+        </div>
         <li>
-          <NavLink to={`/projects`}>{t('navigation.projects')}</NavLink>
+          <NavLink to={`/mywork`}>{t('navigation.mywork')}</NavLink>
         </li>
+        <div className="submenu">
+          <li>
+            <NavLink to={`/projects`}>{t('navigation.projects')}</NavLink>
+          </li>
+          <li>
+            <NavLink to={`/services`}>{t('navigation.services')}</NavLink>
+          </li>
+          <li>
+            <NavLink to={`/blog`}>{t('navigation.blog')}</NavLink>
+          </li>
+        </div>
         <li>
           <NavLink to={`/about`}>{t('navigation.about')}</NavLink>
         </li>
-        <li>
-          <NavLink to={`/skills`}>{t('navigation.skills')}</NavLink>
-        </li>
-        <li>
-          <NavLink to={`/offer`}>{t('navigation.offer')}</NavLink>
-        </li>
+        <div className="submenu">
+          <li>
+            <NavLink to={`/#aboutme`}>{t('navigation.aboutme')}</NavLink>
+          </li>
+          <li>
+            <NavLink to={`/#skills`}>{t('navigation.skills')}</NavLink>
+          </li>
+        </div>
         <li>
           <NavLink to={`/contact`}>{t('navigation.contact')}</NavLink>
-        </li>{' '}
-        <li>
-          <NavLink to={`/blog`}>{t('navigation.blog')}</NavLink>
         </li>
       </menu>
     </nav>
