@@ -9,7 +9,8 @@ export default {
       colors: {
         background: '#111827',
         textBright: '#F9FAFB',
-        accent: '#16F2CA',
+        pink: '#FE2DAD',
+        orange: '#FC7032',
       },
       fontFamily: {
         display: ['Playfair Display', 'serif'],
