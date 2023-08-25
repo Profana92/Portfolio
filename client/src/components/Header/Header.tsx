@@ -14,7 +14,7 @@ const Header: React.FC = () => {
       } px-3`}
     >
       <div className="font-semibold z-10">
-        <span className=" text-5xl text-transparent font-black bg-gradient-to-br bg-clip-text from-pink to-orange">
+        <span className=" text-3xl text-transparent font-black bg-gradient-to-br bg-clip-text from-pink to-orange">
           <Link to="/">WIZdev.</Link>
         </span>
       </div>
