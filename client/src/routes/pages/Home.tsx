@@ -1,6 +1,10 @@
-
 import { Helmet } from 'react-helmet-async'
+import { useTranslation } from 'react-i18next'
+
+import HeroSection from '../../components/HeroSectionWithButtons'
 const Home = () => {
+  const { t } = useTranslation()
+
   return (
     <div>
       <Helmet>
@@ -10,7 +14,12 @@ const Home = () => {
           content="Welcome to my front-end developer portfolio! Take a tour of my work, skills, and projects. Let's create stunning websites together! Enjoy your visit!"
         />
       </Helmet>
-      <section className="bg-home-hero-pattern min-h-dvh bg-cover bg-no-repeat bg-bottom pt-12"></section>
+      <HeroSection
+        buttonOne={t('HomePage.buttonOne')}
+        buttonTwo={t('HomePage.buttonTwo')}
+        heroHeading={t('HomePage.heroHeading')}
+        heroParagraph={t('HomePage.heroParagraph')}
+      />
     </div>
   )
 }
