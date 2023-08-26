@@ -1,5 +1,6 @@
 import { Dispatch, SetStateAction } from 'react'
 import { useTranslation } from 'react-i18next'
+import { IoIosClose } from 'react-icons/io'
 import { Link, NavLink } from 'react-router-dom'
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
 
@@ -20,7 +21,7 @@ const MobileNavigation = (props: Props) => {
           props.menuOpen ? 'left-0' : '-left-[100vw]'
         }`}
       >
-        <div className="flex px-6 justify-between h-14 items-center z-10">
+        <div className="flex px-6 justify-between min-h-[3.5rem] items-center z-10">
           <p className="text-3xl text-transparent font-black bg-gradient-to-br bg-clip-text from-pink to-orange">
             <Link to="/">WIZdev.</Link>
           </p>
@@ -28,8 +29,9 @@ const MobileNavigation = (props: Props) => {
             onClick={() => {
               props.setmenuOpen((prevState) => !prevState)
             }}
+            className="flex flex-col gap-2 text-5xl"
           >
-            X
+            <IoIosClose />
           </p>
         </div>
         <nav className="overflow-auto no-scrollbar z-10 my-5">
@@ -168,8 +170,11 @@ const MobileNavigation = (props: Props) => {
         onClick={() => {
           props.setmenuOpen((prevState) => !prevState)
         }}
+        className="flex flex-col gap-2"
       >
-        X
+        <span className="inline-block w-10 h-[2px] bg-white rounded"></span>
+        <span className="inline-block w-10 h-[2px] bg-white rounded"></span>
+        <span className="inline-block w-10 h-[2px] bg-white rounded"></span>
       </p>
     </div>
   )
