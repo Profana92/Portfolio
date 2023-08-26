@@ -4,10 +4,13 @@ export default {
   theme: {
     extend: {
       minHeight: {
-        dvh: ['calc(100vh - 56px)', 'calc(100dvh - 56px)'],
+        dvh: ['calc(100vh)', 'calc(100dvh)'],
+      },
+      maxHeight: {
+        dvh: ['calc(100vh)', 'calc(100dvh)'],
       },
       colors: {
-        background: '#111827',
+        background: '#090120',
         textBright: '#F9FAFB',
         pink: '#FE2DAD',
         orange: '#FC7032',
@@ -15,6 +18,12 @@ export default {
       fontFamily: {
         display: ['Playfair Display', 'serif'],
         body: ['Roboto', 'sans-serif'],
+      },
+      backgroundImage: {
+        'home-hero-pattern': [
+          'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0))',
+          "url('./assets/home_background_tiny.jpg')",
+        ],
       },
     },
   },

@@ -10,15 +10,15 @@ const lngs: lngsInterface = {
   pl: { nativeName: 'Polski' },
 }
 
-const LanguageSwitcher = () => {
+const LanguageSwitcherMobile = () => {
   const [languageSwitcherOpen, setlanguageSwitcherOpen] = useState(false)
   const { i18n } = useTranslation()
 
   return (
-    <div className="relative w-36 h-8">
+    <div className="relative w-36 h-8 my-5">
       <ul className="text-md self-baseline my-auto transition-all">
         <li
-          className={`w-full flex flex-row gap-2 items-center justify-start h-8 px-2 `}
+          className={`w-full flex flex-row gap-2 items-center justify-start h-8 px-2`}
           onClick={() => {
             setlanguageSwitcherOpen((prevstate) => !prevstate)
           }}
@@ -46,15 +46,16 @@ const LanguageSwitcher = () => {
               : 'English'}
           </span>
         </li>
+
         <div
-          className={`transition-all duration-300 absolute w-full max-h-0 overflow-hidden
+          className={`absolute bottom-full transition-all duration-300 w-full max-h-0 overflow-hidden
             ${languageSwitcherOpen ? 'max-h-[500px] ' : 'overflow-auto duration-150'}
           `}
         >
           {Object.keys(lngs).map((lng) => (
             <li
               className={`w-full flex flex-row gap-2 items-center justify-start h-8 px-2 ${
-                i18n.resolvedLanguage === lng ? ' bg-slate-100 bg-opacity-10' : ''
+                i18n.resolvedLanguage === lng ? 'bg-[#09022e40] bg-opacity-10' : ''
               }`}
               key={lng}
               onClick={() => {
@@ -76,4 +77,4 @@ const LanguageSwitcher = () => {
   )
 }
 
-export default LanguageSwitcher
+export default LanguageSwitcherMobile

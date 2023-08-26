@@ -1,15 +1,17 @@
+import { useState } from 'react'
 import { Outlet } from 'react-router-dom'
 
 import Header from '../components/Header/Header'
 
 const Root = () => {
+  const [menuOpen, setmenuOpen] = useState(false)
   return (
-    <div className="flex flex-col h-full bg-background text-textBright">
-      <Header />
+    <div className="flex flex-col h-full bg-background text-textBright" id="main-element">
+      <Header menuOpen={menuOpen} setmenuOpen={setmenuOpen} />
       <main className="min-h-dvh">
         <Outlet />
       </main>
-      <footer className="h-96">This is a footer</footer>
+      <footer className="">This is a footer</footer>
     </div>
   )
 }

@@ -1,28 +1,31 @@
-import React from 'react'
+import { Dispatch, SetStateAction } from 'react'
 import { Link } from 'react-router-dom'
 
 import useScrollDirection from '../../hooks/scrollDirection'
 
-import LanguageSwitcher from './LanguageSwitcher'
+import MobileNavigation from './MobileNavigation'
 import Navigation from './Navigation'
-const Header: React.FC = () => {
+
+interface Props {
+  menuOpen: boolean
+  setmenuOpen: Dispatch<SetStateAction<boolean>>
+}
+const Header = (props: Props) => {
   const scrollDirection = useScrollDirection()
+
   return (
     <header
-      className={`flex justify-between items-center h-14 sticky transition-all ${
+      className={`flex justify-between items-center h-14 fixed transition-all w-full px-6 bg-[#09022E59] ${
         scrollDirection === 'down' ? '-top-14' : 'top-0'
-      } px-3`}
+      }`}
     >
-      <div className="font-semibold z-10">
-        <span className=" text-3xl text-transparent font-black bg-gradient-to-br bg-clip-text from-pink to-orange">
-          <Link to="/">WIZdev.</Link>
-        </span>
-      </div>
-      <div className="flex items-center flex-row gap-2 z-10">
+      <p className="z-10 text-3xl text-transparent font-black bg-gradient-to-br bg-clip-text from-pink to-orange">
+        <Link to="/">WIZdev.</Link>
+      </p>
+      <div className="flex items-center flex-row gap-2 z-10 h-full">
         <Navigation />
-        <LanguageSwitcher />
+        <MobileNavigation menuOpen={props.menuOpen} setmenuOpen={props.setmenuOpen} />
       </div>
-      <div className="w-full h-14 absolute left-0 opacity-25 bg-[#09022E]"></div>
     </header>
   )
 }

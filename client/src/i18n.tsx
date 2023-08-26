@@ -48,7 +48,7 @@ i18n
             about: 'O mnie',
             aboutMe: 'Ja',
             skills: 'Umiejętności',
-            contact: 'Kontact',
+            contact: 'Kontakt',
           },
         },
       },

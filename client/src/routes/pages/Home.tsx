@@ -1,6 +1,6 @@
-import React from 'react'
+
 import { Helmet } from 'react-helmet-async'
-const Home: React.FC = () => {
+const Home = () => {
   return (
     <div>
       <Helmet>
@@ -10,7 +10,7 @@ const Home: React.FC = () => {
           content="Welcome to my front-end developer portfolio! Take a tour of my work, skills, and projects. Let's create stunning websites together! Enjoy your visit!"
         />
       </Helmet>
-      Home <br></br>
+      <section className="bg-home-hero-pattern min-h-dvh bg-cover bg-no-repeat bg-bottom pt-12"></section>
     </div>
   )
 }
