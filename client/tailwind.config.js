@@ -14,6 +14,8 @@ export default {
         textBright: '#F9FAFB',
         pink: '#FE2DAD',
         orange: '#FC7032',
+        buttonOrange: '#B44F22',
+        buttonBlue: '#112389',
       },
       fontFamily: {
         display: ['Playfair Display', 'serif'],

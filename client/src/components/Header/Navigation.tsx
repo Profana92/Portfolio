@@ -127,7 +127,6 @@ const Navigation = () => {
               ''
             )}
           </div>
-
           <div
             className="relative h-full"
             onMouseOver={() => mouseOverMenuHandler('enter', 'myWork')}
@@ -178,7 +177,6 @@ const Navigation = () => {
               ''
             )}
           </div>
-
           <div
             className="relative h-full"
             onMouseOver={() => mouseOverMenuHandler('enter', 'about')}
@@ -221,7 +219,6 @@ const Navigation = () => {
               ''
             )}
           </div>
-
           <li className="h-full px-5">
             <NavLink
               className={({ isActive, isPending }) =>
