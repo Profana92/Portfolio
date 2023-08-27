@@ -3,6 +3,10 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      screens: {
+        buttonsFix: '402px',
+        tall: { raw: '(min-height: 420px)' },
+      },
       minHeight: {
         dvh: ['calc(100vh)', 'calc(100dvh)'],
       },

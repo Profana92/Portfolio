@@ -1,7 +1,8 @@
 import { Helmet } from 'react-helmet-async'
 import { useTranslation } from 'react-i18next'
 
-import HeroSection from '../../components/HeroSectionWithButtons'
+import HeroSectionMySpells from '../../components/Sections/HeroSectionMySpells'
+import HeroSection from '../../components/Sections/HeroSectionWithButtons'
 const Home = () => {
   const { t } = useTranslation()
 
@@ -19,7 +20,9 @@ const Home = () => {
         buttonTwo={t('HomePage.buttonTwo')}
         heroHeading={t('HomePage.heroHeading')}
         heroParagraph={t('HomePage.heroParagraph')}
+        callToAction={t('HomePage.callToAction')}
       />
+      <HeroSectionMySpells />
     </div>
   )
 }

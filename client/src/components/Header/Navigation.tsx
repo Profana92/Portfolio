@@ -99,7 +99,7 @@ const Navigation = () => {
                     ? 'flex justify-center items-center h-full w-full text-transparent font-black bg-gradient-to-br bg-clip-text from-pink to-orange align-middle'
                     : 'h-full w-full flex justify-center items-center hover:bg-gradient-to-br hover:bg-clip-text hover:from-pink hover:to-orange hover:text-transparent'
                 }
-                to={`/`}
+                to={`/#home`}
               >
                 {t('navigation.home')}
               </NavLink>

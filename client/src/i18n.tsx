@@ -34,11 +34,12 @@ i18n
             contact: 'Contact',
           },
           HomePage: {
-            heroHeading: '<0>Welcome here, where dreams <1>DO COME</1> alivs!</0>',
+            heroHeading: '<0>Welcome here, where dreams <1>DO COME</1> alive!</0>',
             heroParagraph:
-              "<0>Hello! I'm <1>Wojciech Marczak</1>, a Front-End Wizard based in of Leipzig, in the realm of Germany! I'm fervently devoted to crafting top-tier websites, infusing a touch of magic into each creation for unparalleled experiences.</0>",
+              "<0>Hello! I'm <1>Wojciech Marczak</1>, a Front-End Wizard based in Leipzig, in the realm of Germany! I'm fervently devoted to crafting top-tier websites, infusing a touch of magic into each creation for unparalleled experiences.</0>",
             buttonOne: 'My Spells',
             buttonTwo: 'My creations',
+            callToAction: 'See The Magic!',
           },
         },
       },
