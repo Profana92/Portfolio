@@ -15,12 +15,14 @@ const Header = (props: Props) => {
 
   return (
     <header
-      className={`flex justify-between items-center h-14 fixed transition-all w-full px-6 bg-[#09022E59] ${
+      className={`z-10 flex justify-between items-center h-14 fixed transition-all w-full px-6 bg-[#09022E59] ${
         scrollDirection === 'down' ? '-top-14' : 'top-0'
       }`}
     >
       <p className="z-10 text-3xl text-transparent font-black bg-gradient-to-br bg-clip-text from-pink to-orange">
-        <Link to="/">WIZdev.</Link>
+        <Link to="/" tabIndex={-1}>
+          WIZdev.
+        </Link>
       </p>
       <div className="flex items-center flex-row gap-2 z-10 h-full">
         <Navigation />

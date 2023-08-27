@@ -10,6 +10,7 @@ import Home from './routes/pages/Home'
 import Root from './routes/Root'
 
 import './index.css'
+
 const router = createBrowserRouter([
   {
     path: '/',
