@@ -7,6 +7,7 @@ import './i18n'
 
 import ErrorPage from './routes/Error-page'
 import Home from './routes/pages/Home'
+import MyWork from './routes/pages/MyWork'
 import Root from './routes/Root'
 
 import './index.css'
@@ -21,10 +22,9 @@ const router = createBrowserRouter([
         index: true,
         element: <Home />,
       },
-
       {
         path: 'my-work',
-        element: <Home />,
+        element: <MyWork />,
       },
     ],
   },
