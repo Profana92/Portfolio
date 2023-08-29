@@ -61,6 +61,20 @@ i18n
             SectionTwoElementFourParagraph:
               'This enchanting framework magically revamps the user interface, effortlessly rendering captivating visuals that adapt swiftly to any interaction.',
           },
+          myWorkPage: {
+            heroHeading: '<0>So, <1>Who Am I?</1></0>',
+            heroParagraphOne:
+              'I’m a passionate front-end developer with a creative flair for crafting seamless user experiences. I utilize HTML, CSS, JS, and React for website construction, and employ Figma, Adobe XD, Adobe Illustrator, and Photoshop for design. Deploying websites is achieved through Ubuntu, Nginx, and Apache. Moreover, I bring ecommerce websites to life using Wordpress, Divi, and Woocommerce.',
+            heroParagraphTwo:
+              'I remain committed to staying updated with the latest industry trends and delivering visually captivating and responsive web solutions.',
+            heroParagraphThree:
+              'During my leisure hours, I engage in flying drones, 3D printing, and repairing electronics, revitalizing the old to breathe new life into them. I also absolutly love the idea of three.js!',
+            heroParagraphFour:
+              'I take immense pleasure in witnessing my websites generate fresh sales and leads for my clients, leading to the flourishing growth of their businesses.',
+            heroParagraphAccent: "Let's collaborate and bring ideas to life through elegant code.",
+            buttonOne: 'My Work',
+            buttonTwo: 'Contact Me',
+          },
           Footer: {
             Description: 'Let the whispers of the digital wind carry your message to me.',
             Heading: '<0>Summon <1>Me!</1></0>',

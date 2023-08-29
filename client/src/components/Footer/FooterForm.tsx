@@ -1,7 +1,7 @@
 import { SubmitHandler, useForm } from 'react-hook-form'
 import { IconContext } from 'react-icons'
 import { MdErrorOutline } from 'react-icons/md'
-import { AnimatePresence,motion } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion'
 
 type Inputs = {
   firstName: string
@@ -42,7 +42,7 @@ export default function FooterForm(props: Props) {
           <AnimatePresence>
             {errors.firstName?.type === 'required' && (
               <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-                <div className="flex gap-3 items-center">
+                <div className="flex gap-3 items-center text-sm">
                   <IconContext.Provider value={{ className: 'text-3xl text-pink' }}>
                     <div>
                       <MdErrorOutline />
@@ -56,7 +56,7 @@ export default function FooterForm(props: Props) {
           <AnimatePresence>
             {errors.firstName?.type === 'maxLength' && (
               <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-                <div className="flex gap-3 items-center">
+                <div className="flex gap-3 items-center text-sm">
                   <IconContext.Provider value={{ className: 'text-3xl text-pink' }}>
                     <div>
                       <MdErrorOutline />
@@ -79,7 +79,7 @@ export default function FooterForm(props: Props) {
           <AnimatePresence>
             {errors.lastName?.type === 'required' && (
               <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-                <div className="flex gap-3 items-center">
+                <div className="flex gap-3 items-center text-sm">
                   <IconContext.Provider value={{ className: 'text-3xl text-pink' }}>
                     <div>
                       <MdErrorOutline />
@@ -93,7 +93,7 @@ export default function FooterForm(props: Props) {
           <AnimatePresence>
             {errors.lastName?.type === 'maxLength' && (
               <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-                <div className="flex gap-3 items-center">
+                <div className="flex gap-3 items-center text-sm">
                   <IconContext.Provider value={{ className: 'text-3xl text-pink' }}>
                     <div>
                       <MdErrorOutline />
@@ -118,7 +118,7 @@ export default function FooterForm(props: Props) {
         <AnimatePresence>
           {errors.eMail?.type === 'required' && (
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-              <div className="flex gap-3 items-center">
+              <div className="flex gap-3 items-center text-sm">
                 <IconContext.Provider value={{ className: 'text-3xl text-pink' }}>
                   <div>
                     <MdErrorOutline />
@@ -132,7 +132,7 @@ export default function FooterForm(props: Props) {
         <AnimatePresence>
           {errors.eMail?.type === 'maxLength' && (
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-              <div className="flex gap-3 items-center">
+              <div className="flex gap-3 items-center text-sm">
                 <IconContext.Provider value={{ className: 'text-3xl text-pink' }}>
                   <div>
                     <MdErrorOutline />
@@ -147,8 +147,8 @@ export default function FooterForm(props: Props) {
 
       <div className="w-full flex flex-col gap-6">
         <div className="p-[1px] bg-gradient-to-br from-pink to-orange rounded-sm flex flec-col ">
-          <input
-            className="w-full bg-white rounded-sm text-xs px-2 h-10 text-gray-700"
+          <textarea
+            className="w-full bg-white rounded-sm text-xs p-2 text-gray-700 h-52"
             placeholder={props.formMessagePlaceholder}
             {...register('message', { required: true })}
           />
@@ -156,7 +156,7 @@ export default function FooterForm(props: Props) {
         <AnimatePresence>
           {errors.message?.type === 'required' && (
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-              <div className="flex gap-3 items-center">
+              <div className="flex gap-3 items-center text-sm">
                 <IconContext.Provider value={{ className: 'text-3xl text-pink' }}>
                   <div>
                     <MdErrorOutline />
@@ -172,7 +172,7 @@ export default function FooterForm(props: Props) {
       <input
         type="submit"
         value={props.formSummonButton}
-        className="inline-block w-40 bg-buttonOrange buttonsFix:mr-2 md:mr-8 text-center leading-[50px] rounded-[5px] text-sm md:text-base md:leading-[50px]"
+        className="m-auto inline-block w-40 bg-buttonOrange md:mr-8 text-center leading-[50px] rounded-[5px] text-sm md:text-base md:leading-[50px] lg:leading-[50px] "
       />
     </form>
   )

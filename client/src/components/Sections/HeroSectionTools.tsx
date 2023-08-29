@@ -23,9 +23,9 @@ interface Props {
 const HeroSectionTools = (props: Props) => {
   return (
     <section id="tools">
-      <div className="bg-gradient-to-b from-[#33091D] to-[#9B1536]">
-        <div className="flex max-w-[1920px] mx-auto gap-12 justify-center items-start py-12">
-          <div className="flex items-center justify-center gap-12">
+      <div className="bg-gradient-to-b from-[#33091D] to-[#9B1536] text-center gap-12">
+        <div className="flex flex-col lg:flex-row max-w-[1920px] mx-auto gap-12 justify-center items-start p-12">
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-12">
             <MagicItemIcon description="A Spellbook, magical item" image={HeroBook} />
             <TextBlockWithDescription
               sectionDescription={props.SectionTwoElementOneDescription}
@@ -33,7 +33,7 @@ const HeroSectionTools = (props: Props) => {
               i18nKey="HomePage.SectionTwoElementOneHeading"
             />
           </div>
-          <div className="flex items-center justify-center gap-12">
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-12">
             <MagicItemIcon description="A Potion, magical item" image={Potion} />
             <TextBlockWithDescription
               sectionDescription={props.SectionTwoElementTwoDescription}
@@ -42,8 +42,8 @@ const HeroSectionTools = (props: Props) => {
             />
           </div>
         </div>
-        <div className="flex max-w-[1920px] mx-auto gap-12 justify-center items-start py-12">
-          <div className="flex items-center justify-center gap-12">
+        <div className="flex flex-col lg:flex-row max-w-[1920px] mx-auto gap-12 justify-center items-start px-12 pb-12">
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-12">
             <MagicItemIcon description="A Scroll, magical item" image={Scroll} />
             <TextBlockWithDescription
               sectionDescription={props.SectionTwoElementThreeDescription}
@@ -51,7 +51,8 @@ const HeroSectionTools = (props: Props) => {
               i18nKey="HomePage.SectionTwoElementThreeHeading"
             />
           </div>
-          <div className="flex items-center justify-center gap-12">
+
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-12">
             <MagicItemIcon description="A Mask, magical item" image={Mask} />
             <TextBlockWithDescription
               sectionDescription={props.SectionTwoElementFourDescription}
