@@ -12,11 +12,13 @@ const Footer = () => {
   const { t } = useTranslation()
   return (
     <footer className="bg-gradient-to-b from-[#440B7E] to-[#090120]">
-      <div className="flex justify-items-center bg-[#D9D9D90D] max-w-[90vw] mx-auto m-20 gap-6 rounded-md shadow-lg">
-        <div className="w-1/3 flex-col p-5">
-          <p className="uppercase font-light text-xs text-[#ffffffBF] my-5">{t('Footer.Description')}</p>
+      <div className="grid grid-cols-1 lg:grid-cols-3 bg-[#D9D9D90D] max-w-[90vw] mx-auto rounded-md shadow-lg lg:gap-x-6 xl:gap-x-12 my-12">
+        <div className="row-start-1 row-end-2 lg:row-start-1 lg:row-end-4 p-6 ">
+          <p className="text-center lg:text-left uppercase font-light text-xs text-[#ffffffBF] my-5 max-w-[70vw] m-auto">
+            {t('Footer.Description')}
+          </p>
           <Trans i18nKey={'Footer.Heading'}>
-            <h2 className="font-display text-2xl md:text-5xl font-medium max-w-xl my-5">
+            <h2 className="text-center lg:text-left font-display text-2xl md:text-5xl font-medium max-w-xl my-5 max-w-[70vw] m-auto">
               This is a dummy text. If you can see it contact
               <span className="text-transparent bg-gradient-to-br bg-clip-text from-pink to-orange">
                 The Administrator
@@ -31,20 +33,22 @@ const Footer = () => {
               </span>
             </p>
           </Trans>
-          <div className="flex gap-4 my-5">
+        </div>
+        <div className="row-start-4 row-end-5 px-6 flex justify-between gap-6">
+          <div className="flex gap-3 my-5">
             <Link to="/">
-              <img src={InstagramIcon} alt="Instagram Icon with link" className="w-10 h-10" />
+              <img src={InstagramIcon} alt="Instagram Icon with link" className="w-8 h-8 lg:w-10 lg:h-10" />
             </Link>
             <Link to="/">
-              <img src={MessangerIcon} alt="MessangerIcon Icon with link" className="w-10 h-10" />
+              <img src={MessangerIcon} alt="MessangerIcon Icon with link" className="w-8 h-8 lg:w-10 lg:h-10" />
             </Link>
             <Link to="/">
-              <img src={LinkedInIcon} alt="LinkedInIcon Icon with link" className="w-10 h-10" />
+              <img src={LinkedInIcon} alt="LinkedInIcon Icon with link" className="w-8 h-8 lg:w-10 lg:h-10" />
             </Link>
           </div>
           <LanguageSwitcherMobile />
         </div>
-        <div className="w-1/3 py-10 px-5">
+        <div className="row-start-2 row-end-3 lg:row-start-1 lg:row-end-5 lg:col-start-2 lg:col-end-3 px-6 lg:p-6">
           <FooterForm
             formMessagePlaceholder={t('Footer.formMessagePlaceholder')}
             formSummonButton={t('Footer.formSummonButton')}
@@ -54,12 +58,14 @@ const Footer = () => {
             errorMaxLength={t('Footer.errorMaxLength')}
             formEmailPlaceholder={t('Footer.formEmailPlaceholder')}
           />
-          <p className="font-light py-5">{t('Footer.formUnderText')}</p>
+          <p className="text-center lg:text-left font-light text-sm lg:text-base my-5">{t('Footer.formUnderText')}</p>
         </div>
-        <div className="w-1/3 py-10 px-5 relative">
-          <div className="z-10 ">
-            <p className="">{t('Footer.aboveFooterMenuText')}</p>
-            <div className="flex my-5">
+        <div className="lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:row-end-5 relative">
+          <div className="z-10 m-6 lg:my-6">
+            <p className="my-6 text-center lg:text-left font-light text-sm lg:text-base">
+              {t('Footer.aboveFooterMenuText')}
+            </p>
+            <div className="flex text-sm lg:text-base lg:gap-2">
               <div className="w-1/4 flex flex-col">
                 <Link to={'/'} className="text-orange">
                   {t('navigation.home')}
@@ -95,15 +101,19 @@ const Footer = () => {
                 <Link to={'/'} className="text-white">
                   {t('navigation.skills')}
                 </Link>
-              </div>{' '}
+              </div>
               <div className="w-1/4 flex flex-col">
                 <Link to={'/'} className="text-orange">
                   {t('navigation.contact')}
                 </Link>
               </div>
             </div>
-            <img src={Hands} alt="Image of hands with crystal ball" className="absolute bottom-0 right-0" />
           </div>
+          <img
+            src={Hands}
+            alt="Image of hands with crystal ball"
+            className="absolute bottom-0 right-0 hidden lg:block"
+          />
         </div>
       </div>
     </footer>

@@ -10,7 +10,7 @@ const HeroSectionMySpells = (props: Props) => {
     <section id="magic">
       <div className="h-[100px] bg-gradient-to-b from-[#130C6C] to-[#170126]"></div>
       <div className="bg-gradient-to-b from-[#170126] to-[#280C20]">
-        <div className="flex max-w-[1920px] mx-auto gap-12 justify-center items-center py-12">
+        <div className="flex max-w-[1920px] mx-auto gap-12 justify-center items-center p-12 flex-col lg:flex-row text-center  lg:text-left">
           <TextBlockWithDescription
             sectionDescription={props.sectionOneDescription}
             sectionParagraph={props.sectionOneParagraph}
@@ -19,7 +19,7 @@ const HeroSectionMySpells = (props: Props) => {
           <img
             src={floatingItems}
             alt="Floating magical items, a scroll, a book, a crystal and a potion"
-            className="w-[40%]"
+            className="w-[70%] lg:w-[40%]"
           />
         </div>
 

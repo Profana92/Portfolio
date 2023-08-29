@@ -22,7 +22,7 @@ const HeroSection = (props: Props) => {
       id="home"
       className="bg-home-hero-pattern min-h-dvh bg-cover bg-no-repeat bg-bottom pt-12 flex justify-center items-center"
     >
-      <div className="mx-auto p-10 text-center lg:pr-[40vw] lg:text-left">
+      <div className="mx-auto p-12 text-center lg:pr-[40vw] lg:text-left">
         <Trans i18nKey="HomePage.heroHeading">
           <h1 className="font-display text-2xl md:text-5xl font-medium max-w-xl">
             Welcome here, where dreams
