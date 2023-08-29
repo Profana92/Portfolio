@@ -40,6 +40,43 @@ i18n
             buttonOne: 'My Spells',
             buttonTwo: 'My creations',
             callToAction: 'See The Magic!',
+            sectionOneDescription: 'HTML CSS JAVASCRIPT REACT',
+            sectionOneHeading: '<0>Those are my <1>Spells</1></0>',
+            sectionOneParagraph:
+              'In this dimension, we wield not wands and incantations, but rather completly other tools to create magical online experiences.',
+            SectionTwoElementOneDescription: 'SPELLS',
+            SectionTwoElementTwoDescription: 'Potions',
+            SectionTwoElementThreeDescription: 'Scrolls',
+            SectionTwoElementFourDescription: 'Enchantments',
+            SectionTwoElementOneHeading: '<0>Magical words of <1>HTML</1></0>',
+            SectionTwoElementTwoHeading: '<0>Style potions of <1>CSS</1></0>',
+            SectionTwoElementThreeHeading: '<0>Scrolls of <1>JavaScript</1></0>',
+            SectionTwoElementFourHeading: '<0>Enchanting with the powers of <1>React</1></0>',
+            SectionTwoElementOneParagraph:
+              'Through these spells, I tell the web browser how to arrange these elements, creating a harmonious symphony of information and aesthetics.',
+            SectionTwoElementTwoParagraph:
+              'These magical mixtures produce extraordinary outcomes, infusing our HTML spells with mesmerizing colors, enticing fonts, captivating animations, and enchanting layouts.',
+            SectionTwoElementThreeParagraph:
+              'Using those scrolls I can summon the power of interactivity, effortlessly manipulating elements, animating pages, and creating dynamic content.',
+            SectionTwoElementFourParagraph:
+              'This enchanting framework magically revamps the user interface, effortlessly rendering captivating visuals that adapt swiftly to any interaction.',
+          },
+          Footer: {
+            Description: 'Let the whispers of the digital wind carry your message to me.',
+            Heading: '<0>Summon <1>Me!</1></0>',
+            Paragraph:
+              '<0>In this realm of web enchantment, <1>your journey matters</1>.  Should you seek my counsel, fear not, for I am but a summoning spell away. Cast your inquiries, propositions, or even just a friendly greeting into the digital aether. With a wave of your cursor and a recitation of the incantation, the arcane forms shall deliver your message to my realm. Let us connect, fellow traveler, and exchange wisdom and enchantments across the digital expanse.</0>',
+            formFirstNamePlaceholder: 'First Name',
+            formLastNamePlaceholder: 'Last Name',
+            formEmailPlaceholder: 'E-mail',
+            formMessagePlaceholder: 'Message...',
+            formSummonButton: 'Summon!',
+            formUnderText:
+              ' By sharing your thoughts, you open the door to endless possibilities. Await my response as our destinies intertwine. May the pixels be ever in your favor!',
+            aboveFooterMenuText:
+              'In the world of web, every line of code is a strand of magic, and every pixel a canvas for creation.',
+            errorRequired: 'This field is required',
+            errorMaxLength: 'Exceeded 20 letters limit',
           },
         },
       },

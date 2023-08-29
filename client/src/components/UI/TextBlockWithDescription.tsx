@@ -1,15 +1,20 @@
 import { Trans } from 'react-i18next'
-const TextBlockWithDescription = () => {
+interface Props {
+  sectionDescription: string
+  sectionParagraph: string
+  i18nKey: string
+}
+const TextBlockWithDescription = (props: Props) => {
   return (
     <div>
-      <Trans i18nKey="HomePage.heroHeading">
-        <p className="uppercase font-light text-xs my-5">Dummy gray text</p>
-        <h2 className="font-display text-2xl md:text-5xl font-medium max-w-xl">
-          This is a dummy text. If you
-          <span className="text-transparent bg-gradient-to-br bg-clip-text from-pink to-orange">CAN SEE</span>
-          it please inform site administrator!
+      <p className="uppercase font-light text-xs text-[#ffffffBF]">{props.sectionDescription}</p>
+      <Trans i18nKey={props.i18nKey}>
+        <h2 className="font-display text-2xl md:text-5xl font-medium max-w-xl my-5">
+          This is a dummy text. If you can see it contact
+          <span className="text-transparent bg-gradient-to-br bg-clip-text from-pink to-orange">The Administrator</span>
         </h2>
       </Trans>
+      <p className="max-w-xl">{props.sectionParagraph}</p>
     </div>
   )
 }
