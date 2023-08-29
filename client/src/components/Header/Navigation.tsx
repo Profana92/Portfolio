@@ -82,7 +82,7 @@ const Navigation = () => {
   }
 
   return (
-    <div className="items-center hidden lg:flex">
+    <div className="items-center h-full hidden lg:flex">
       <nav className="h-full overflow-visible">
         <ul className="h-full flex justify-center items-center font-medium mr-12 cursor-pointer">
           <div
