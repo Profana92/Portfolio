@@ -11,14 +11,14 @@ import FooterForm from './FooterForm'
 const Footer = () => {
   const { t } = useTranslation()
   return (
-    <footer className="bg-gradient-to-b from-[#440B7E] to-[#090120]">
-      <div className="grid grid-cols-1 lg:grid-cols-3 bg-[#D9D9D90D] max-w-[90vw] mx-auto rounded-md shadow-lg lg:gap-x-6 xl:gap-x-12 my-12">
+    <footer className="bg-gradient-to-b from-[#440B7E] to-[#090120] lg:px-12">
+      <div className="grid grid-cols-1 lg:grid-cols-3 bg-[#D9D9D90D] max-w-[90vw] mx-auto rounded-md shadow-lg lg:gap-x-6 xl:gap-x-12 my-12 lg:max-w-[1920px]">
         <div className="row-start-1 row-end-2 lg:row-start-1 lg:row-end-4 p-6 ">
           <p className="text-center lg:text-left uppercase font-light text-xs text-[#ffffffBF] my-5 max-w-[70vw] m-auto">
             {t('Footer.Description')}
           </p>
           <Trans i18nKey={'Footer.Heading'}>
-            <h2 className="text-center lg:text-left font-display text-2xl md:text-5xl font-medium max-w-xl my-5 max-w-[70vw] m-auto">
+            <h2 className="text-center lg:text-left font-display text-2xl md:text-5xl font-medium my-5 max-w-[70vw] m-auto">
               This is a dummy text. If you can see it contact
               <span className="text-transparent bg-gradient-to-br bg-clip-text from-pink to-orange">
                 The Administrator
@@ -60,7 +60,7 @@ const Footer = () => {
           />
           <p className="text-center lg:text-left font-light text-sm lg:text-base my-5">{t('Footer.formUnderText')}</p>
         </div>
-        <div className="lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:row-end-5 relative">
+        <div className="lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:row-end-5">
           <div className="z-10 m-6 lg:my-6">
             <p className="my-6 text-center lg:text-left font-light text-sm lg:text-base">
               {t('Footer.aboveFooterMenuText')}

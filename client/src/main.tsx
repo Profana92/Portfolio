@@ -6,8 +6,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './i18n'
 
 import ErrorPage from './routes/Error-page'
+import About from './routes/pages/About'
 import Home from './routes/pages/Home'
-import MyWork from './routes/pages/MyWork'
 import Root from './routes/Root'
 
 import './index.css'
@@ -23,8 +23,8 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: 'my-work',
-        element: <MyWork />,
+        path: 'about',
+        element: <About />,
       },
     ],
   },

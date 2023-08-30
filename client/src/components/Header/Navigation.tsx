@@ -105,7 +105,10 @@ const Navigation = () => {
               </NavLink>
             </li>
             {menuState.home ? (
-              <div className="absolute min-w-[120px] bg-[#09022e40]">
+              <div
+                className="absolute min-w-[120px] bg-[#09022e40]"
+                onClick={() => mouseOverMenuHandler('leave', 'home')}
+              >
                 <li>
                   <NavLink
                     className="h-14 w-full flex px-5 items-center hover:bg-gradient-to-br hover:bg-clip-text hover:from-pink hover:to-orange hover:text-transparent"
@@ -191,7 +194,7 @@ const Navigation = () => {
                     ? 'flex justify-center items-center h-full w-full text-transparent font-black bg-gradient-to-br bg-clip-text from-pink to-orange align-middle'
                     : 'h-full w-full flex justify-center items-center hover:bg-gradient-to-br hover:bg-clip-text hover:from-pink hover:to-orange hover:text-transparent'
                 }
-                to={`/about`}
+                to={`/about/#hero`}
               >
                 {t('navigation.about')}
               </NavLink>

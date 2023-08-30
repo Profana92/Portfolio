@@ -3,8 +3,9 @@ import { Helmet } from 'react-helmet-async'
 import { useTranslation } from 'react-i18next'
 import { useLocation } from 'react-router-dom'
 
-import HeroSection from '../../components/Sections/MyWorkHeroSection'
-const MyWork = () => {
+import HeroSection from '../../components/Sections/AboutSectionHero'
+import AboutSectionMySkills from '../../components/Sections/AboutSectionMySkills'
+const About = () => {
   const { t } = useTranslation()
   const location = useLocation()
   useEffect(() => {
@@ -40,16 +41,17 @@ const MyWork = () => {
         />
       </Helmet>
       <HeroSection
-        buttonOne={t('myWorkPage.buttonOne')}
-        buttonTwo={t('myWorkPage.buttonTwo')}
-        heroParagraphOne={t('myWorkPage.heroParagraphOne')}
-        heroParagraphTwo={t('myWorkPage.heroParagraphTwo')}
-        heroParagraphThree={t('myWorkPage.heroParagraphThree')}
-        heroParagraphFour={t('myWorkPage.heroParagraphFour')}
-        heroParagraphAccent={t('myWorkPage.heroParagraphAccent')}
+        buttonOne={t('aboutPage.buttonOne')}
+        buttonTwo={t('aboutPage.buttonTwo')}
+        heroParagraphOne={t('aboutPage.heroParagraphOne')}
+        heroParagraphTwo={t('aboutPage.heroParagraphTwo')}
+        heroParagraphThree={t('aboutPage.heroParagraphThree')}
+        heroParagraphFour={t('aboutPage.heroParagraphFour')}
+        heroParagraphAccent={t('aboutPage.heroParagraphAccent')}
       />
+      <AboutSectionMySkills />
     </div>
   )
 }
 
-export default MyWork
+export default About

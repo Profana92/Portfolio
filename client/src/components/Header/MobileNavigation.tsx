@@ -15,9 +15,9 @@ const MobileNavigation = (props: Props) => {
   const { t } = useTranslation()
   props.menuOpen ? disableBodyScroll(document as any) : enableBodyScroll(document as any)
   return (
-    <div className={`lg:hidden`}>
+    <div className={`lg:hidden h-full flex justify-center items-center`}>
       <div
-        className={`absolute top-0  w-full min-h-dvh max-h-dvh bg-gradient-to-br from-[#0C011F] to-[#33091D] transition-all flex flex-col justify-between ${
+        className={`z-20 absolute top-0  w-full min-h-dvh max-h-dvh bg-gradient-to-br from-[#0C011F] to-[#33091D] transition-all flex flex-col justify-between ${
           props.menuOpen ? 'left-0' : '-left-[100vw]'
         }`}
       >
@@ -35,17 +35,20 @@ const MobileNavigation = (props: Props) => {
           </p>
         </div>
         <nav className="overflow-auto no-scrollbar z-10 my-5">
-          <ul className="h-full flex items-center font-medium cursor-pointer flex-col mx-8 ">
-            <li className="w-full px-5 text-2xl my-2">
+          <ul className="h-full flex items-center font-medium flex-col mx-8 ">
+            <li className="w-full px-5 text-2xl my-2 ">
               <NavLink
                 className={({ isActive, isPending }) =>
                   isPending
                     ? 'h-full w-full flex justify-center items-center font-black'
                     : isActive
                     ? 'flex justify-center items-center h-full w-full text-transparent font-black bg-gradient-to-br bg-clip-text from-pink to-orange align-middle'
-                    : 'h-full w-full flex justify-center items-center hover:bg-gradient-to-br hover:bg-clip-text hover:from-pink hover:to-orange hover:text-transparent'
+                    : 'flex justify-center items-center h-full w-full text-transparent font-black bg-gradient-to-br bg-clip-text from-pink to-orange align-middle'
                 }
-                to={`/`}
+                to={`/#home`}
+                onClick={() => {
+                  props.setmenuOpen((prevState) => !prevState)
+                }}
               >
                 {t('navigation.home')}
               </NavLink>
@@ -55,6 +58,9 @@ const MobileNavigation = (props: Props) => {
               <NavLink
                 className="w-full flex px-5 justify-center items-center hover:bg-gradient-to-br hover:bg-clip-text hover:from-pink hover:to-orange hover:text-transparent"
                 to={`/#magic`}
+                onClick={() => {
+                  props.setmenuOpen((prevState) => !prevState)
+                }}
               >
                 {t('navigation.magic')}
               </NavLink>
@@ -63,6 +69,9 @@ const MobileNavigation = (props: Props) => {
               <NavLink
                 className="w-full flex px-5 justify-center items-center hover:bg-gradient-to-br hover:bg-clip-text hover:from-pink hover:to-orange hover:text-transparent"
                 to={`/#tools`}
+                onClick={() => {
+                  props.setmenuOpen((prevState) => !prevState)
+                }}
               >
                 {t('navigation.tools')}
               </NavLink>
@@ -170,7 +179,7 @@ const MobileNavigation = (props: Props) => {
         onClick={() => {
           props.setmenuOpen((prevState) => !prevState)
         }}
-        className="flex flex-col gap-2"
+        className="flex flex-col gap-2 h-full justify-center items-center"
       >
         <span className="inline-block w-10 h-[2px] bg-white rounded"></span>
         <span className="inline-block w-10 h-[2px] bg-white rounded"></span>
