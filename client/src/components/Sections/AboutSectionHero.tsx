@@ -1,5 +1,7 @@
 import { Trans } from 'react-i18next'
 import { Link } from 'react-router-dom'
+
+import bottomDivider from '../../assets/aboutHeroDivider.svg'
 interface Props {
   buttonOne: string
   buttonTwo: string
@@ -14,10 +16,10 @@ const MyWorkHeroSection = (props: Props) => {
   return (
     <section
       id="hero"
-      className="bg-myWork-hero-pattern min-h-dvh bg-cover bg-no-repeat bg-bottom pt-12 flex justify-center items-center"
+      className="bg-myWork-hero-pattern min-h-dvh bg-cover bg-no-repeat bg-bottom pt-12 flex justify-between items-center flex-col"
     >
-      <div className="mx-auto p-12 text-center lg:pl-[40vw] lg:text-left">
-        <Trans i18nKey="myWorkPage.heroHeading">
+      <div className="mx-auto p-12 text-center lg:pl-[40vw] lg:text-left lg:max-w-[1920px]">
+        <Trans i18nKey="aboutPage.heroHeading">
           <h1 className="font-display text-2xl md:text-5xl font-medium max-w-xl">
             Welcome here, where dreams
             <span className="text-transparent bg-gradient-to-br bg-clip-text from-pink to-orange">DO COME</span>
@@ -47,6 +49,7 @@ const MyWorkHeroSection = (props: Props) => {
           </Link>
         </div>
       </div>
+      <img src={bottomDivider} alt="Section bottom divider image" className="w-full" />
     </section>
   )
 }

@@ -61,7 +61,7 @@ i18n
             SectionTwoElementFourParagraph:
               'This enchanting framework magically revamps the user interface, effortlessly rendering captivating visuals that adapt swiftly to any interaction.',
           },
-          myWorkPage: {
+          aboutPage: {
             heroHeading: '<0>So, <1>Who Am I?</1></0>',
             heroParagraphOne:
               'I’m a passionate front-end developer with a creative flair for crafting seamless user experiences. I utilize HTML, CSS, JS, and React for website construction, and employ Figma, Adobe XD, Adobe Illustrator, and Photoshop for design. Deploying websites is achieved through Ubuntu, Nginx, and Apache. Moreover, I bring ecommerce websites to life using Wordpress, Divi, and Woocommerce.',
@@ -74,6 +74,132 @@ i18n
             heroParagraphAccent: "Let's collaborate and bring ideas to life through elegant code.",
             buttonOne: 'My Work',
             buttonTwo: 'Contact Me',
+          },
+          mySkills: {
+            HTML: {
+              Description:
+                'In the enchanted realm of web creation, HTML stands as the spell of structure, shaping the digital tapestry of elements. With mystic tags and attributes, it weaves text, images, and links into a harmonious structure that brings forth the wondrous landscapes of the online realm.',
+              Website: 'developer.mozilla.org',
+              Link: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
+            },
+            CSS: {
+              Description:
+                'There exists a wondrous language known as CSS, or Cascading Style Sheets. CSS weaves its spells to bring forth the very essence of beauty and design upon the canvas of the digital world.',
+              Website: 'developer.mozilla.org',
+              Link: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
+            },
+            npm: {
+              Description:
+                'NPM (Node Package Manager) is a magical tool for JavaScript, enabling seamless installation, management, and sharing of code libraries for enchanting web and software creations.',
+              Website: 'NPMjs.com',
+              Link: 'https://www.npmjs.com/',
+            },
+            WooCommerce: {
+              Description:
+                'WooCommerce is a enchanting WordPress plugin, transforming websites into captivating online stores. It conjures product listings, payments, and shopping carts to create captivating digital marketplaces.',
+              Website: 'WooCommerce.com',
+              Link: 'https://woocommerce.com/',
+            },
+            Wordpress: {
+              Description:
+                'WordPress is a spellbinding open-source platform, crafting websites with ease. Its sorcery includes themes, plugins, and a bewitching interface for creating captivating digital realms without complex coding.',
+              Website: 'WordPress.org',
+              Link: 'https://pl.wordpress.org/',
+            },
+            React: {
+              Description:
+                'React, a potent JavaScript library, enchants web development with spellbinding user interfaces. It uses components to craft dynamic and captivating digital experiences, redefining the art of interaction.',
+              Website: 'React.dev',
+              Link: 'https://react.dev/',
+            },
+            JavaScript: {
+              Description:
+                'JavaScript, a magical scripting language, bewitches web pages with interactivity and enchanting behavior. It conjures animations, validates forms, and interacts with users, breathing life into the digital realm.',
+              Website: 'developer.mozilla.org',
+              Link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+            },
+            TypeScript: {
+              Description:
+                'TypeScript, a wizardly superset of JavaScript, adds enchanting types and static analysis to the conjuring process. It enhances code quality and compiles to spellbinding JavaScript for web sorcery.',
+              Website: 'TypeScriptLang.org',
+              Link: 'https://www.typescriptlang.org/',
+            },
+            MJML: {
+              Description:
+                'MJML, a mystical framework, weaves responsive email spells. It conjures captivating layouts with simple HTML-like syntax, ensuring bewitching messages across magical devices.',
+              Website: 'MJML.io',
+              Link: 'https://mjml.io/',
+            },
+            NodeJs: {
+              Description:
+                'Node.js, a celestial runtime, empowers server sorcery with non-blocking incantations. It enchants JavaScript beyond the browser, conjuring scalable and bewitching network applications with asynchronous might.',
+              Website: 'NodeJS.org',
+              Link: 'https://nodejs.org/en',
+            },
+            Expressjs: {
+              Description:
+                'Express.js, a magical web framework for Node.js, accelerates server sorcery. It crafts bewitching APIs and routes, casting spells for dynamic web enchantments with minimal code incantations.',
+              Website: 'ExpressJS.com',
+              Link: 'https://expressjs.com/',
+            },
+            MongoDB: {
+              Description:
+                'MongoDB, a mystical NoSQL database, stores enchanting data with flexibility. It conjures collections and documents, offering scalable and schema-less realms for modern digital sorcery.',
+              Website: 'MongoDB.com',
+              Link: 'https://www.mongodb.com/',
+            },
+            Figma: {
+              Description:
+                'Figma, a wondrous design tool, conjures collaborative visions. It weaves captivating interfaces with real-time sorcery, allowing wizards to craft, prototype, and enchant together in a boundless creative realm.',
+              Website: 'Figma.com',
+              Link: 'https://www.figma.com/',
+            },
+            AdobeXD: {
+              Description:
+                'Adobe XD, an enchanting design software, weaves user experiences. It crafts captivating interfaces with artful interactions, casting spells for web and app sorcery, bringing visions to life.',
+              Website: 'Adobe.com',
+              Link: 'https://www.adobe.com/',
+            },
+            AdobeIllustrator: {
+              Description:
+                'Adobe Illustrator, a masterful design sorcerer, crafts visual enchantments. With vector magic, it conjures captivating illustrations and graphics, breathing life into digital realms with creative spells.',
+              Website: 'Adobe.com',
+              Link: 'https://www.adobe.com/',
+            },
+            AdobePhotoshop: {
+              Description:
+                'Photoshop, the artful magician of imagery, enchants pixels. It transforms photos and graphics with spells of editing, retouching, and manipulation, creating captivating visuals that defy reality.',
+              Website: 'Adobe.com',
+              Link: 'https://www.adobe.com/',
+            },
+            GIMP: {
+              Description:
+                'GIMP, the open-source enchantress of imagery, wields creative magic. It crafts captivating graphics with powerful spells of editing, retouching, and manipulation, conjuring digital wonders for all.',
+              Website: 'Gimp.com',
+              Link: 'https://www.gimp.org/',
+            },
+            Nginx: {
+              Description:
+                'NGINX, a mystical web server, accelerates enchanting journeys. It balances, caches, and safeguards with sorcery, providing high-performance and secure passage through the ethereal realms of the internet.',
+              Website: 'Nginx.com',
+              Link: 'https://www.nginx.com/',
+            },
+            Apache: {
+              Description:
+                'Apache, an ancient server sorcerer, hosts digital realms. With spells of flexibility and open-source might, it enchants websites, conjuring pages and files for all who seek its magic.',
+              Website: 'HTTPD.Apache.org',
+              Link: 'https://httpd.apache.org/',
+            },
+            Ubuntu: {
+              Description:
+                'Ubuntu, a benevolent Linux enchantment, beckons community spirit. It bestows free and open-source spells, weaving a user-friendly OS that empowers wizards to navigate the digital landscape.',
+              Website: 'Ubuntu.com',
+              Link: 'https://ubuntu.com/',
+            },
+            buttonOne: 'Front-End',
+            buttonTwo: 'Back-End',
+            buttonThree: 'Design',
+            buttonFour: 'Servers',
           },
           Footer: {
             Description: 'Let the whispers of the digital wind carry your message to me.',
