@@ -11,7 +11,7 @@ interface Props {
 const Header = (props: Props) => {
   return (
     <header
-      className={`z-10 flex justify-between items-center h-14 fixed transition-all w-full px-6 bg-[#09022E59] top-0`}
+      className={`z-50 flex justify-between items-center h-14 fixed transition-all w-full px-6 bg-[#09022E59] top-0`}
     >
       <p className="z-10 text-3xl text-transparent font-black bg-gradient-to-br bg-clip-text from-pink to-orange">
         <Link to="/" tabIndex={-1}>

@@ -30,9 +30,12 @@ export default {
           'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0))',
           "url('./assets/home_background_tiny.jpg')",
         ],
-        'myWork-hero-pattern': [
-          'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0))',
-          "url('./assets/myWorkHeroImage.jpg')",
+        'about-hero-pattern': ["url('./assets/aboutHeroImage.jpg')"],
+        'myWork-hero-pattern': ["url('./assets/myWorkHeroImage.jpg')"],
+        'myWork-hero-pattern-desktop': ["url('./assets/myWorkHeroImageDesktop.jpg')"],
+        'about-hero-pattern-desktop': [
+          'linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))',
+          "url('./assets/aboutHeroImage.jpg')",
         ],
       },
     },

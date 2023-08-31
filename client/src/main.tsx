@@ -8,6 +8,7 @@ import './i18n'
 import ErrorPage from './routes/Error-page'
 import About from './routes/pages/About'
 import Home from './routes/pages/Home'
+import MyWork from './routes/pages/MyWork'
 import Root from './routes/Root'
 
 import './index.css'
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: 'about',
         element: <About />,
+      },
+      {
+        path: 'my-work',
+        element: <MyWork />,
       },
     ],
   },
