@@ -12,13 +12,13 @@ interface Props {
   heroParagraphAccent: string
 }
 
-const MyWorkHeroSection = (props: Props) => {
+const AboutSectionHero = (props: Props) => {
   return (
     <section
       id="hero"
-      className="bg-myWork-hero-pattern min-h-dvh bg-cover bg-no-repeat bg-bottom pt-12 flex justify-between items-center flex-col"
+      className="bg-about-hero-pattern bg-[left_-300px_bottom] sm:bg-[left_-200px_bottom] md:bg-[left_-200px_bottom] lg:bg-[center_-500px_bottom] xl:bg-[center_-500px_bottom] 2xl:bg-[center_bottom] min-h-dvh bg-cover bg-no-repeat  pt-12 flex justify-center lg:justify-end items-center"
     >
-      <div className="mx-auto p-12 text-center lg:pl-[40vw] lg:text-left lg:max-w-[1920px]">
+      <div className="p-12 text-center lg:text-left max-w-[1920px] lg:mr-[10vw] 2xl:mr-[20vw]">
         <Trans i18nKey="aboutPage.heroHeading">
           <h1 className="font-display text-2xl md:text-5xl font-medium max-w-xl">
             Welcome here, where dreams
@@ -49,9 +49,9 @@ const MyWorkHeroSection = (props: Props) => {
           </Link>
         </div>
       </div>
-      <img src={bottomDivider} alt="Section bottom divider image" className="w-full" />
+      <img src={bottomDivider} alt="Section bottom divider image" className="w-full absolute bottom-0" />
     </section>
   )
 }
 
-export default MyWorkHeroSection
+export default AboutSectionHero

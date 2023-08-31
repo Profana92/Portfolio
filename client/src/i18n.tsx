@@ -201,6 +201,19 @@ i18n
             buttonThree: 'Design',
             buttonFour: 'Servers',
           },
+          myWorkPage: {
+            heroHeading: '<0>Step into the gallery of <1>my creations</1>.</0>',
+            heroParagraphOne:
+              'Here, where the arcane art of front-end development intertwines with imagination. Behold, a tapestry of web wonders woven with HTML spells, CSS potions, JavaScript scrolls and React enchantments.',
+            heroParagraphAccent:
+              'These projects are the manifestation of my digital sorcery, inviting you to witness the magic forged through pixels and code.',
+            ProjectOneTitle: 'Company website with “offer cart” and offer inquiry functionality.',
+            ProjectOneParagraph:
+              'In the enchanted realm of web creation, HTML stands as the spell of structure, shaping the digital tapestry of elements. With mystic tags and attributes, it weaves text, images, and links into a harmonious structure that brings forth the wondrous landscapes of the online realm.',
+            ProjectOneWebsite: 'symbios.pl',
+            ProjectOneLink: 'https://symbios.pl/',
+            ProjectOneType: 'Commercial',
+          },
           Footer: {
             Description: 'Let the whispers of the digital wind carry your message to me.',
             Heading: '<0>Summon <1>Me!</1></0>',

@@ -17,7 +17,7 @@ const MobileNavigation = (props: Props) => {
   return (
     <div className={`lg:hidden h-full flex justify-center items-center`}>
       <div
-        className={`z-20 absolute top-0  w-full min-h-dvh max-h-dvh bg-gradient-to-br from-[#0C011F] to-[#33091D] transition-all flex flex-col justify-between ${
+        className={`absolute z-20 top-0  w-full min-h-dvh max-h-dvh bg-gradient-to-br from-[#0C011F] to-[#33091D] transition-all flex flex-col justify-between ${
           props.menuOpen ? 'left-0' : '-left-[100vw]'
         }`}
       >
@@ -36,22 +36,16 @@ const MobileNavigation = (props: Props) => {
         </div>
         <nav className="overflow-auto no-scrollbar z-10 my-5">
           <ul className="h-full flex items-center font-medium flex-col mx-8 ">
-            <li className="w-full px-5 text-2xl my-2 ">
-              <NavLink
-                className={({ isActive, isPending }) =>
-                  isPending
-                    ? 'h-full w-full flex justify-center items-center font-black'
-                    : isActive
-                    ? 'flex justify-center items-center h-full w-full text-transparent font-black bg-gradient-to-br bg-clip-text from-pink to-orange align-middle'
-                    : 'flex justify-center items-center h-full w-full text-transparent font-black bg-gradient-to-br bg-clip-text from-pink to-orange align-middle'
-                }
+            <li className="h-full px-5 text-2xl my-2">
+              <Link
+                className="flex justify-center items-center h-full w-full text-transparent font-black bg-gradient-to-br bg-clip-text from-pink to-orange align-middle"
                 to={`/#home`}
                 onClick={() => {
                   props.setmenuOpen((prevState) => !prevState)
                 }}
               >
-                {t('navigation.home')}
-              </NavLink>
+                {t('navigation.home')}ss
+              </Link>
             </li>
             <hr className="w-full rounded border-[#D9D9D940]" />
             <li className="my-1 w-full">
@@ -126,7 +120,7 @@ const MobileNavigation = (props: Props) => {
                     ? 'flex justify-center items-center h-full w-full text-transparent font-black bg-gradient-to-br bg-clip-text from-pink to-orange align-middle'
                     : 'h-full w-full flex justify-center items-center hover:bg-gradient-to-br hover:bg-clip-text hover:from-pink hover:to-orange hover:text-transparent'
                 }
-                to={`/`}
+                to={`/about/#hero`}
               >
                 {t('navigation.about')}
               </NavLink>
@@ -135,7 +129,7 @@ const MobileNavigation = (props: Props) => {
             <li className="my-1 w-full">
               <NavLink
                 className="w-full flex px-5 justify-center items-center hover:bg-gradient-to-br hover:bg-clip-text hover:from-pink hover:to-orange hover:text-transparent"
-                to={`/#magic`}
+                to={`/about/#hero`}
               >
                 {t('navigation.aboutMe')}
               </NavLink>

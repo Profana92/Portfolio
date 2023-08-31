@@ -12,7 +12,7 @@ const Footer = () => {
   const { t } = useTranslation()
   return (
     <footer className="bg-gradient-to-b from-[#440B7E] to-[#090120] lg:px-12">
-      <div className="grid grid-cols-1 lg:grid-cols-3 bg-[#D9D9D90D] max-w-[90vw] mx-auto rounded-md shadow-lg lg:gap-x-6 xl:gap-x-12 my-12 lg:max-w-[1920px]">
+      <div className="grid grid-cols-1 lg:grid-cols-3 bg-[#D9D9D90D] max-w-[90vw] mx-auto rounded-md shadow-lg lg:gap-x-6 xl:gap-x-12 my-12 lg:max-w-[1920px] relative">
         <div className="row-start-1 row-end-2 lg:row-start-1 lg:row-end-4 p-6 ">
           <p className="text-center lg:text-left uppercase font-light text-xs text-[#ffffffBF] my-5 max-w-[70vw] m-auto">
             {t('Footer.Description')}
@@ -35,7 +35,7 @@ const Footer = () => {
           </Trans>
         </div>
         <div className="row-start-4 row-end-5 px-6 flex justify-between gap-6">
-          <div className="flex gap-3 my-5">
+          <div className="flex gap-3 my-5 ">
             <Link to="/">
               <img src={InstagramIcon} alt="Instagram Icon with link" className="w-8 h-8 lg:w-10 lg:h-10" />
             </Link>
@@ -61,7 +61,7 @@ const Footer = () => {
           <p className="text-center lg:text-left font-light text-sm lg:text-base my-5">{t('Footer.formUnderText')}</p>
         </div>
         <div className="lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:row-end-5">
-          <div className="z-10 m-6 lg:my-6">
+          <div className=" m-6 lg:my-6">
             <p className="my-6 text-center lg:text-left font-light text-sm lg:text-base">
               {t('Footer.aboveFooterMenuText')}
             </p>
