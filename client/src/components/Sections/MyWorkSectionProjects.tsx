@@ -105,74 +105,74 @@ const MyWorkSectionProjects = () => {
                   type={t('myWorkPage.ProjectTwoType')}
                   projectsUsedTechnologies={t('myWorkPage.ProjectsUsedTechnologies')}
                   technologiesUsed={[
-                    'HTML',
-                    'CSS',
-                    'JavaScript',
-                    'TypeScript',
                     'React',
-                    'npm',
+                    'TypeScript',
                     'Figma',
                     'AdobeIllustrator',
+                    'GIMP',
+                    'npm',
                     'Nginx',
                     'Ubuntu',
                   ]}
                   technologies={technologies}
+                  figma="https://www.figma.com/file/imXuoBkK0z5RC6c6iNKRA6/Portfolio-W.Marczak?node-id=90%3A4875&mode=dev"
+                />
+                <SliderElement
+                  image={Portfolio}
+                  imageAlt="Portfolio website project image"
+                  heading={t('myWorkPage.ProjectTwoTitle')}
+                  description={t('myWorkPage.ProjectTwoParagraph')}
+                  website={t('myWorkPage.ProjectTwoWebsite')}
+                  link={t('myWorkPage.ProjectTwoLink')}
+                  type={t('myWorkPage.ProjectTwoType')}
+                  projectsUsedTechnologies={t('myWorkPage.ProjectsUsedTechnologies')}
+                  technologiesUsed={[
+                    'React',
+                    'TypeScript',
+                    'Figma',
+                    'AdobeIllustrator',
+                    'GIMP',
+                    'npm',
+                    'Nginx',
+                    'Ubuntu',
+                  ]}
+                  technologies={technologies}
+                  figma="https://www.figma.com/file/imXuoBkK0z5RC6c6iNKRA6/Portfolio-W.Marczak?node-id=90%3A4875&mode=dev"
                 />
               </Slider>
             </motion.div>
           )}
           {activeCategory === 'backEnd' && (
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-              <Slider {...settings}>
-                <SliderElement
-                  image={Symbios}
-                  imageAlt="Symbios website project image"
-                  heading={t('myWorkPage.ProjectOneTitle')}
-                  description={t('myWorkPage.ProjectOneParagraph')}
-                  website={t('myWorkPage.ProjectOneWebsite')}
-                  link={t('myWorkPage.ProjectOneLink')}
-                  type="commercial"
-                  projectsUsedTechnologies={t('myWorkPage.ProjectsUsedTechnologies')}
-                  technologiesUsed={['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'npm']}
-                  technologies={technologies}
-                />
-              </Slider>
-            </motion.div>
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}></motion.div>
           )}
           {activeCategory === 'design' && (
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-              <Slider {...settings}>
-                <SliderElement
-                  image={Symbios}
-                  imageAlt="Symbios website project image"
-                  heading={t('myWorkPage.ProjectOneTitle')}
-                  description={t('myWorkPage.ProjectOneParagraph')}
-                  website={t('myWorkPage.ProjectOneWebsite')}
-                  link={t('myWorkPage.ProjectOneLink')}
-                  type="commercial"
-                  projectsUsedTechnologies={t('myWorkPage.ProjectsUsedTechnologies')}
-                  technologiesUsed={['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'npm']}
-                  technologies={technologies}
-                />
-              </Slider>
+              <SliderElement
+                image={Portfolio}
+                imageAlt="Portfolio website project image"
+                heading={t('myWorkPage.ProjectTwoTitle')}
+                description={t('myWorkPage.ProjectTwoParagraph')}
+                website={t('myWorkPage.ProjectTwoWebsite')}
+                link={t('myWorkPage.ProjectTwoLink')}
+                type={t('myWorkPage.ProjectTwoType')}
+                projectsUsedTechnologies={t('myWorkPage.ProjectsUsedTechnologies')}
+                technologiesUsed={[
+                  'React',
+                  'TypeScript',
+                  'Figma',
+                  'AdobeIllustrator',
+                  'GIMP',
+                  'npm',
+                  'Nginx',
+                  'Ubuntu',
+                ]}
+                technologies={technologies}
+                figma="https://www.figma.com/file/imXuoBkK0z5RC6c6iNKRA6/Portfolio-W.Marczak?node-id=90%3A4875&mode=dev"
+              />
             </motion.div>
           )}
           {activeCategory === 'servers' && (
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-              <Slider {...settings}>
-                <SliderElement
-                  image={Symbios}
-                  imageAlt="Symbios website project image"
-                  heading={t('myWorkPage.ProjectOneTitle')}
-                  description={t('myWorkPage.ProjectOneParagraph')}
-                  website={t('myWorkPage.ProjectOneWebsite')}
-                  link={t('myWorkPage.ProjectOneLink')}
-                  type="commercial"
-                  technologiesUsed={['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'npm']}
-                  technologies={technologies}
-                />
-              </Slider>
-            </motion.div>
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}></motion.div>
           )}
         </AnimatePresence>
       </div>
