@@ -9,6 +9,7 @@ import MyWorkSectionProjects from '../../components/Sections/MyWorkSectionProjec
 const MyWork = () => {
   const { t } = useTranslation()
   const location = useLocation()
+
   useEffect(() => {
     const hashElement = () => {
       const hash = location.hash

@@ -8,10 +8,12 @@ export default {
         tall: { raw: '(min-height: 420px)' },
       },
       minHeight: {
-        dvh: ['calc(100vh)', 'calc(100dvh)'],
+        dvh: ['calc(100vh)', 'calc(100dvh)', 'calc(100svh)'],
+        'dvh-nav': ['calc(100vh)', 'calc(100dvh)'],
       },
       maxHeight: {
-        dvh: ['calc(100vh)', 'calc(100dvh)'],
+        dvh: ['calc(100vh)', 'calc(100dvh)', 'calc(100svh)'],
+        'dvh-nav': ['calc(100vh)', 'calc(100dvh)'],
       },
       colors: {
         background: '#090120',

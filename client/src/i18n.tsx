@@ -11,7 +11,7 @@ i18n
   // init i18next
   // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
-    debug: true,
+    debug: false,
     fallbackLng: ['en', 'pl', 'de'],
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default
@@ -207,12 +207,20 @@ i18n
               'Here, where the arcane art of front-end development intertwines with imagination. Behold, a tapestry of web wonders woven with HTML spells, CSS potions, JavaScript scrolls and React enchantments.',
             heroParagraphAccent:
               'These projects are the manifestation of my digital sorcery, inviting you to witness the magic forged through pixels and code.',
+            ProjectsTitle: '<0>My<1>Skills</1></0>',
+            ProjectsUsedTechnologies: 'Used technologies',
             ProjectOneTitle: 'Company website with “offer cart” and offer inquiry functionality.',
             ProjectOneParagraph:
-              'In the enchanted realm of web creation, HTML stands as the spell of structure, shaping the digital tapestry of elements. With mystic tags and attributes, it weaves text, images, and links into a harmonious structure that brings forth the wondrous landscapes of the online realm.',
+              'A website I conjured for thy esteemed client!, woven with spells of captivating design and potent React enchantments. It weaves their essence into the very fabric of the internet, summoning new clients and offering a grand stage for their magical offerings, all in the pursuit of increased client satisfaction and a bigger online presence.',
             ProjectOneWebsite: 'symbios.pl',
             ProjectOneLink: 'https://symbios.pl/',
             ProjectOneType: 'Commercial',
+            ProjectTwoTitle: 'My portfolio website based on React, designed in Figma',
+            ProjectTwoParagraph:
+              'By the magic of code and artistry, I crafted a digital grimoire – my front-end portfolio website. It reveals the essence of my sorcery, showcasing spells of design and enchantments of interactivity. With every click, visitors journey deeper into the mystic realm of my creations, where I, the web wizard, introduce myself with elegance and skill.',
+            ProjectTwoWebsite: 'WizDev.de',
+            ProjectTwoLink: 'https://wizdev.de/',
+            ProjectTwoType: 'Hobby',
           },
           Footer: {
             Description: 'Let the whispers of the digital wind carry your message to me.',
