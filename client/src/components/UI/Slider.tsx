@@ -9,6 +9,7 @@ interface Props {
   description: string
   website: string
   link: string
+  projectsUsedTechnologies: string
   type: 'commercial' | 'hobby'
   technologiesUsed: string[]
   technologies: {
@@ -21,11 +22,11 @@ interface Props {
 const SliderElement = (props: Props) => {
   return (
     <div className="flex flex-col md:flex-row text-sm ">
-      <div className="max-w-[90vw] mx-auto bg-[#D9D9D91A] flex flex-col md:flex-row gap-6 p-6">
+      <div className="max-w-[80vw] mx-auto bg-[#D9D9D91A] flex flex-col md:flex-row gap-6 p-6">
         <img src={props.image} alt={props.imageAlt} />
         <div className="bg-[#2D1349] p-6 flex flex-col justify-between">
           <div>
-            <h2 className="text-center text-base md:text-2xl ">{props.heading}</h2>
+            <h3 className="text-center text-base md:text-2xl">{props.heading}</h3>
             <p className="text-left my-6">{props.description}</p>
             <div className="flex my-6">
               <Link
@@ -41,6 +42,7 @@ const SliderElement = (props: Props) => {
           <div>
             <p className="font-light uppercase text-left text-[#ffffffB3] ">TYPE: {props.type}</p>
             <hr className="border-[#ffffff40] rounded my-6" />
+            <p className="">used technologies</p>
             <div className=" flex flex-wrap justify-center items-center gap-2">
               {props.technologiesUsed.map((item, index) => {
                 return (

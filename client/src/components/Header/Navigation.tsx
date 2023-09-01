@@ -154,7 +154,7 @@ const Navigation = () => {
                 <li>
                   <NavLink
                     className="h-14 w-full flex px-5 items-center hover:bg-gradient-to-br hover:bg-clip-text hover:from-pink hover:to-orange hover:text-transparent"
-                    to={`/mywork#projects`}
+                    to={`/my-work/#projects`}
                   >
                     {t('navigation.projects')}
                   </NavLink>
@@ -162,7 +162,7 @@ const Navigation = () => {
                 <li>
                   <NavLink
                     className="h-14 w-full flex px-5 items-center hover:bg-gradient-to-br hover:bg-clip-text hover:from-pink hover:to-orange hover:text-transparent"
-                    to={`/mywork#services`}
+                    to={`/my-work/#services`}
                   >
                     {t('navigation.services')}
                   </NavLink>
@@ -201,14 +201,6 @@ const Navigation = () => {
             </li>
             {menuState.about ? (
               <div className="absolute min-w-[120px] bg-[#09022e40]">
-                <li>
-                  <NavLink
-                    className="h-14 w-full flex px-5 items-center hover:bg-gradient-to-br hover:bg-clip-text hover:from-pink hover:to-orange hover:text-transparent"
-                    to={`/about#aboutMe`}
-                  >
-                    {t('navigation.aboutMe')}
-                  </NavLink>
-                </li>
                 <li>
                   <NavLink
                     className="h-14 w-full flex px-5 items-center hover:bg-gradient-to-br hover:bg-clip-text hover:from-pink hover:to-orange hover:text-transparent"

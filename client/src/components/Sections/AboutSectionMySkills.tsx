@@ -60,7 +60,7 @@ const AboutSectionMySkills = () => {
 
   const { t } = useTranslation()
   return (
-    <div className="bg-gradient-to-b from-[#1E0E32] to-[#440B7E] text-center lg:px-12 pt-12">
+    <section id="skills" className="bg-gradient-to-b from-[#1E0E32] to-[#440B7E] text-center lg:px-12 pt-12">
       <div className="flex flex-col bg-[#D9D9D90D] max-w-[90vw] mx-auto rounded-md shadow-lg  pt-12 pb-6 lg:max-w-[1920px]">
         <div className="flex flex-col md:flex-row items-center md:justify-center gap-3 md:gap-6">
           <div className="w-[162px] inline-block rounded-[5px] bg-gradient-to-r from-pink to-orange p-[1px]">
@@ -158,7 +158,7 @@ const AboutSectionMySkills = () => {
           })}
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

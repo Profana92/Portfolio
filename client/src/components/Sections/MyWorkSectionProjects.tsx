@@ -1,6 +1,9 @@
-import { useTranslation } from 'react-i18next'
+import { useState } from 'react'
+import { Trans, useTranslation } from 'react-i18next'
 import Slider from 'react-slick'
+import { AnimatePresence, motion } from 'framer-motion'
 
+import Portfolio from '../../assets/Portfolio.jpg'
 import Symbios from '../../assets/symbios.jpg'
 import AdobeIllustratorIcon from '../Icons/AdobeIllustratorIcon'
 import AdobePhotoshopIcon from '../Icons/AdobePhotoshopIcon'
@@ -22,6 +25,7 @@ import TypeScriptIcon from '../Icons/TypeScriptIcon'
 import UbuntuIcon from '../Icons/UbuntuIcon'
 import WooCommerceIcon from '../Icons/WooCommerceIcon'
 import WordpressIcon from '../Icons/WordpressIcon'
+import FourButtonsRow from '../UI/FourButtonsRow'
 import SliderElement from '../UI/Slider'
 const MyWorkSectionProjects = () => {
   const technologies = {
@@ -64,35 +68,115 @@ const MyWorkSectionProjects = () => {
   }
 
   const { t } = useTranslation()
+  const [activeCategory, setactiveCategory] = useState('frontEnd')
+
   return (
-    <div className="bg-gradient-to-b from-[#33091D] to-[#9B1536] text-center lg:px-12 py-12">
+    <section id="projects" className="bg-gradient-to-b from-[#33091D] to-[#9B1536] text-center px-12 py-12">
       <div className="max-w-[1920px] mx-auto">
-        <Slider {...settings}>
-          <SliderElement
-            image={Symbios}
-            imageAlt="Symbios website project image"
-            heading={t('myWorkPage.ProjectOneTitle')}
-            description={t('myWorkPage.ProjectOneParagraph')}
-            website={t('myWorkPage.ProjectOneWebsite')}
-            link={t('myWorkPage.ProjectOneLink')}
-            type="commercial"
-            technologiesUsed={['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'npm']}
-            technologies={technologies}
-          />
-          <SliderElement
-            image={Symbios}
-            imageAlt="Symbios website project image"
-            heading={t('myWorkPage.ProjectOneTitle')}
-            description={t('myWorkPage.ProjectOneParagraph')}
-            website={t('myWorkPage.ProjectOneWebsite')}
-            link={t('myWorkPage.ProjectOneLink')}
-            type="commercial"
-            technologiesUsed={['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'npm']}
-            technologies={technologies}
-          />
-        </Slider>
+        <Trans i18nKey="myWorkPage.ProjectsTitle">
+          <h2 className="font-display text-2xl md:text-5xl font-medium">
+            My <span className="text-transparent bg-gradient-to-br bg-clip-text from-pink to-orange">Skills</span>
+          </h2>
+        </Trans>
+        <FourButtonsRow setactiveCategory={setactiveCategory} activeCategory={activeCategory} />
+        <AnimatePresence>
+          {activeCategory === 'frontEnd' && (
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+              <Slider {...settings}>
+                <SliderElement
+                  image={Symbios}
+                  imageAlt="Symbios website project image"
+                  heading={t('myWorkPage.ProjectOneTitle')}
+                  description={t('myWorkPage.ProjectOneParagraph')}
+                  website={t('myWorkPage.ProjectOneWebsite')}
+                  link={t('myWorkPage.ProjectOneLink')}
+                  type={t('myWorkPage.ProjectOneType')}
+                  projectsUsedTechnologies={t('myWorkPage.ProjectsUsedTechnologies')}
+                  technologiesUsed={['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'npm', 'NodeJs', 'Expressjs']}
+                  technologies={technologies}
+                />
+                <SliderElement
+                  image={Portfolio}
+                  imageAlt="Portfolio website project image"
+                  heading={t('myWorkPage.ProjectTwoTitle')}
+                  description={t('myWorkPage.ProjectTwoParagraph')}
+                  website={t('myWorkPage.ProjectTwoWebsite')}
+                  link={t('myWorkPage.ProjectTwoLink')}
+                  type={t('myWorkPage.ProjectTwoType')}
+                  projectsUsedTechnologies={t('myWorkPage.ProjectsUsedTechnologies')}
+                  technologiesUsed={[
+                    'HTML',
+                    'CSS',
+                    'JavaScript',
+                    'TypeScript',
+                    'React',
+                    'npm',
+                    'Figma',
+                    'AdobeIllustrator',
+                    'Nginx',
+                    'Ubuntu',
+                  ]}
+                  technologies={technologies}
+                />
+              </Slider>
+            </motion.div>
+          )}
+          {activeCategory === 'backEnd' && (
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+              <Slider {...settings}>
+                <SliderElement
+                  image={Symbios}
+                  imageAlt="Symbios website project image"
+                  heading={t('myWorkPage.ProjectOneTitle')}
+                  description={t('myWorkPage.ProjectOneParagraph')}
+                  website={t('myWorkPage.ProjectOneWebsite')}
+                  link={t('myWorkPage.ProjectOneLink')}
+                  type="commercial"
+                  projectsUsedTechnologies={t('myWorkPage.ProjectsUsedTechnologies')}
+                  technologiesUsed={['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'npm']}
+                  technologies={technologies}
+                />
+              </Slider>
+            </motion.div>
+          )}
+          {activeCategory === 'design' && (
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+              <Slider {...settings}>
+                <SliderElement
+                  image={Symbios}
+                  imageAlt="Symbios website project image"
+                  heading={t('myWorkPage.ProjectOneTitle')}
+                  description={t('myWorkPage.ProjectOneParagraph')}
+                  website={t('myWorkPage.ProjectOneWebsite')}
+                  link={t('myWorkPage.ProjectOneLink')}
+                  type="commercial"
+                  projectsUsedTechnologies={t('myWorkPage.ProjectsUsedTechnologies')}
+                  technologiesUsed={['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'npm']}
+                  technologies={technologies}
+                />
+              </Slider>
+            </motion.div>
+          )}
+          {activeCategory === 'servers' && (
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+              <Slider {...settings}>
+                <SliderElement
+                  image={Symbios}
+                  imageAlt="Symbios website project image"
+                  heading={t('myWorkPage.ProjectOneTitle')}
+                  description={t('myWorkPage.ProjectOneParagraph')}
+                  website={t('myWorkPage.ProjectOneWebsite')}
+                  link={t('myWorkPage.ProjectOneLink')}
+                  type="commercial"
+                  technologiesUsed={['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'npm']}
+                  technologies={technologies}
+                />
+              </Slider>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
-    </div>
+    </section>
   )
 }
 
