@@ -39,6 +39,7 @@ const ContactSectionOptions = (props: Props) => {
           </p>
         </div>
       </div>
+      <p>test</p>
       <img src={upperDivider} alt="Section bottom divider image" className="w-full absolute top-[-1px] rotate-180" />
       <img src={bottomDivider} alt="Section bottom divider image" className="w-full absolute bottom-[-1px] " />
     </section>
