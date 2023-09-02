@@ -25,7 +25,11 @@ const MyWorkSectionHero = (props: Props) => {
           {props.heroParagraphAccent}
         </p>
       </div>
-      <img src={bottomDivider} alt="Section bottom divider image" className="w-full absolute bottom-[-1px]" />
+      <img
+        src={bottomDivider}
+        alt="Section bottom divider image"
+        className="w-full absolute bottom-[-1px] 2xl:bottom-[-4px]"
+      />
     </section>
   )
 }

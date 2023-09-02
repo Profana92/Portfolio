@@ -15,7 +15,7 @@ const LanguageSwitcher = () => {
   const { i18n } = useTranslation()
 
   return (
-    <div className="relative w-36 h-8">
+    <div className="relative w-36 h-8 clickable">
       <ul className="text-md self-baseline my-auto transition-all">
         <li
           className={`w-full flex flex-row gap-2 items-center justify-start h-8 px-2 `}

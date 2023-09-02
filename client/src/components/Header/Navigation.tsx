@@ -84,7 +84,7 @@ const Navigation = () => {
   return (
     <div className="items-center h-full hidden lg:flex">
       <nav className="h-full overflow-visible">
-        <ul className="h-full flex justify-center items-center font-medium mr-12 cursor-pointer">
+        <ul className="h-full flex justify-center items-center font-medium mr-12">
           <div
             className="relative h-full"
             onMouseOver={() => mouseOverMenuHandler('enter', 'home')}
@@ -170,7 +170,7 @@ const Navigation = () => {
                 <li>
                   <NavLink
                     className="h-14 w-full flex px-5 items-center hover:bg-gradient-to-br hover:bg-clip-text hover:from-pink hover:to-orange hover:text-transparent"
-                    to={`/mywork#blog`}
+                    to={`/my-work/#blog`}
                   >
                     {t('navigation.blog')}
                   </NavLink>
@@ -223,7 +223,7 @@ const Navigation = () => {
                   ? 'flex justify-center items-center h-full w-full text-transparent font-black bg-gradient-to-br bg-clip-text from-pink to-orange align-middle'
                   : 'h-full w-full flex justify-center items-center hover:bg-gradient-to-br hover:bg-clip-text hover:from-pink hover:to-orange hover:text-transparent'
               }
-              to={`/contact`}
+              to={`/contact/#hero`}
             >
               {t('navigation.contact')}
             </NavLink>

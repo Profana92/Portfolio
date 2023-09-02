@@ -15,7 +15,7 @@ const MobileNavigation = (props: Props) => {
   const { t } = useTranslation()
   props.menuOpen ? disableBodyScroll(document as any) : enableBodyScroll(document as any)
   return (
-    <div className={`lg:hidden h-full flex justify-center items-center`}>
+    <div className={`lg:hidden h-full flex justify-center items-center `}>
       <div
         className={`absolute z-20 top-0  w-full min-h-dvh-nav max-h-dvh-nav bg-gradient-to-br from-[#0C011F] to-[#33091D] transition-all flex flex-col justify-between ${
           props.menuOpen ? 'left-0' : '-left-[100vw]'
@@ -192,7 +192,7 @@ const MobileNavigation = (props: Props) => {
         onClick={() => {
           props.setmenuOpen((prevState) => !prevState)
         }}
-        className="flex flex-col gap-2 h-full justify-center items-center"
+        className="flex flex-col gap-2 h-full justify-center items-center clickable"
       >
         <span className="inline-block w-10 h-[2px] bg-white rounded"></span>
         <span className="inline-block w-10 h-[2px] bg-white rounded"></span>

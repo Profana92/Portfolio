@@ -56,7 +56,7 @@ const HeroSection = (props: Props) => {
         </div>
       </div>
       <div
-        className="hidden tall:flex gap-3 justify-center items-center absolute bottom-7 text-transparent bg-gradient-to-br bg-clip-text from-pink to-orange select-none"
+        className="hidden tall:flex gap-3 justify-center items-center absolute bottom-7 text-transparent bg-gradient-to-br bg-clip-text from-pink to-orange select-none clickable"
         onClick={scrollHandler}
       >
         <GiMagicSwirl
