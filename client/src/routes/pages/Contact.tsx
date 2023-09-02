@@ -3,12 +3,10 @@ import { Helmet } from 'react-helmet-async'
 import { useTranslation } from 'react-i18next'
 import { useLocation } from 'react-router-dom'
 
-import MyWorkSectionBlog from '../../components/Sections/MyWorkSectionBlog'
-import HeroSection from '../../components/Sections/MyWorkSectionHero'
-import MyWorkSectionProjects from '../../components/Sections/MyWorkSectionProjects'
-import MyWorkSectionServices from '../../components/Sections/MyWorkSectionServices'
+import HeroSection from '../../components/Sections/ContactSectionHero'
+import ContactSectionOptions from '../../components/Sections/ContactSectionOptions'
 
-const MyWork = () => {
+const Contact = () => {
   const { t } = useTranslation()
   const location = useLocation()
 
@@ -36,7 +34,7 @@ const MyWork = () => {
   }, [])
 
   return (
-    <>
+    <div>
       <Helmet>
         <title> Home | Wojciech Marczak | Let&apos;s Build The Web Together! </title>
         <meta
@@ -44,15 +42,17 @@ const MyWork = () => {
           content="Welcome to my front-end developer portfolio! Take a tour of my work, skills, and projects. Let's create stunning websites together! Enjoy your visit!"
         />
       </Helmet>
-      <HeroSection
-        heroParagraphOne={t('myWorkPage.heroParagraphOne')}
-        heroParagraphAccent={t('myWorkPage.heroParagraphAccent')}
+      <HeroSection HeroParagraph={t('ContactPage.HeroParagraph')} HeroAccent={t('ContactPage.HeroAccent')} />
+      <ContactSectionOptions
+        FormSubHeading={t('ContactPage.FormSubHeading')}
+        FormEndingAccent={t('ContactPage.FormEndingAccent')}
+        FormListItemOne={t('ContactPage.FormListItemOne')}
+        FormListItemTwo={t('ContactPage.FormListItemTwo')}
+        FormListItemThree={t('ContactPage.FormListItemThree')}
+        FormListItemFour={t('ContactPage.FormListItemFour')}
       />
-      <MyWorkSectionProjects />
-      <MyWorkSectionServices />
-      <MyWorkSectionBlog />
-    </>
+    </div>
   )
 }
 
-export default MyWork
+export default Contact

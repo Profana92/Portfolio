@@ -3,6 +3,7 @@ import { Trans, useTranslation } from 'react-i18next'
 import Slider from 'react-slick'
 import { AnimatePresence, motion } from 'framer-motion'
 
+import divider from '../../assets/myWorkProjectsBottomDivider.svg'
 import Portfolio from '../../assets/Portfolio.jpg'
 import Symbios from '../../assets/symbios.jpg'
 import AdobeIllustratorIcon from '../Icons/AdobeIllustratorIcon'
@@ -71,8 +72,8 @@ const MyWorkSectionProjects = () => {
   const [activeCategory, setactiveCategory] = useState('frontEnd')
 
   return (
-    <section id="projects" className="bg-gradient-to-b from-[#33091D] to-[#9B1536] text-center px-12 py-12">
-      <div className="max-w-[1920px] mx-auto">
+    <section id="projects" className="bg-gradient-to-b from-[#33091D] to-[#9B1536] text-center px-12 py-12 relative">
+      <div className="max-w-[1920px] mx-auto mb-[10vh]">
         <Trans i18nKey="myWorkPage.ProjectsTitle">
           <h2 className="font-display text-2xl md:text-5xl font-medium">
             My <span className="text-transparent bg-gradient-to-br bg-clip-text from-pink to-orange">Skills</span>
@@ -176,6 +177,11 @@ const MyWorkSectionProjects = () => {
           )}
         </AnimatePresence>
       </div>
+      <img
+        src={divider}
+        alt="Section bottom divider image"
+        className="w-full absolute left-0 bottom-[-1px] 2xl:bottom-[-4px]"
+      />
     </section>
   )
 }

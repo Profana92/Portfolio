@@ -207,7 +207,7 @@ i18n
               'Here, where the arcane art of front-end development intertwines with imagination. Behold, a tapestry of web wonders woven with HTML spells, CSS potions, JavaScript scrolls and React enchantments.',
             heroParagraphAccent:
               'These projects are the manifestation of my digital sorcery, inviting you to witness the magic forged through pixels and code.',
-            ProjectsTitle: '<0>My<1>Skills</1></0>',
+            ProjectsTitle: '<0>My <1>Projects</1></0>',
             ProjectsUsedTechnologies: 'Used technologies',
             ProjectOneTitle: 'Company website with “offer cart” and offer inquiry functionality.',
             ProjectOneParagraph:
@@ -221,6 +221,41 @@ i18n
             ProjectTwoWebsite: 'WizDev.de',
             ProjectTwoLink: 'https://wizdev.de/',
             ProjectTwoType: 'Hobby',
+            ServicesTitle: '<0>My <1>Services</1></0>',
+            ServiceOneHeading: 'Apps',
+            ServiceOneParagraph:
+              "I infuse the digital canvas with the enchanting power of React, crafting applications that dance to the rhythm of responsiveness. Through mystical components and spells of state management, I bestow websites with fluid interactions, ensuring they adapt seamlessly to every user's incantation.",
+            ServiceTwoHeading: 'Online Shops',
+            ServiceTwoParagraph:
+              'I conjure captivating digital realms using the arcane art of web design. With a wave of creativity and a sprinkle of code, I bring websites to life, merging technology and magic.',
+            ServiceThreeHeading: 'Websites',
+            ServiceThreeParagraph:
+              "As a digital sorcerer, my craft is the art of weaving enchanting websites upon the sacred scrolls of WordPress. With spells of customization and a wizard's touch, I conjure online realms that beckon visitors with irresistible allure and mystical functionality",
+            ServiceFourHeading: 'E-Mails',
+            ServiceFourParagraph:
+              'It weaves responsive email enchantments and transforms mere code into visually stunning messages, granting emails a touch of bewitching elegance.',
+            ServiceFiveHeading: 'Design',
+            ServiceFiveParagraph:
+              'I conjure captivating digital realms using the arcane art of web design. With a wave of creativity and a sprinkle of code, I bring websites to life, merging technology and magic.',
+            MyBlogHeading: '<0>My <1>Blog</1></0>',
+            MyBlogParagraph:
+              'Join me on a mystical journey through my Blog, where technology and wizardry collide to illuminate the wonders of the digital realm.',
+            MyBlogCallButton: "Let's go!",
+            MyBlogCommingSoon: 'Comming soon...',
+          },
+          ContactPage: {
+            HeroHeading: '<0>Connect <1>and</1> Conjure!</0>',
+            HeroParagraph:
+              "Whether you're embarking on a digital journey ,seeking to collaborate or just want to say “Hi!”, feel free to reach out through the contact form below or drop me a line via email.",
+            HeroAccent: "Let's create magic together!",
+            FormHeading: '<0>Let <1>the Magic</1> Begin!</0>',
+            FormSubHeading: 'Feel free to reach out through various mystical channels.',
+            FormListItemOne: 'send an whisper via email',
+            FormListItemTwo: 'summon me via LinkedIn',
+            FormListItemThree: 'cast a communication spell with WhatsApp',
+            FormListItemFour: 'get in touch through the ethereal gates of Telegram',
+            FormEndingParagraph: "Alternatively, you'll find a contact form on the right for your convenience.",
+            FormEndingAccent: "Let's connect and create wonders!",
           },
           Footer: {
             Description: 'Let the whispers of the digital wind carry your message to me.',

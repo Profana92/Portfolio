@@ -33,12 +33,18 @@ export default {
           "url('./assets/home_background_tiny.jpg')",
         ],
         'about-hero-pattern': ["url('./assets/aboutHeroImage.jpg')"],
-        'myWork-hero-pattern': ["url('./assets/myWorkHeroImage.jpg')"],
-        'myWork-hero-pattern-desktop': ["url('./assets/myWorkHeroImageDesktop.jpg')"],
         'about-hero-pattern-desktop': [
           'linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))',
           "url('./assets/aboutHeroImage.jpg')",
         ],
+        'myWork-hero-pattern': ["url('./assets/myWorkHeroImage.jpg')"],
+        'myWork-hero-pattern-desktop': ["url('./assets/myWorkHeroImageDesktop.jpg')"],
+
+        'contact-hero-pattern': [
+          'linear-gradient(to left bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))',
+          "url('./assets/ContactPageBackground.jpg')",
+        ],
+        'contact-form-pattern': ["url('./assets/ContactSectionFormBG.svg')"],
       },
     },
   },
