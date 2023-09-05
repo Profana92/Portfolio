@@ -179,7 +179,7 @@ const MobileNavigation = (props: Props) => {
           </ul>
         </nav>
         <div className="z-10 flex justify-center items-center flex-col gap-5">
-          <img className="m-auto" src={hat} alt="Image of a hat" width="100" />
+          <img className="min-mobile-menu-height:hidden m-auto" src={hat} alt="Image of a hat" width="100" />
           <LanguageSwitcherMobile />
         </div>
         <div className="absolute -top-[5vh] bg-white opacity-10 w-[20vw] h-[20vw] rounded-full blur-2xl"></div>
@@ -192,7 +192,7 @@ const MobileNavigation = (props: Props) => {
         onClick={() => {
           props.setmenuOpen((prevState) => !prevState)
         }}
-        className="flex flex-col gap-2 h-full justify-center items-center clickable"
+        className="flex flex-col gap-2 justify-center items-center clickable"
       >
         <span className="inline-block w-10 h-[2px] bg-white rounded"></span>
         <span className="inline-block w-10 h-[2px] bg-white rounded"></span>

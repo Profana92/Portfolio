@@ -6,6 +6,7 @@ export default {
       screens: {
         buttonsFix: '402px',
         tall: { raw: '(min-height: 420px)' },
+        'min-mobile-menu-height': { raw: '(max-height: 650px)' },
       },
       minHeight: {
         dvh: ['calc(100vh)', 'calc(100dvh)', 'calc(100svh)'],

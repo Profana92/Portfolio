@@ -67,43 +67,41 @@ const Footer = () => {
             </p>
             <div className="flex text-sm lg:text-base lg:gap-2">
               <div className="w-1/4 flex flex-col">
-                <Link to={'/'} className="text-orange">
+                <Link to={'/#home'} className="text-orange">
                   {t('navigation.home')}
                 </Link>
-                <Link to={'/'} className="text-white">
+                <Link to={'/#magic'} className="text-white">
                   {t('navigation.magic')}
                 </Link>
-                <Link to={'/'} className="text-white">
+                <Link to={'/#tools'} className="text-white">
                   {t('navigation.tools')}
                 </Link>
               </div>
               <div className="w-1/4 flex flex-col">
-                <Link to={'/'} className="text-orange">
+                <Link to={'/my-work/#hero'} className="text-orange">
                   {t('navigation.myWork')}
                 </Link>
-                <Link to={'/'} className="text-white">
+                <Link to={'/my-work/#projects'} className="text-white">
                   {t('navigation.projects')}
                 </Link>
-                <Link to={'/'} className="text-white">
+                <Link to={'/my-work/#services'} className="text-white">
                   {t('navigation.services')}
                 </Link>
-                <Link to={'/'} className="text-white">
+                <Link to={'/my-work/#blog'} className="text-white">
                   {t('navigation.blog')}
                 </Link>
               </div>
               <div className="w-1/4 flex flex-col">
-                <Link to={'/'} className="text-orange">
+                <Link to={'/about/#hero'} className="text-orange">
                   {t('navigation.about')}
                 </Link>
-                <Link to={'/'} className="text-white">
-                  {t('navigation.aboutMe')}
-                </Link>
-                <Link to={'/'} className="text-white">
+
+                <Link to={'/about/#skills'} className="text-white">
                   {t('navigation.skills')}
                 </Link>
               </div>
               <div className="w-1/4 flex flex-col">
-                <Link to={'/'} className="text-orange">
+                <Link to={'/contact#hero'} className="text-orange">
                   {t('navigation.contact')}
                 </Link>
               </div>
