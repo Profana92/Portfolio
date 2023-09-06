@@ -36,13 +36,13 @@ const Footer = () => {
         </div>
         <div className="row-start-4 row-end-5 px-6 flex justify-between gap-6">
           <div className="flex gap-3 my-5 ">
-            <Link to="/">
+            <Link to="https://www.instagram.com/wizdevlabs/">
               <img src={InstagramIcon} alt="Instagram Icon with link" className="w-8 h-8 lg:w-10 lg:h-10" />
             </Link>
-            <Link to="/">
+            <Link to="">
               <img src={MessangerIcon} alt="MessangerIcon Icon with link" className="w-8 h-8 lg:w-10 lg:h-10" />
             </Link>
-            <Link to="/">
+            <Link to="https://www.linkedin.com/in/wojciech-marczak-39bb89104/">
               <img src={LinkedInIcon} alt="LinkedInIcon Icon with link" className="w-8 h-8 lg:w-10 lg:h-10" />
             </Link>
           </div>
@@ -61,11 +61,11 @@ const Footer = () => {
           <p className="text-center lg:text-left font-light text-sm lg:text-base my-5">{t('Footer.formUnderText')}</p>
         </div>
         <div className="lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:row-end-5">
-          <div className=" m-6 lg:my-6">
-            <p className="my-6 text-center lg:text-left font-light text-sm lg:text-base">
+          <div className="m-6 lg:my-6">
+            <q className="my-6 text-center lg:text-left font-light text-sm lg:text-base">
               {t('Footer.aboveFooterMenuText')}
-            </p>
-            <div className="flex text-sm lg:text-base lg:gap-2">
+            </q>
+            <div className="flex text-sm lg:text-base lg:gap-2 my-6">
               <div className="w-1/4 flex flex-col">
                 <Link to={'/#home'} className="text-orange">
                   {t('navigation.home')}
