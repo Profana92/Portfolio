@@ -3,18 +3,13 @@ import i18n from 'i18next'
 import LanguageDetector from 'i18next-browser-languagedetector'
 
 i18n
-  // detect user language
-  // learn more: https://github.com/i18next/i18next-browser-languageDetector
   .use(LanguageDetector)
-  // pass the i18n instance to react-i18next.
   .use(initReactI18next)
-  // init i18next
-  // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
     debug: false,
     fallbackLng: ['en', 'pl', 'de'],
     interpolation: {
-      escapeValue: false, // not needed for react as it escapes by default
+      escapeValue: false,
     },
     nonExplicitSupportedLngs: true,
     resources: {
@@ -36,14 +31,14 @@ i18n
           HomePage: {
             heroHeading: '<0>Welcome here, where dreams <1>DO COME</1> alive!</0>',
             heroParagraph:
-              "<0>Hello! I'm <1>Wojciech Marczak</1>, a Front-End Wizard based in Leipzig, in the realm of Germany! I'm fervently devoted to crafting top-tier websites, infusing a touch of magic into each creation for unparalleled experiences.</0>",
+              "<0>Hello! I'm <1>Wojciech Marczak</1>, a Front-End Wizard based in a magical city of Leipzig, in the realm of Germany! I'm fervently devoted to crafting top-tier websites, infusing a touch of magic into each creation for unparalleled experiences.</0>",
             buttonOne: 'My Spells',
             buttonTwo: 'My creations',
             callToAction: 'See The Magic!',
             sectionOneDescription: 'HTML CSS JAVASCRIPT REACT',
             sectionOneHeading: '<0>Those are my <1>Spells</1></0>',
             sectionOneParagraph:
-              'In this dimension, we wield not wands and incantations, but rather completly other tools to create magical online experiences.',
+              'In this dimension, I wield not wands and staffs, but rather completly other tools to create magical online experiences.',
             SectionTwoElementOneDescription: 'SPELLS',
             SectionTwoElementTwoDescription: 'Potions',
             SectionTwoElementThreeDescription: 'Scrolls',

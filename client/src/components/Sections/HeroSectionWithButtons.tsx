@@ -42,14 +42,14 @@ const HeroSection = (props: Props) => {
         </Trans>
         <Link
           className="inline-block w-40 bg-buttonOrange buttonsFix:mr-2 md:mr-8 text-center leading-[50px] rounded-[5px] text-sm md:text-base md:leading-[50px]"
-          to="/"
+          to="/#magic"
         >
           {props.buttonOne}
         </Link>
         <div className="inline-block rounded-[5px] bg-gradient-to-r from-pink to-orange p-[1px]">
           <Link
             className="inline-block w-40 rounded-[5px] bg-buttonBlue text-center leading-[50px] text-sm md:text-base md:leading-[50px]"
-            to="/"
+            to="/my-work/#projects"
           >
             {props.buttonTwo}
           </Link>
