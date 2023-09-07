@@ -206,7 +206,7 @@ i18n
             ProjectsUsedTechnologies: 'Used technologies',
             ProjectOneTitle: 'Company website with “offer cart” and offer inquiry functionality.',
             ProjectOneParagraph:
-              'A website I conjured for thy esteemed client!, woven with spells of captivating design and potent React enchantments. It weaves their essence into the very fabric of the internet, summoning new clients and offering a grand stage for their magical offerings, all in the pursuit of increased client satisfaction and a bigger online presence.',
+              'A website I conjured for thy esteemed client! Woven with spells of captivating design and potent React enchantments. It weaves their essence into the very fabric of the internet, summoning new clients and offering a grand stage for their magical offerings, all in the pursuit of increased client satisfaction and a bigger online presence.',
             ProjectOneWebsite: 'symbios.pl',
             ProjectOneLink: 'https://symbios.pl/',
             ProjectOneType: 'Commercial',
@@ -219,19 +219,19 @@ i18n
             ServicesTitle: '<0>My <1>Services</1></0>',
             ServiceOneHeading: 'Apps',
             ServiceOneParagraph:
-              "I infuse the digital canvas with the enchanting power of React, crafting applications that dance to the rhythm of responsiveness. Through mystical components and spells of state management, I bestow websites with fluid interactions, ensuring they adapt seamlessly to every user's incantation.",
+              "I infuse the digital canvas with the enchanting power of React, crafting applications that dance to the rhythm of interactivity. Through mystical components and spells of state management, I bestow websites with fluid interactions, ensuring they adapt seamlessly to every user's incantation.",
             ServiceTwoHeading: 'Online Shops',
             ServiceTwoParagraph:
-              'I conjure captivating digital realms using the arcane art of web design. With a wave of creativity and a sprinkle of code, I bring websites to life, merging technology and magic.',
+              "With the enchanting combination of Divi's captivating design wizardry and WooCommerce's mystical e-commerce powers, I weave online shops that are nothing short of magical.",
             ServiceThreeHeading: 'Websites',
             ServiceThreeParagraph:
-              "As a digital sorcerer, my craft is the art of weaving enchanting websites upon the sacred scrolls of WordPress. With spells of customization and a wizard's touch, I conjure online realms that beckon visitors with irresistible allure and mystical functionality",
+              "As a digital sorcerer, my craft is the art of enchanting websites upon the sacred scrolls of WordPress. With spells of customization and a wizard's touch, I conjure online realms that beckon visitors with irresistible allure and mystical functionality",
             ServiceFourHeading: 'E-Mails',
             ServiceFourParagraph:
-              'It weaves responsive email enchantments and transforms mere code into visually stunning messages, granting emails a touch of bewitching elegance.',
+              "I harness the power of MJML to conjure responsive emails, employing its transformative spells to transmute mere code into visually stunning messages. This bewitching alchemy not only grants them a touch of elegance but also unlocks the unique advantages of MJML's efficiency and compatibility.",
             ServiceFiveHeading: 'Design',
             ServiceFiveParagraph:
-              'I conjure captivating digital realms using the arcane art of web design. With a wave of creativity and a sprinkle of code, I bring websites to life, merging technology and magic.',
+              "I craft captivating websites with precision and creativity in Figma. From pixel-perfect designs to seamless user experiences, I bring your digital vision to life with the power of Figma's versatile design tools.",
             MyBlogHeading: '<0>My <1>Blog</1></0>',
             MyBlogParagraph:
               'Join me on a mystical journey through my Blog, where technology and wizardry collide to illuminate the wonders of the digital realm.',
@@ -285,6 +285,51 @@ i18n
             aboutMe: 'Ja',
             skills: 'Umiejętności',
             contact: 'Kontakt',
+          },
+          HomePage: {
+            heroHeading: '<0>Witaj tu, w miejscu gdzie marzenia <1>OŻYWAJĄ</1>!</0>',
+            heroParagraph:
+              '<0>Cześć! Nazywam się <1>Wojciech Marczak</1> i jestem Front-End Developerem mieszkającym w magicznym mieście Lipsk, w Niemczech. tem żarliwie oddany tworzeniu najlepszych stron internetowych, dodając odrobinę magii do każdego dzieła by zapewnić niezrównane doświadczenia.</0>',
+            buttonOne: 'Moje Czary',
+            buttonTwo: 'Moje dzieła',
+            callToAction: 'Zobacz magię!',
+            sectionOneDescription: 'HTML CSS JAVASCRIPT REACT',
+            sectionOneHeading: '<0>To są moje <1>Czary</1></0>',
+            sectionOneParagraph:
+              'W tym wymiarze nie władam różdżkami czy laskami, ale raczej zupełnie innymi narzędziami do tworzenia magicznych doświadczeń.',
+            SectionTwoElementOneDescription: 'Czary',
+            SectionTwoElementTwoDescription: 'Mikstury',
+            SectionTwoElementThreeDescription: 'Zwoje',
+            SectionTwoElementFourDescription: 'Uroki',
+            SectionTwoElementOneHeading: '<0>Magiczne słowa <1>HTML</1></0>',
+            SectionTwoElementTwoHeading: '<0>Mikstury stylu <1>CSS</1></0>',
+            SectionTwoElementThreeHeading: '<0>Zwoje <1>JavaScript</1></0>',
+            SectionTwoElementFourHeading: '<0>Uroki mocy <1>React</1></0>',
+            SectionTwoElementOneParagraph:
+              'Za pomocą tych zaklęć rozkazuje przeglądarce internetowej, jak ułożyć elementy, tworząc harmonijną symfonię informacji i estetyki.',
+            SectionTwoElementTwoParagraph:
+              'Te magiczne mikstury dają niezwykłe rezultaty, nasycając nasze zaklęcia HTML hipnotyzującymi kolorami, kuszącymi czcionkami, urzekającymi animacjami i układami.',
+            SectionTwoElementThreeParagraph:
+              'Za pomocą tych zwojów mogę przywołać moc interaktywności, bez wysiłku manipulując elementami, animując strony i tworząc dynamiczną treść.',
+            SectionTwoElementFourParagraph:
+              'Ten urzekający framework w magiczny sposób zmienia doświadczenia użytkownika, bez wysiłku renderując urzekające efekty wizualne, które szybko dostosowują się do każdej interakcji.',
+          },
+          Footer: {
+            Description: 'Niech szept cyfrowego wiatru poniesie Twoją wiadomość do mnie.',
+            Heading: '<0>Przywołaj <1>Mnie!</1></0>',
+            Paragraph:
+              '<0>W krainie internetowych czarów <1>Twoja podróż ma znaczenie</1>. Jeśli będziesz szukać mojej rady, nie obawiaj się, bo jestem w odległości jednego zaklęcia. Prześlij swoje zapytania, propozycje, a nawet przyjazne pozdrowienia do mojego cyfrowego eteru. Po machnięciu kursorem i wyrecytowaniu zaklęcia tajemne formy przekażą twoją wiadomość do mojego królestwa. Połączmy się, towarzyszu podróży, i wymieńmy mądrość i zaklęcia w cyfrowej przestrzeni.</0>',
+            formFirstNamePlaceholder: 'Imię',
+            formLastNamePlaceholder: 'Nazwisko',
+            formEmailPlaceholder: 'E-mail',
+            formMessagePlaceholder: 'Wiadomość...',
+            formSummonButton: 'Przywołaj mnie!',
+            formUnderText:
+              'Dzieląc się swoimi myślami otwierasz drogę do nieskończonych możliwości. Oczekuj mej odpowiedzi, która splecie nasze losy. Niech piksele zawsze będą po Twojej stronie!',
+            aboveFooterMenuText:
+              'In the world of web, every line of code is a strand of magic, and every pixel a canvas for creation.',
+            errorRequired: 'This field is required',
+            errorMaxLength: 'Exceeded 20 letters limit',
           },
         },
       },

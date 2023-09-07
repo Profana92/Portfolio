@@ -24,7 +24,7 @@ const HeroSection = (props: Props) => {
     >
       <div className="mx-auto p-12 text-center lg:pr-[40vw] lg:text-left">
         <Trans i18nKey="HomePage.heroHeading">
-          <h1 className="font-display text-2xl md:text-5xl font-medium max-w-xl">
+          <h1 className="font-display text-2xl md:text-5xl font-medium max-w-xl leading-[1.3!important]">
             Welcome here, where dreams
             <span className="text-transparent bg-gradient-to-br bg-clip-text from-pink to-orange">DO COME</span>
             alive!

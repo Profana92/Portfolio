@@ -5,11 +5,8 @@ import divider from '../../assets/BeforeFooterBottomDivider.svg'
 const MyWorkSectionBlog = () => {
   const { t } = useTranslation()
   return (
-    <section
-      id="blog"
-      className="bg-gradient-to-b from-[#15081B] to-[#3C052D] relative px-9 pt-12 pb-[15vh] md:pb-[20vh] lg:pb-[50vh]"
-    >
-      <div className="max-w-[1920px] mx-auto text-center">
+    <section id="blog" className="bg-gradient-to-b from-[#15081B] to-[#3C052D] relative px-9 py-12">
+      <div className="max-w-[1920px] mx-auto text-center flex flex-col min-h-[500px] justify-center pb-[100px] lg:pb-[200px]">
         <Trans i18nKey="myWorkPage.MyBlogHeading">
           <h2 className="mx-auto font-display text-2xl md:text-5xl font-medium text-center mb-12">
             My <span className="text-transparent bg-gradient-to-br bg-clip-text from-pink to-orange">Skills</span>
@@ -22,7 +19,7 @@ const MyWorkSectionBlog = () => {
         >
           {t('myWorkPage.MyBlogCallButton')}
         </Link> */}
-        <p className=" leading-normal text-sm md:text-base">{t('myWorkPage.MyBlogCommingSoon')}</p>
+        <p className="text-[#ffffffA1] py- leading-normal text-sm md:text-base">{t('myWorkPage.MyBlogCommingSoon')}</p>
         <img
           src={divider}
           alt="Section bottom divider image not-sr-only"
