@@ -327,9 +327,23 @@ i18n
             formUnderText:
               'Dzieląc się swoimi myślami otwierasz drogę do nieskończonych możliwości. Oczekuj mej odpowiedzi, która splecie nasze losy. Niech piksele zawsze będą po Twojej stronie!',
             aboveFooterMenuText:
-              'In the world of web, every line of code is a strand of magic, and every pixel a canvas for creation.',
-            errorRequired: 'This field is required',
-            errorMaxLength: 'Exceeded 20 letters limit',
+              'W świecie internetu, każda linijka kodu stanowi nić magii, a każdy piksel płótno do tworzenia.',
+            errorRequired: 'To pole jest wymagane',
+            errorMaxLength: 'Przekroczono limit 20 znaków',
+          },
+          aboutPage: {
+            heroHeading: '<0>Kim więc <1>jestem?</1></0>',
+            heroParagraphOne:
+              'Jestem zapalonym programistą front-end z kreatywnym zacięciem do tworzenia nieskazitelnych doświadczeń dla użytkownika. Do budowy stron internetowych wykorzystuję HTML, CSS, JS i React, a do projektowania Figmę, Adobe XD, Adobe Illustrator i Photoshop. Wdrażanie stron internetowych odbywa się za pośrednictwem Ubuntu, Nginx i Apache. Ponadto tworzę witryny e-commerce za pomocą Wordpress, Divi i Woocommerce.',
+            heroParagraphTwo:
+              'Pozostaję na bieżąco z najnowszymi trendami w branży,by dostarczać atrakcyjne wizualnie i responsywne rozwiązania internetowe.',
+            heroParagraphThree:
+              'W wolnym czasie zajmuję się lataniem dronami, drukiem 3D i naprawą elektroniki, odnawiając stare, aby tchnąć w nie nowe życie. Bardzo ciekawi mnie też Three.js!',
+            heroParagraphFour:
+              'Z ogromną przyjemnością obserwuję, jak moje strony internetowe generują nową sprzedaż i potencjalnych klientów dla moich kontrahentów, co prowadzi do rozwoju ich firm.',
+            heroParagraphAccent: 'Powspółpracujmy i powcielajmy nowe pomysły w życie poprzez elegancki kod.',
+            buttonOne: 'Moje Prace',
+            buttonTwo: 'Skontaktuj się',
           },
         },
       },
