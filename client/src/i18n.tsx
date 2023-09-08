@@ -133,7 +133,7 @@ i18n
             },
             Expressjs: {
               Description:
-                'Express.js, a magical web framework for Node.js, accelerates server sorcery. It crafts bewitching APIs and routes, casting spells for dynamic web enchantments with minimal code incantations.',
+                'Express.js is the mystical tool of web development, a versatile spellbook for Node.js. With its magical incantations, it weaves powerful web applications effortlessly.',
               Website: 'ExpressJS.com',
               Link: 'https://expressjs.com/',
             },
@@ -287,7 +287,7 @@ i18n
             contact: 'Kontakt',
           },
           HomePage: {
-            heroHeading: '<0>Witaj tu, w miejscu gdzie marzenia <1>OŻYWAJĄ</1>!</0>',
+            heroHeading: '<0>Witam Cię tu, w miejscu gdzie marzenia <1>OŻYWAJĄ</1>!</0>',
             heroParagraph:
               '<0>Cześć! Nazywam się <1>Wojciech Marczak</1> i jestem Front-End Developerem mieszkającym w magicznym mieście Lipsk, w Niemczech. tem żarliwie oddany tworzeniu najlepszych stron internetowych, dodając odrobinę magii do każdego dzieła by zapewnić niezrównane doświadczenia.</0>',
             buttonOne: 'Moje Czary',
@@ -344,6 +344,132 @@ i18n
             heroParagraphAccent: 'Powspółpracujmy i powcielajmy nowe pomysły w życie poprzez elegancki kod.',
             buttonOne: 'Moje Prace',
             buttonTwo: 'Skontaktuj się',
+          },
+          mySkills: {
+            HTML: {
+              Description:
+                'W zaczarowanej krainie tworzenia stron internetowych HTML stanowi zaklęcie nadające kształt, kształtujące cyfrowy gobelin elementów. Dzięki mistycznym tagom i atrybutom splata tekst, obrazy i linki w harmonijną strukturę, która ukazuje cudowne krajobrazy świata online.',
+              Website: 'developer.mozilla.org',
+              Link: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
+            },
+            CSS: {
+              Description:
+                'Istnieje cudowny język znany jako CSS lub inaczej kaskadowe arkusze stylów. Zaklęcia CSS wydobywają samą esencję piękna i designu na płótno cyfrowego świata.',
+              Website: 'developer.mozilla.org',
+              Link: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
+            },
+            npm: {
+              Description:
+                'NPM (Node Package Manager) to magiczne narzędzie JavaScript, umożliwiające bezproblemową instalację, zarządzanie i udostępnianie bibliotek kodu w celu tworzenia urzekających projektów internetowych i oprogramowania.',
+              Website: 'NPMjs.com',
+              Link: 'https://www.npmjs.com/',
+            },
+            WooCommerce: {
+              Description:
+                'WooCommerce to urzekająca wtyczka WordPress, przekształcająca strony internetowe w sklepy internetowe. Wyczarowuje listy produktów, płatności i koszyki, aby stworzyć urzekające rynki cyfrowe.',
+              Website: 'WooCommerce.com',
+              Link: 'https://woocommerce.com/',
+            },
+            Wordpress: {
+              Description:
+                'WordPress to platforma typu open source, która pozwala z łatwością tworzyć strony internetowe. Jej magia obejmuje motywy, wtyczki i interfejs do tworzenia urzekających cyfrowych krain bez skomplikowanego kodowania.',
+              Website: 'WordPress.org',
+              Link: 'https://pl.wordpress.org/',
+            },
+            React: {
+              Description:
+                'React, potężna biblioteka JavaScript, wykorzystuje komponenty do tworzenia dynamicznych i wciągających doświadczeń cyfrowych, na nowo definiując sztukę interakcji.',
+              Website: 'React.dev',
+              Link: 'https://react.dev/',
+            },
+            JavaScript: {
+              Description:
+                'JavaScript, magiczny język skryptowy, zaczarowuje strony internetowe dodając im interaktywności. Wywołuje animacje, sprawdza formularze i wchodzi w interakcję z użytkownikami, tchając życie w sferę cyfrową.',
+              Website: 'developer.mozilla.org',
+              Link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+            },
+            TypeScript: {
+              Description:
+                'TypeScript, magiczny uzupełnienie JavaScriptu, dodaje do procesu tworzenia typy zmiennych. Poprawia dzięki temu jakość pisanego kodu i w pełni kompiluje się do JavaScriptu.',
+              Website: 'TypeScriptLang.org',
+              Link: 'https://www.typescriptlang.org/',
+            },
+            MJML: {
+              Description:
+                'MJML to mistyczny framework, tworzący magicznie responsywne e-maile. Przywołuje urzekające układy z prostą składnią przypominającą HTML, zapewniając kompatybylność e-maili na wszystkich urządzeniach.',
+              Website: 'MJML.io',
+              Link: 'https://mjml.io/',
+            },
+            NodeJs: {
+              Description:
+                'Node.js, niebiańskie środowisko wykonawcze, wzmacnia magię serwerów za pomocą nieblokujących zaklęć. Zaczarowuje JavaScript mocą działania poza przeglądarką, tworząc skalowalne i urzekające aplikacje sieciowe z asynchroniczną mocą.',
+              Website: 'NodeJS.org',
+              Link: 'https://nodejs.org/en',
+            },
+            Expressjs: {
+              Description:
+                'Express.js to mistyczne narzędzie do tworzenia stron internetowych, wszechstronna księga zaklęć dla Node.js. Dzięki magicznym zaklęciom bez wysiłku tworzy potężne interfejsy aplikacje internetowe.',
+              Website: 'ExpressJS.com',
+              Link: 'https://expressjs.com/',
+            },
+            MongoDB: {
+              Description:
+                'MongoDB, mistyczna baza danych NoSQL, elastycznie przechowuje zachwycające dane. Przywołuje kolekcje i dokumenty, oferując skalowalne i pozbawione schematów obszary dla współczesnej cyfrowej magii.',
+              Website: 'MongoDB.com',
+              Link: 'https://www.mongodb.com/',
+            },
+            Figma: {
+              Description:
+                'Figma, wspaniałe narzędzie do projektowania, przywołuje wspólne wizje, gwarantując przejrzystą współpracę. Łączy w sobie urzekające interfejsy z magią czasu rzeczywistego, umożliwiając czarodziejom wspólne tworzenie, prototypowanie i czarowanie w nieograniczonej krainie kreatywności.',
+              Website: 'Figma.com',
+              Link: 'https://www.figma.com/',
+            },
+            AdobeXD: {
+              Description:
+                'Adobe XD, czarujące oprogramowanie do projektowania, tworzy "user expirience". Tworzy urzekające interfejsy z pomysłowymi interakcjami, rzuca zaklęcia, ożywiając wizje developera.',
+              Website: 'Adobe.com',
+              Link: 'https://www.adobe.com/',
+            },
+            AdobeIllustrator: {
+              Description:
+                'Adobe Illustrator to mistrzowskie narzędzie do tworzenia ilustracji. Dzięki magii wektorowej wyczarowuje ilustracje i grafiki, tchając życie w cyfrowe krainy.',
+              Website: 'Adobe.com',
+              Link: 'https://www.adobe.com/',
+            },
+            AdobePhotoshop: {
+              Description:
+                'Photoshop, the artful magician of imagery, enchants pixels. It transforms photos and graphics with spells of editing, retouching, and manipulation, creating captivating visuals that defy reality.',
+              Website: 'Adobe.com',
+              Link: 'https://www.adobe.com/',
+            },
+            GIMP: {
+              Description:
+                'GIMP, the open-source enchantress of imagery, wields creative magic. It crafts captivating graphics with powerful spells of editing, retouching, and manipulation, conjuring digital wonders for all.',
+              Website: 'Gimp.com',
+              Link: 'https://www.gimp.org/',
+            },
+            Nginx: {
+              Description:
+                'NGINX, a mystical web server, accelerates enchanting journeys. It balances, caches, and safeguards with sorcery, providing high-performance and secure passage through the ethereal realms of the internet.',
+              Website: 'Nginx.com',
+              Link: 'https://www.nginx.com/',
+            },
+            Apache: {
+              Description:
+                'Apache, an ancient server sorcerer, hosts digital realms. With spells of flexibility and open-source might, it enchants websites, conjuring pages and files for all who seek its magic.',
+              Website: 'HTTPD.Apache.org',
+              Link: 'https://httpd.apache.org/',
+            },
+            Ubuntu: {
+              Description:
+                'Ubuntu, a benevolent Linux enchantment, beckons community spirit. It bestows free and open-source spells, weaving a user-friendly OS that empowers wizards to navigate the digital landscape.',
+              Website: 'Ubuntu.com',
+              Link: 'https://ubuntu.com/',
+            },
+            buttonOne: 'Front-End',
+            buttonTwo: 'Back-End',
+            buttonThree: 'Design',
+            buttonFour: 'Servers',
           },
         },
       },
