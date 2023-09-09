@@ -95,6 +95,7 @@ const MyWorkSectionProjects = () => {
                   projectsUsedTechnologies={t('myWorkPage.ProjectsUsedTechnologies')}
                   technologiesUsed={['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'npm', 'NodeJs', 'Expressjs']}
                   technologies={technologies}
+                  ProjectType={t('myWorkPage.ProjectType')}
                 />
                 <SliderElement
                   image={Portfolio}
@@ -117,6 +118,7 @@ const MyWorkSectionProjects = () => {
                   ]}
                   technologies={technologies}
                   figma="https://www.figma.com/file/imXuoBkK0z5RC6c6iNKRA6/Portfolio-W.Marczak?node-id=90%3A4875&mode=dev"
+                  ProjectType={t('myWorkPage.ProjectType')}
                 />
                 <SliderElement
                   image={Portfolio}
@@ -139,6 +141,7 @@ const MyWorkSectionProjects = () => {
                   ]}
                   technologies={technologies}
                   figma="https://www.figma.com/file/imXuoBkK0z5RC6c6iNKRA6/Portfolio-W.Marczak?node-id=90%3A4875&mode=dev"
+                  ProjectType={t('myWorkPage.ProjectType')}
                 />
               </Slider>
             </motion.div>
@@ -169,6 +172,7 @@ const MyWorkSectionProjects = () => {
                 ]}
                 technologies={technologies}
                 figma="https://www.figma.com/file/imXuoBkK0z5RC6c6iNKRA6/Portfolio-W.Marczak?node-id=90%3A4875&mode=dev"
+                ProjectType={t('myWorkPage.ProjectType')}
               />
             </motion.div>
           )}
