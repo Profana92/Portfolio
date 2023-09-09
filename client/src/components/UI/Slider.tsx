@@ -11,6 +11,7 @@ interface Props {
   link: string
   figma?: string
   projectsUsedTechnologies: string
+  ProjectType: string
   type: 'commercial' | 'hobby'
   technologiesUsed: string[]
   technologies: {
@@ -41,7 +42,9 @@ const SliderElement = (props: Props) => {
             </div>
           </div>
           <div>
-            <p className="font-light uppercase text-left text-[#ffffffB3] ">TYPE: {props.type}</p>
+            <p className="font-light uppercase text-left text-[#ffffffB3] ">
+              {props.ProjectType}: {props.type}
+            </p>
             {props.figma && (
               <Link
                 className="box-border my-6 py-2 px-5 bg-buttonOrange mr-auto text-center leading-[50px] rounded-[5px] text-sm md:text-base md:leading-[50px]"

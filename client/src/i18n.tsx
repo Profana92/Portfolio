@@ -163,13 +163,13 @@ i18n
             },
             AdobePhotoshop: {
               Description:
-                'Photoshop, the artful magician of imagery, enchants pixels. It transforms photos and graphics with spells of editing, retouching, and manipulation, creating captivating visuals that defy reality.',
+                'Photoshop, is the magician of imagery, which with its powers enchants pixels. It transforms photos and graphics with spells of editing, retouching, and manipulation, creating captivating visual effects.',
               Website: 'Adobe.com',
               Link: 'https://www.adobe.com/',
             },
             GIMP: {
               Description:
-                'GIMP, the open-source enchantress of imagery, wields creative magic. It crafts captivating graphics with powerful spells of editing, retouching, and manipulation, conjuring digital wonders for all.',
+                'GIMP, like a magical wand, harnesses the mystical forces of open-source artistry. With its spells of editing and manipulation, it crafts enchanting graphics, painting digital canvases with captivating wonders, inviting all into the realm of boundless creativity.',
               Website: 'Gimp.com',
               Link: 'https://www.gimp.org/',
             },
@@ -181,13 +181,13 @@ i18n
             },
             Apache: {
               Description:
-                'Apache, an ancient server sorcerer, hosts digital realms. With spells of flexibility and open-source might, it enchants websites, conjuring pages and files for all who seek its magic.',
+                'Apache, the mystical guardian of digital realms, is a server wizard of boundless power. With its arcane incantations, it ushers websites into existence, weaving intricate networks and enchanting visitors with seamless access to the treasures of the online world.',
               Website: 'HTTPD.Apache.org',
               Link: 'https://httpd.apache.org/',
             },
             Ubuntu: {
               Description:
-                'Ubuntu, a benevolent Linux enchantment, beckons community spirit. It bestows free and open-source spells, weaving a user-friendly OS that empowers wizards to navigate the digital landscape.',
+                'Ubuntu, a Linux enchantment, It bestows an open-source tool, weaving a user-friendly OS that empowers wizards to navigate the digital landscape.',
               Website: 'Ubuntu.com',
               Link: 'https://ubuntu.com/',
             },
@@ -203,6 +203,7 @@ i18n
             heroParagraphAccent:
               'These projects are the manifestation of my digital sorcery, inviting you to witness the magic forged through pixels and code.',
             ProjectsTitle: '<0>My <1>Projects</1></0>',
+            ProjectType: 'Type',
             ProjectsUsedTechnologies: 'Used technologies',
             ProjectOneTitle: 'Company website with “offer cart” and offer inquiry functionality.',
             ProjectOneParagraph:
@@ -212,7 +213,7 @@ i18n
             ProjectOneType: 'Commercial',
             ProjectTwoTitle: 'My portfolio website based on React, designed in Figma',
             ProjectTwoParagraph:
-              'By the magic of code and artistry, I crafted a digital grimoire – my front-end portfolio website. It reveals the essence of my sorcery, showcasing spells of design and enchantments of interactivity. With every click, visitors journey deeper into the mystic realm of my creations, where I, the web wizard, introduce myself with elegance and skill.',
+              'By the magic of code and artistry, I crafted a digital grimoire – my front-end portfolio website. It reveals the essence of my sorcery, showcasing spells of design and enchantments of interactivity. With every click, visitors journey deeper into the mystic realm of my creations, where I, the web wizard, thru them - introduce myself.',
             ProjectTwoWebsite: 'WizDev.de',
             ProjectTwoLink: 'https://wizdev.de/',
             ProjectTwoType: 'Hobby',
@@ -438,31 +439,31 @@ i18n
             },
             AdobePhotoshop: {
               Description:
-                'Photoshop, the artful magician of imagery, enchants pixels. It transforms photos and graphics with spells of editing, retouching, and manipulation, creating captivating visuals that defy reality.',
+                'Photoshop to pomysłowy magik, który swą mocą zaczarowuje piksele. Przekształca zdjęcia i grafikę za pomocą zaklęć edycji, retuszu oraz manipulacji, tworząc urzekające efekty wizualne.',
               Website: 'Adobe.com',
               Link: 'https://www.adobe.com/',
             },
             GIMP: {
               Description:
-                'GIMP, the open-source enchantress of imagery, wields creative magic. It crafts captivating graphics with powerful spells of editing, retouching, and manipulation, conjuring digital wonders for all.',
+                'GIMP niczym magiczna różdżka wykorzystuje mistyczne siły artyzmu w stylu open source. Dzięki zaklęciom edycji i manipulacji tworzy urzekającą grafikę, malując cyfrowe płótna cudami, zapraszając wszystkich do krainy nieograniczonej kreatywności.',
               Website: 'Gimp.com',
               Link: 'https://www.gimp.org/',
             },
             Nginx: {
               Description:
-                'NGINX, a mystical web server, accelerates enchanting journeys. It balances, caches, and safeguards with sorcery, providing high-performance and secure passage through the ethereal realms of the internet.',
+                'NGINX, mistyczny serwer sieciowy, przyspiesza czarujące cyfrowe podróże. Równoważy, buforuje i za pomocą swej magii dba o bezpieczeństwo, zapewniając wydajne i spokojne przejście przez eteryczne krainy internetu.',
               Website: 'Nginx.com',
               Link: 'https://www.nginx.com/',
             },
             Apache: {
               Description:
-                'Apache, an ancient server sorcerer, hosts digital realms. With spells of flexibility and open-source might, it enchants websites, conjuring pages and files for all who seek its magic.',
+                'Apache, mistyczny strażnik cyfrowych królestw, to kreator serwerów o nieograniczonej mocy. Swoimi tajemnymi zaklęciami powołuje do istnienia strony internetowe, tworząc skomplikowane sieci i oczarowując odwiedzających płynnym dostępem do skarbów świata online.',
               Website: 'HTTPD.Apache.org',
               Link: 'https://httpd.apache.org/',
             },
             Ubuntu: {
               Description:
-                'Ubuntu, a benevolent Linux enchantment, beckons community spirit. It bestows free and open-source spells, weaving a user-friendly OS that empowers wizards to navigate the digital landscape.',
+                'Ubuntu, zaklęcie Linuksa, zapewnia narzędzie o otwartym kodzie źródłowym, tworząc tym samym przyjazny dla użytkownika system operacyjny, który umożliwia czarodziejom poruszanie się po cyfrowym krajobrazie.',
               Website: 'Ubuntu.com',
               Link: 'https://ubuntu.com/',
             },
@@ -470,6 +471,50 @@ i18n
             buttonTwo: 'Back-End',
             buttonThree: 'Design',
             buttonFour: 'Servers',
+          },
+          myWorkPage: {
+            heroHeading: '<0>Wejdź do galerii <1>moich dzieł</1>.</0>',
+            heroParagraphOne:
+              'Tutaj, gdzie tajna sztuka front-end developmentu splata się z wyobraźnią. Oto gobelin cudów sieci utkany z zaklęć HTML, mikstur CSS, zwojów JavaScript i zaklęć React.',
+            heroParagraphAccent:
+              'Te projekty są manifestacją mojej cyfrowej magii i zapraszają Cię do bycia świadkiem czarów wykutych w pikselach i kodzie.',
+            ProjectsTitle: '<0>Moje <1>Projekty</1></0>',
+            ProjectType: 'Typ',
+            ProjectsUsedTechnologies: 'Użyte technologie',
+            ProjectOneTitle:
+              'Firmowa strona internetowa z "koszykiem ofertowym" i funkcjonalnością prośby o wystawienie oferty.',
+            ProjectOneParagraph:
+              'Strona internetowa, którą wyczarowałem dla szanownego klienta! Utkana z zaklęć o nietuzinkowym designie i potężnych czarów React przywołuje nowych klientów i oferuje wspaniałą scenę dla pozyskiwania magicznych ofert, a wszystko to w dążeniu do zwiększenia zadowolenia klientów i większej obecności marki w Internecie.',
+            ProjectOneWebsite: 'symbios.pl',
+            ProjectOneLink: 'https://symbios.pl/',
+            ProjectOneType: 'Komercyjny',
+            ProjectTwoTitle: 'Strona mojego portfolio, oparta o React, zaprojektowana w Figmie',
+            ProjectTwoParagraph:
+              'Dzięki magii kodu i kunsztu stworzyłem cyfrowy grymuar – moją witrynę z portfolio. Strona ta odsłania istotę moich czarów, ukazując zaklęcia projektowania i interaktywności. Z każdym kliknięciem odwiedzający podróżują głębiej do mistycznej krainy moich dzieł, gdzie ja, kreator ich sieci, poprzez nie się przedstawiam.',
+            ProjectTwoWebsite: 'WizDev.de',
+            ProjectTwoLink: 'https://wizdev.de/',
+            ProjectTwoType: 'Hobby',
+            ServicesTitle: '<0>My <1>Services</1></0>',
+            ServiceOneHeading: 'Apps',
+            ServiceOneParagraph:
+              "I infuse the digital canvas with the enchanting power of React, crafting applications that dance to the rhythm of interactivity. Through mystical components and spells of state management, I bestow websites with fluid interactions, ensuring they adapt seamlessly to every user's incantation.",
+            ServiceTwoHeading: 'Online Shops',
+            ServiceTwoParagraph:
+              "With the enchanting combination of Divi's captivating design wizardry and WooCommerce's mystical e-commerce powers, I weave online shops that are nothing short of magical.",
+            ServiceThreeHeading: 'Websites',
+            ServiceThreeParagraph:
+              "As a digital sorcerer, my craft is the art of enchanting websites upon the sacred scrolls of WordPress. With spells of customization and a wizard's touch, I conjure online realms that beckon visitors with irresistible allure and mystical functionality",
+            ServiceFourHeading: 'E-Mails',
+            ServiceFourParagraph:
+              "I harness the power of MJML to conjure responsive emails, employing its transformative spells to transmute mere code into visually stunning messages. This bewitching alchemy not only grants them a touch of elegance but also unlocks the unique advantages of MJML's efficiency and compatibility.",
+            ServiceFiveHeading: 'Design',
+            ServiceFiveParagraph:
+              "I craft captivating websites with precision and creativity in Figma. From pixel-perfect designs to seamless user experiences, I bring your digital vision to life with the power of Figma's versatile design tools.",
+            MyBlogHeading: '<0>My <1>Blog</1></0>',
+            MyBlogParagraph:
+              'Join me on a mystical journey through my Blog, where technology and wizardry collide to illuminate the wonders of the digital realm.',
+            MyBlogCallButton: "Let's go!",
+            MyBlogCommingSoon: 'Comming soon...',
           },
         },
       },
