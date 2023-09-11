@@ -497,7 +497,7 @@ i18n
             ServicesTitle: '<0>My <1>Services</1></0>',
             ServiceOneHeading: 'Apps',
             ServiceOneParagraph:
-              "I infuse the digital canvas with the enchanting power of React, crafting applications that dance to the rhythm of interactivity. Through mystical components and spells of state management, I bestow websites with fluid interactions, ensuring they adapt seamlessly to every user's incantation.",
+              'Wypełniam cyfrowe płótno czarującą mocą React, tworząc aplikacje, które tańczą w rytmie interaktywności. Poprzez mistyczne komponenty i zaklęcia zarządzania stanem, nadaję stronom płynnych interakcji, zapewniając, że dostosowują się do zaklęć każdego użytkownika.',
             ServiceTwoHeading: 'Online Shops',
             ServiceTwoParagraph:
               "With the enchanting combination of Divi's captivating design wizardry and WooCommerce's mystical e-commerce powers, I weave online shops that are nothing short of magical.",
