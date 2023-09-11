@@ -14,7 +14,7 @@ const MyWorkSectionHero = (props: Props) => {
     >
       <div className="p-12 text-center lg:text-left max-w-[1920px] lg:mr-[10vw] 2xl:mr-[20vw]">
         <Trans i18nKey="myWorkPage.heroHeading">
-          <h1 className="font-display text-2xl md:text-5xl font-medium max-w-xl">
+          <h1 className="font-display text-2xl md:text-5xl font-medium max-w-xl leading-[1.3!important]">
             Welcome here, where dreams
             <span className="text-transparent bg-gradient-to-br bg-clip-text from-pink to-orange">DO COME</span>
             alive!
