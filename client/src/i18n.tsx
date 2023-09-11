@@ -500,21 +500,35 @@ i18n
               'Wypełniam cyfrowe płótno czarującą mocą React, tworząc aplikacje, które tańczą w rytmie interaktywności. Poprzez mistyczne komponenty i zaklęcia zarządzania stanem, nadaję stronom płynnych interakcji, zapewniając, że dostosowują się do zaklęć każdego użytkownika.',
             ServiceTwoHeading: 'Online Shops',
             ServiceTwoParagraph:
-              "With the enchanting combination of Divi's captivating design wizardry and WooCommerce's mystical e-commerce powers, I weave online shops that are nothing short of magical.",
+              'Dzięki połączeniu magii projektowania Divi i mistycznych mocy WooCommerce, tworzę sklepy internetowe, które są po prostu magiczne.',
             ServiceThreeHeading: 'Websites',
             ServiceThreeParagraph:
-              "As a digital sorcerer, my craft is the art of enchanting websites upon the sacred scrolls of WordPress. With spells of customization and a wizard's touch, I conjure online realms that beckon visitors with irresistible allure and mystical functionality",
+              'Jako cyfrowy czarodziej zajmuję się sztuką zaklinania stron internetowych na świętych zwojach WordPressa. Zaklęciami dostosowywania wyczarowuję krainy online, które przyciągają gości nieodpartym urokiem i mistyczną funkcjonalnością',
             ServiceFourHeading: 'E-Mails',
             ServiceFourParagraph:
-              "I harness the power of MJML to conjure responsive emails, employing its transformative spells to transmute mere code into visually stunning messages. This bewitching alchemy not only grants them a touch of elegance but also unlocks the unique advantages of MJML's efficiency and compatibility.",
+              'Wykorzystuję moc MJML do tworzenia responsywnych e-maili, używając jego zaklęcia transformacyjnego do przekształcania zwykłego kodu w oszałamiające wizualnie wiadomości. Ta urzekająca alchemia nie tylko nadaje im odrobinę elegancji, ale także odblokowuje unikalne zalety wydajności i kompatybilności.',
             ServiceFiveHeading: 'Design',
             ServiceFiveParagraph:
-              "I craft captivating websites with precision and creativity in Figma. From pixel-perfect designs to seamless user experiences, I bring your digital vision to life with the power of Figma's versatile design tools.",
-            MyBlogHeading: '<0>My <1>Blog</1></0>',
+              'Tworzę wciągające strony internetowe z precyzją i kreatywnością w Figmie. Od projektów "pixel-perfect" po bezproblemowe doświadczenia użytkownika, ożywiam Twoją cyfrową wizję dzięki mocy wszechstronnych narzędzi Figmy.',
+            MyBlogHeading: '<0>Mój <1>Blog</1></0>',
             MyBlogParagraph:
-              'Join me on a mystical journey through my Blog, where technology and wizardry collide to illuminate the wonders of the digital realm.',
-            MyBlogCallButton: "Let's go!",
-            MyBlogCommingSoon: 'Comming soon...',
+              'Dołącz do mnie w mistycznej podróży po moim blogu, gdzie technologia i magia zderzają się, aby rzucić światło na cuda cyfrowej rzeczywistości.',
+            MyBlogCallButton: 'Zobacz!',
+            MyBlogCommingSoon: 'Nadejdzie wkrótce...',
+          },
+          ContactPage: {
+            HeroHeading: '<0>Połącz się <1>i</1> czaruj ze mną!</0>',
+            HeroParagraph:
+              'Niezależnie od tego, czy wyruszasz w cyfrową podróż, szukasz współpracy, czy po prostu chcesz się przywitać, skontaktuj się ze mną za pomocą poniższego formularza kontaktowego lub napisz do mnie e-mail.',
+            HeroAccent: 'Zaczarujmy coś razem!',
+            FormHeading: '<0>Niech <1>magia</1> się rozpocznie!</0>',
+            FormSubHeading: 'Feel free to reach out through various mystical channels.',
+            FormListItemOne: 'send an whisper via email',
+            FormListItemTwo: 'summon me via LinkedIn',
+            FormListItemThree: 'cast a communication spell with WhatsApp',
+            FormListItemFour: 'get in touch through the ethereal gates of Telegram',
+            FormEndingParagraph: "Alternatively, you'll find a contact form on the right for your convenience.",
+            FormEndingAccent: "Let's connect and create wonders!",
           },
         },
       },
