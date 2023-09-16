@@ -517,7 +517,7 @@ i18n
             MyBlogCommingSoon: 'Nadejdzie wkrótce...',
           },
           ContactPage: {
-            HeroHeading: '<0>Połącz się <1>i</1> czaruj ze mną!</0>',
+            HeroHeading: '<0>Skontaktuj się <1>i</1> czaruj ze mną!</0>',
             HeroParagraph:
               'Niezależnie od tego, czy wyruszasz w cyfrową podróż, szukasz współpracy, czy po prostu chcesz się przywitać, skontaktuj się ze mną za pomocą poniższego formularza kontaktowego lub napisz do mnie e-mail.',
             HeroAccent: 'Zaczarujmy coś razem!',
