@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next'
 import { AnimatePresence, motion } from 'framer-motion'
 
 interface Props {
-  activeCategory: 'frontEnd' | 'backEnd' | 'design' | 'servers'
+  activeCategory: string
   setactiveCategory: (arg: string) => void
 }
 const FourButtonsRow = (props: Props) => {
