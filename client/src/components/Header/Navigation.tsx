@@ -150,7 +150,10 @@ const Navigation = () => {
               </NavLink>
             </li>
             {menuState.myWork ? (
-              <div className="absolute min-w-[120px] bg-[#09022e40]">
+              <div
+                className="absolute min-w-[120px] bg-[#09022e40]"
+                onClick={() => mouseOverMenuHandler('leave', 'myWork')}
+              >
                 <li>
                   <NavLink
                     className="h-14 w-full flex px-5 items-center hover:bg-gradient-to-br hover:bg-clip-text hover:from-pink hover:to-orange hover:text-transparent"
@@ -200,7 +203,10 @@ const Navigation = () => {
               </NavLink>
             </li>
             {menuState.about ? (
-              <div className="absolute min-w-[120px] bg-[#09022e40]">
+              <div
+                className="absolute min-w-[120px] bg-[#09022e40]"
+                onClick={() => mouseOverMenuHandler('leave', 'about')}
+              >
                 <li>
                   <NavLink
                     className="h-14 w-full flex px-5 items-center hover:bg-gradient-to-br hover:bg-clip-text hover:from-pink hover:to-orange hover:text-transparent"
