@@ -36,6 +36,7 @@ const About = () => {
       <Helmet>
         <title>{t('helmet.title')}</title>
         <meta name="description" content={t('helmet.description')} />
+        <meta httpEquiv="Content-Language" content={t('helmet.code')} />
       </Helmet>
       <HeroSection
         buttonOne={t('aboutPage.buttonOne')}
