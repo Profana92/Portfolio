@@ -15,6 +15,11 @@ i18n
     resources: {
       en: {
         translation: {
+          helmet: {
+            title: 'About | Wojciech Marczak | Let&apos;s Build The Web Together!',
+            description:
+              'Step into the Enchanted Realm of My Front-End Developer Portfolio! Embark on a magical journey through my creations, skills, and projects. Together, we shall conjure extraordinary websites! May your visit be filled with wonder and delight!',
+          },
           navigation: {
             home: 'Home',
             magic: 'My Magic',
