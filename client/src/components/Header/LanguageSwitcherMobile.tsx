@@ -61,6 +61,7 @@ const LanguageSwitcherMobile = () => {
               onClick={() => {
                 setlanguageSwitcherOpen((prevstate) => !prevstate)
                 i18n.changeLanguage(lng)
+                i18n.on('languageChanged', (lng) => (document.documentElement.lang = lng))
               }}
             >
               <Flag
