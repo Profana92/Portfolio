@@ -34,11 +34,8 @@ const About = () => {
   return (
     <div>
       <Helmet>
-        <title> Home | Wojciech Marczak | Let&apos;s Build The Web Together! </title>
-        <meta
-          name="description"
-          content="Welcome to my front-end developer portfolio! Take a tour of my work, skills, and projects. Let's create stunning websites together! Enjoy your visit!"
-        />
+        <title>{t('helmet.title')}</title>
+        <meta name="description" content={t('helmet.description')} />
       </Helmet>
       <HeroSection
         buttonOne={t('aboutPage.buttonOne')}
