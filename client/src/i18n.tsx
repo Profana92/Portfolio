@@ -290,9 +290,9 @@ i18n
           helmet: {
             code: 'pl-pl',
             homeTitle: 'Start | Zbudujmy coś wspólnie!',
-            myWorkTitle: 'fs | Zobacz moje dzieła',
-            contactTitle: 'Contact | Wezwij mnie!',
-            aboutTitle: 'About | My personal story',
+            myWorkTitle: 'Portfolio | Zobacz moje dzieła',
+            contactTitle: 'Kontakt | Przywołaj mnie!',
+            aboutTitle: 'O mnie | My personal story',
             homeDescription:
               'Step into the Enchanted Realm of My Front-End Developer Portfolio! Embark on a magical journey through my creations, skills, and projects. Together, we shall conjure extraordinary websites! May your visit be filled with wonder and delight!',
             myWorkDescription: 'Behold the wondrous manifestations of my enchanted craftsmanship!',

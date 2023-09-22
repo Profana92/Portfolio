@@ -6,7 +6,7 @@ interface lngsInterface {
 }
 const lngs: lngsInterface = {
   en: { nativeName: 'English' },
-  de: { nativeName: 'Deutsch' },
+  // de: { nativeName: 'Deutsch' },
   pl: { nativeName: 'Polski' },
 }
 
