@@ -27,8 +27,10 @@ const HeroSection = () => {
           additionalInternalClasses=""
         />
         <Paragraph
+          decoration="partial"
           decorationInternal={true}
-          textSource="HomePage.heroParagraph"
+          textKey="HomePage.heroParagraph"
+          textContent="HomePage.heroParagraph"
           additionalExternalClasses=""
           additionalInternalClasses=""
         />
