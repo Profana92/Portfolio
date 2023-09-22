@@ -1,8 +1,8 @@
 import { useEffect } from 'react'
-import { Helmet } from 'react-helmet-async'
 import { useTranslation } from 'react-i18next'
 import { useLocation } from 'react-router-dom'
 
+import ReactHelmet from '../../components/Effects/ReactHelmet'
 import HeroSection from '../../components/Sections/AboutSectionHero'
 import AboutSectionMySkills from '../../components/Sections/AboutSectionMySkills'
 const About = () => {
@@ -33,11 +33,11 @@ const About = () => {
 
   return (
     <div>
-      <Helmet>
-        <title>{t('helmet.title')}</title>
-        <meta name="description" content={t('helmet.description')} />
-        <meta httpEquiv="Content-Language" content={t('helmet.code')} />
-      </Helmet>
+      <ReactHelmet
+        title={t('helmet.aboutTitle')}
+        description={t('helmet.aboutDescription')}
+        contentLanguage={t('helmet.code')}
+      />
       <HeroSection
         buttonOne={t('aboutPage.buttonOne')}
         buttonTwo={t('aboutPage.buttonTwo')}

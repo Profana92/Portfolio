@@ -15,7 +15,7 @@ const Header = (props: Props) => {
     >
       <p className="z-10 text-3xl text-transparent font-black bg-gradient-to-br bg-clip-text from-pink to-orange">
         <Link to="/" tabIndex={-1}>
-          WIZdev.
+          <span className="text-white">WIZ</span>dev.
         </Link>
       </p>
       <div className="flex items-center flex-row gap-2 z-10 h-full">

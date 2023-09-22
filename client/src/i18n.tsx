@@ -16,10 +16,17 @@ i18n
       en: {
         translation: {
           helmet: {
-            code: "en-us",
-            title: 'About | Wojciech Marczak | Let&apos;s Build The Web Together!',
-            description:
+            code: 'en-us',
+            homeTitle: "Home | Let's Build Together!",
+            myWorkTitle: 'My Work | See my creations',
+            contactTitle: 'Contact | Summon me!',
+            aboutTitle: 'About | My personal story',
+            homeDescription:
               'Step into the Enchanted Realm of My Front-End Developer Portfolio! Embark on a magical journey through my creations, skills, and projects. Together, we shall conjure extraordinary websites! May your visit be filled with wonder and delight!',
+            myWorkDescription: 'Behold the wondrous manifestations of my enchanted craftsmanship!',
+            contactDescription:
+              "The magic of communication awaits your conjuration. Contact me, and let's weave wonders together.",
+            aboutDescription: 'Venture deeper into my mystical realm, where secrets of my journey unfold.',
           },
           navigation: {
             home: 'Home',
@@ -280,6 +287,19 @@ i18n
       },
       pl: {
         translation: {
+          helmet: {
+            code: 'pl-pl',
+            homeTitle: 'Start | Zbudujmy coś wspólnie!',
+            myWorkTitle: 'fs | Zobacz moje dzieła',
+            contactTitle: 'Contact | Wezwij mnie!',
+            aboutTitle: 'About | My personal story',
+            homeDescription:
+              'Step into the Enchanted Realm of My Front-End Developer Portfolio! Embark on a magical journey through my creations, skills, and projects. Together, we shall conjure extraordinary websites! May your visit be filled with wonder and delight!',
+            myWorkDescription: 'Behold the wondrous manifestations of my enchanted craftsmanship!',
+            contactDescription:
+              "The magic of communication awaits your conjuration. Contact me, and let's weave wonders together.",
+            aboutDescription: 'Venture deeper into my mystical realm, where secrets of my journey unfold.',
+          },
           navigation: {
             home: 'Start',
             magic: 'Magia',

@@ -1,8 +1,8 @@
 import { useEffect } from 'react'
-import { Helmet } from 'react-helmet-async'
 import { useTranslation } from 'react-i18next'
 import { useLocation } from 'react-router-dom'
 
+import ReactHelmet from '../../components/Effects/ReactHelmet'
 import HeroSectionMySpells from '../../components/Sections/HeroSectionMySpells'
 import HeroSectionTools from '../../components/Sections/HeroSectionTools'
 import HeroSection from '../../components/Sections/HeroSectionWithButtons'
@@ -34,13 +34,11 @@ const Home = () => {
 
   return (
     <div>
-      <Helmet>
-        <title> Home | Wojciech Marczak | Let&apos;s Build The Web Together! </title>
-        <meta
-          name="description"
-          content="Welcome to my front-end developer portfolio! Take a tour of my work, skills, and projects. Let's create stunning websites together! Enjoy your visit!"
-        />
-      </Helmet>
+      <ReactHelmet
+        title={t('helmet.homeTitle')}
+        description={t('helmet.homeDescription')}
+        contentLanguage={t('helmet.code')}
+      />
       <HeroSection
         buttonOne={t('HomePage.buttonOne')}
         buttonTwo={t('HomePage.buttonTwo')}

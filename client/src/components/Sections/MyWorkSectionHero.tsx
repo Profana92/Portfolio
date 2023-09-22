@@ -10,7 +10,7 @@ const MyWorkSectionHero = (props: Props) => {
   return (
     <section
       id="hero"
-      className="relative bg-myWork-hero-pattern lg:bg-myWork-hero-pattern-desktop bg-[left_-300px_bottom] sm:bg-[left_-200px_bottom] md:bg-[left_-200px_bottom] lg:bg-[center_-500px_bottom] xl:bg-[center_-500px_bottom] 2xl:bg-[center_bottom] min-h-dvh bg-cover bg-no-repeat pt-12 flex justify-center lg:justify-end items-center"
+      className="relative bg-myWork-hero-pattern lg:bg-myWork-hero-pattern-desktop min-h-dvh bg-cover bg-no-repeat pt-12 flex justify-center lg:justify-end items-center"
     >
       <div className="p-12 text-center lg:text-left max-w-[1920px] lg:mr-[10vw] 2xl:mr-[20vw]">
         <Trans i18nKey="myWorkPage.heroHeading">

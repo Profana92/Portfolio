@@ -15,7 +15,7 @@ const LanguageSwitcherMobile = () => {
   const { i18n } = useTranslation()
 
   return (
-    <div className="relative w-36 h-8 my-5 z-10 clickable">
+    <div className="relative h-8 my-5 z-10 clickable">
       <ul className="text-md self-baseline my-auto transition-all">
         <li
           className={`w-full flex flex-row gap-2 items-center justify-start h-8 px-2`}
@@ -48,9 +48,9 @@ const LanguageSwitcherMobile = () => {
         </li>
 
         <div
-          className={`absolute bottom-full transition-all duration-300 w-full max-h-0 overflow-hidden
-            ${languageSwitcherOpen ? 'max-h-[500px] ' : 'overflow-auto duration-150'}
-          `}
+          className={`absolute bottom-full transition-all duration-300 w-full max-h-0 ${
+            languageSwitcherOpen ? 'max-h-[500px] ' : 'overflow-auto duration-150'
+          }`}
         >
           {Object.keys(lngs).map((lng) => (
             <li
