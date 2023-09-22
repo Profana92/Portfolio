@@ -70,7 +70,7 @@ i18n
               'This enchanting framework magically revamps the user interface, effortlessly rendering captivating visuals that adapt swiftly to any interaction.',
           },
           aboutPage: {
-            heroHeading: '<0>So, <1>Who Am I?</1></0>',
+            heroHeading: '<0>So, <1>Who Am I</1>?</0>',
             heroParagraphOne:
               'I’m a passionate front-end developer with a creative flair for crafting seamless user experiences. I utilize HTML, CSS, JS, and React for website construction, and employ Figma, Adobe XD, Adobe Illustrator, and Photoshop for design. Deploying websites is achieved through Ubuntu, Nginx, and Apache. Moreover, I bring ecommerce websites to life using Wordpress, Divi, and Woocommerce.',
             heroParagraphTwo:
@@ -359,7 +359,7 @@ i18n
             errorMaxLength: 'Przekroczono limit 20 znaków',
           },
           aboutPage: {
-            heroHeading: '<0>Kim więc <1>jestem?</1></0>',
+            heroHeading: '<0>Kim więc <1>jestem</1>?</0>',
             heroParagraphOne:
               'Jestem zapalonym programistą front-end z kreatywnym zacięciem do tworzenia nieskazitelnych doświadczeń dla użytkownika. Do budowy stron internetowych wykorzystuję HTML, CSS, JS i React, a do projektowania Figmę, Adobe XD, Adobe Illustrator i Photoshop. Wdrażanie stron internetowych odbywa się za pośrednictwem Ubuntu, Nginx i Apache. Ponadto tworzę witryny e-commerce za pomocą Wordpress, Divi i Woocommerce.',
             heroParagraphTwo:
@@ -499,7 +499,7 @@ i18n
             buttonFour: 'Servers',
           },
           myWorkPage: {
-            heroHeading: '<0>Wejdź do galerii <1>moich dzieł</1>.</0>',
+            heroHeading: '<0>Wstąp do galerii <1>moich dzieł</1>.</0>',
             heroParagraphOne:
               'Tutaj, gdzie tajna sztuka front-end developmentu splata się z wyobraźnią. Oto gobelin cudów sieci utkany z zaklęć HTML, mikstur CSS, zwojów JavaScript i zaklęć React.',
             heroParagraphAccent:

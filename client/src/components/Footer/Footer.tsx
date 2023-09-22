@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import Hands from '../../assets/Hands.png'
 import InstagramIcon from '../../assets/InstagramIcon.svg'
 import LinkedInIcon from '../../assets/LinkedInIcon.svg'
-import MessangerIcon from '../../assets/MessangerIcon.svg'
+// import MessangerIcon from '../../assets/MessangerIcon.svg'
 import TwitterIcon from '../../assets/TwitterIcon.svg'
 import LanguageSwitcherMobile from '../Header/LanguageSwitcherMobile'
 
@@ -43,9 +43,9 @@ const Footer = () => {
             <Link to="https://twitter.com/WIZdevLabs">
               <img src={TwitterIcon} alt="Twitter Icon with link" className="w-8 h-8 lg:w-10 lg:h-10" />
             </Link>
-            <Link to="">
+            {/* <Link to="">
               <img src={MessangerIcon} alt="MessangerIcon Icon with link" className="w-8 h-8 lg:w-10 lg:h-10" />
-            </Link>
+            </Link> */}
             <Link to="https://www.linkedin.com/in/wojciech-marczak-39bb89104/">
               <img src={LinkedInIcon} alt="LinkedInIcon Icon with link" className="w-8 h-8 lg:w-10 lg:h-10" />
             </Link>

@@ -1,4 +1,4 @@
-{
+{"ignorePatterns": ["smtp.js"],
   "env": {
     "browser": true,
     "node": true,
