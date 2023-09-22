@@ -16,10 +16,17 @@ i18n
       en: {
         translation: {
           helmet: {
-            code: "en-us",
-            title: 'About | Wojciech Marczak | Let&apos;s Build The Web Together!',
-            description:
+            code: 'en-us',
+            homeTitle: "Home | Let's Build Together!",
+            myWorkTitle: 'My Work | See my creations',
+            contactTitle: 'Contact | Summon me!',
+            aboutTitle: 'About | My personal story',
+            homeDescription:
               'Step into the Enchanted Realm of My Front-End Developer Portfolio! Embark on a magical journey through my creations, skills, and projects. Together, we shall conjure extraordinary websites! May your visit be filled with wonder and delight!',
+            myWorkDescription: 'Behold the wondrous manifestations of my enchanted craftsmanship!',
+            contactDescription:
+              "The magic of communication awaits your conjuration. Contact me, and let's weave wonders together.",
+            aboutDescription: 'Venture deeper into my mystical realm, where secrets of my journey unfold.',
           },
           navigation: {
             home: 'Home',
@@ -63,7 +70,7 @@ i18n
               'This enchanting framework magically revamps the user interface, effortlessly rendering captivating visuals that adapt swiftly to any interaction.',
           },
           aboutPage: {
-            heroHeading: '<0>So, <1>Who Am I?</1></0>',
+            heroHeading: '<0>So, <1>Who Am I</1>?</0>',
             heroParagraphOne:
               'I’m a passionate front-end developer with a creative flair for crafting seamless user experiences. I utilize HTML, CSS, JS, and React for website construction, and employ Figma, Adobe XD, Adobe Illustrator, and Photoshop for design. Deploying websites is achieved through Ubuntu, Nginx, and Apache. Moreover, I bring ecommerce websites to life using Wordpress, Divi, and Woocommerce.',
             heroParagraphTwo:
@@ -280,6 +287,19 @@ i18n
       },
       pl: {
         translation: {
+          helmet: {
+            code: 'pl-pl',
+            homeTitle: 'Start | Zbudujmy coś wspólnie!',
+            myWorkTitle: 'Portfolio | Zobacz moje dzieła',
+            contactTitle: 'Kontakt | Przywołaj mnie!',
+            aboutTitle: 'O mnie | My personal story',
+            homeDescription:
+              'Step into the Enchanted Realm of My Front-End Developer Portfolio! Embark on a magical journey through my creations, skills, and projects. Together, we shall conjure extraordinary websites! May your visit be filled with wonder and delight!',
+            myWorkDescription: 'Behold the wondrous manifestations of my enchanted craftsmanship!',
+            contactDescription:
+              "The magic of communication awaits your conjuration. Contact me, and let's weave wonders together.",
+            aboutDescription: 'Venture deeper into my mystical realm, where secrets of my journey unfold.',
+          },
           navigation: {
             home: 'Start',
             magic: 'Magia',
@@ -339,7 +359,7 @@ i18n
             errorMaxLength: 'Przekroczono limit 20 znaków',
           },
           aboutPage: {
-            heroHeading: '<0>Kim więc <1>jestem?</1></0>',
+            heroHeading: '<0>Kim więc <1>jestem</1>?</0>',
             heroParagraphOne:
               'Jestem zapalonym programistą front-end z kreatywnym zacięciem do tworzenia nieskazitelnych doświadczeń dla użytkownika. Do budowy stron internetowych wykorzystuję HTML, CSS, JS i React, a do projektowania Figmę, Adobe XD, Adobe Illustrator i Photoshop. Wdrażanie stron internetowych odbywa się za pośrednictwem Ubuntu, Nginx i Apache. Ponadto tworzę witryny e-commerce za pomocą Wordpress, Divi i Woocommerce.',
             heroParagraphTwo:
@@ -479,7 +499,7 @@ i18n
             buttonFour: 'Servers',
           },
           myWorkPage: {
-            heroHeading: '<0>Wejdź do galerii <1>moich dzieł</1>.</0>',
+            heroHeading: '<0>Wstąp do galerii <1>moich dzieł</1>.</0>',
             heroParagraphOne:
               'Tutaj, gdzie tajna sztuka front-end developmentu splata się z wyobraźnią. Oto gobelin cudów sieci utkany z zaklęć HTML, mikstur CSS, zwojów JavaScript i zaklęć React.',
             heroParagraphAccent:

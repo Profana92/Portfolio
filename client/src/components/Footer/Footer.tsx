@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom'
 import Hands from '../../assets/Hands.png'
 import InstagramIcon from '../../assets/InstagramIcon.svg'
 import LinkedInIcon from '../../assets/LinkedInIcon.svg'
-import MessangerIcon from '../../assets/MessangerIcon.svg'
+// import MessangerIcon from '../../assets/MessangerIcon.svg'
+import TwitterIcon from '../../assets/TwitterIcon.svg'
 import LanguageSwitcherMobile from '../Header/LanguageSwitcherMobile'
 
 import FooterForm from './FooterForm'
@@ -34,14 +35,17 @@ const Footer = () => {
             </p>
           </Trans>
         </div>
-        <div className="row-start-4 row-end-5 px-6 flex justify-between gap-6">
-          <div className="flex gap-3 my-5 ">
+        <div className="row-start-4 row-end-5 px-6 flex justify-between">
+          <div className="flex gap-3 my-5 flex-wrap max-w-[40%]">
             <Link to="https://www.instagram.com/wizdevlabs/">
               <img src={InstagramIcon} alt="Instagram Icon with link" className="w-8 h-8 lg:w-10 lg:h-10" />
             </Link>
-            <Link to="">
-              <img src={MessangerIcon} alt="MessangerIcon Icon with link" className="w-8 h-8 lg:w-10 lg:h-10" />
+            <Link to="https://twitter.com/WIZdevLabs">
+              <img src={TwitterIcon} alt="Twitter Icon with link" className="w-8 h-8 lg:w-10 lg:h-10" />
             </Link>
+            {/* <Link to="">
+              <img src={MessangerIcon} alt="MessangerIcon Icon with link" className="w-8 h-8 lg:w-10 lg:h-10" />
+            </Link> */}
             <Link to="https://www.linkedin.com/in/wojciech-marczak-39bb89104/">
               <img src={LinkedInIcon} alt="LinkedInIcon Icon with link" className="w-8 h-8 lg:w-10 lg:h-10" />
             </Link>

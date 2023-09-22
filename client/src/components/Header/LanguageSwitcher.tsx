@@ -6,7 +6,7 @@ interface lngsInterface {
 }
 const lngs: lngsInterface = {
   en: { nativeName: 'English' },
-  de: { nativeName: 'Deutsch' },
+  // de: { nativeName: 'Deutsch' },
   pl: { nativeName: 'Polski' },
 }
 
@@ -59,8 +59,8 @@ const LanguageSwitcher = () => {
               key={lng}
               onClick={() => {
                 setlanguageSwitcherOpen((prevstate) => !prevstate)
-                i18n.changeLanguage(lng)
                 i18n.on('languageChanged', (lng) => (document.documentElement.lang = lng))
+                i18n.changeLanguage(lng)
               }}
             >
               <Flag

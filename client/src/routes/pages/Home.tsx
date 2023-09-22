@@ -1,10 +1,10 @@
 import { useEffect } from 'react'
-import { Helmet } from 'react-helmet-async'
 import { useTranslation } from 'react-i18next'
 import { useLocation } from 'react-router-dom'
 
-import HeroSectionMySpells from '../../components/Sections/HeroSectionMySpells'
-import HeroSectionTools from '../../components/Sections/HeroSectionTools'
+import ReactHelmet from '../../components/Effects/ReactHelmet'
+import SectionMySpells from '../../components/Sections/HeroSectionMySpells'
+import SectionTools from '../../components/Sections/HeroSectionTools'
 import HeroSection from '../../components/Sections/HeroSectionWithButtons'
 const Home = () => {
   const { t } = useTranslation()
@@ -33,26 +33,15 @@ const Home = () => {
   }, [])
 
   return (
-    <div>
-      <Helmet>
-        <title> Home | Wojciech Marczak | Let&apos;s Build The Web Together! </title>
-        <meta
-          name="description"
-          content="Welcome to my front-end developer portfolio! Take a tour of my work, skills, and projects. Let's create stunning websites together! Enjoy your visit!"
-        />
-      </Helmet>
-      <HeroSection
-        buttonOne={t('HomePage.buttonOne')}
-        buttonTwo={t('HomePage.buttonTwo')}
-        heroHeading={t('HomePage.heroHeading')}
-        heroParagraph={t('HomePage.heroParagraph')}
-        callToAction={t('HomePage.callToAction')}
+    <>
+      <ReactHelmet
+        title={t('helmet.homeTitle')}
+        description={t('helmet.homeDescription')}
+        contentLanguage={t('helmet.code')}
       />
-      <HeroSectionMySpells
-        sectionOneDescription={t('HomePage.sectionOneDescription')}
-        sectionOneParagraph={t('HomePage.sectionOneParagraph')}
-      />
-      <HeroSectionTools
+      <HeroSection />
+      <SectionMySpells />
+      <SectionTools
         SectionTwoElementOneDescription={t('HomePage.SectionTwoElementOneDescription')}
         SectionTwoElementTwoDescription={t('HomePage.SectionTwoElementTwoDescription')}
         SectionTwoElementThreeDescription={t('HomePage.SectionTwoElementThreeDescription')}
@@ -66,7 +55,7 @@ const Home = () => {
         SectionTwoElementThreeParagraph={t('HomePage.SectionTwoElementThreeParagraph')}
         SectionTwoElementFourParagraph={t('HomePage.SectionTwoElementFourParagraph')}
       />
-    </div>
+    </>
   )
 }
 

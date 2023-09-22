@@ -1,7 +1,7 @@
-import { Trans } from 'react-i18next'
 import { Link } from 'react-router-dom'
 
 import bottomDivider from '../../assets/aboutHeroDivider.svg'
+import HeadingMain from '../UI/Heading/HeadingMain'
 interface Props {
   buttonOne: string
   buttonTwo: string
@@ -19,13 +19,8 @@ const AboutSectionHero = (props: Props) => {
       className="bg-about-hero-pattern bg-[left_-300px_bottom] sm:bg-[left_-200px_bottom] md:bg-[left_-200px_bottom] lg:bg-[center_-500px_bottom] xl:bg-[center_-500px_bottom] 2xl:bg-[center_bottom] min-h-dvh bg-cover bg-no-repeat  py-12 flex justify-center lg:justify-end items-center relative"
     >
       <div className="p-12 text-center lg:text-left max-w-[1920px] lg:mr-[10vw] 2xl:mr-[20vw]">
-        <Trans i18nKey="aboutPage.heroHeading">
-          <h1 className="font-display text-2xl md:text-5xl font-medium max-w-xl leading-[1.3!important]">
-            Welcome here, where dreams
-            <span className="text-transparent bg-gradient-to-br bg-clip-text from-pink to-orange">DO COME</span>
-            alive!
-          </h1>
-        </Trans>
+        <HeadingMain decorationInternal={false} textSource="aboutPage.heroHeading" additionalExternalClasses="" />
+
         <p className="my-5 max-w-xl leading-normal text-sm md:text-base">{props.heroParagraphOne}</p>
         <p className="my-5 max-w-xl leading-normal text-sm md:text-base">{props.heroParagraphTwo}</p>
         <p className="my-5 max-w-xl leading-normal text-sm md:text-base">{props.heroParagraphThree}</p>
