@@ -41,20 +41,7 @@ const Home = () => {
       />
       <HeroSection />
       <SectionMySpells />
-      <SectionTools
-        SectionTwoElementOneDescription={t('HomePage.SectionTwoElementOneDescription')}
-        SectionTwoElementTwoDescription={t('HomePage.SectionTwoElementTwoDescription')}
-        SectionTwoElementThreeDescription={t('HomePage.SectionTwoElementThreeDescription')}
-        SectionTwoElementFourDescription={t('HomePage.SectionTwoElementFourDescription')}
-        SectionTwoElementOneHeading={t('HomePage.SectionTwoElementOneHeading')}
-        SectionTwoElementTwoHeading={t('HomePage.SectionTwoElementTwoHeading')}
-        SectionTwoElementThreeHeading={t('HomePage.SectionTwoElementThreeHeading')}
-        SectionTwoElementFourHeading={t('HomePage.SectionTwoElementFourHeading')}
-        SectionTwoElementOneParagraph={t('HomePage.SectionTwoElementOneParagraph')}
-        SectionTwoElementTwoParagraph={t('HomePage.SectionTwoElementTwoParagraph')}
-        SectionTwoElementThreeParagraph={t('HomePage.SectionTwoElementThreeParagraph')}
-        SectionTwoElementFourParagraph={t('HomePage.SectionTwoElementFourParagraph')}
-      />
+      <SectionTools />
     </>
   )
 }
