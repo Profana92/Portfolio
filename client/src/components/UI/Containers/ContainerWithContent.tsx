@@ -1,10 +1,21 @@
 interface Props {
   children: JSX.Element[]
+  additionalClasses?: string
 }
 
-const ContainerWithContent = ({ children }: Props) => {
+const ContainerWithContent = ({ children, additionalClasses }: Props) => {
+  if (additionalClasses)
+    return (
+      <div
+        className={`flex w-full max-w-[1440px] mx-auto gap-0 justify-between items-center p-12 flex-col lg:flex-row text-center lg:text-left ${additionalClasses}`}
+      >
+        {children}
+      </div>
+    )
   return (
-    <div className="flex max-w-[1640px] mx-auto gap-12 justify-between items-center p-12 flex-col lg:flex-row text-center lg:text-left">
+    <div
+      className={`flex w-full max-w-[1440px] mx-auto gap-0 justify-between items-center p-12 flex-col lg:flex-row text-center lg:text-left`}
+    >
       {children}
     </div>
   )

@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next'
 
 import floatingItems from '../../assets/Floating_items_tiny.png'
-import bottomDivider from '../../assets/HeroMagicBottomDivider.svg'
 import ContainerWithContent from '../UI/Containers/ContainerWithContent'
 import HeadingSecondary from '../UI/Heading/HeadingSecondary'
 import Paragraph from '../UI/Paragraph/Paragraph'
@@ -12,7 +11,7 @@ const HeroSectionMySpells = () => {
   return (
     <section id="magic">
       <div className="h-[100px] bg-gradient-to-b from-[#130C6C] to-[#170126]"></div>
-      <div className="bg-gradient-to-b from-[#170126] to-[#280C20]">
+      <div className="bg-gradient-to-b from-[#170126] to-[#33091D]">
         <ContainerWithContent>
           <div>
             <ParagraphUppercase textContent={t('HomePage.sectionOneDescription')} />
@@ -25,7 +24,6 @@ const HeroSectionMySpells = () => {
             className="w-[70%] lg:w-[40%]"
           />
         </ContainerWithContent>
-        <img src={bottomDivider} alt="Section bottom divider image" className="w-full" />
       </div>
     </section>
   )
