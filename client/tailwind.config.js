@@ -5,7 +5,7 @@ export default {
     extend: {
       screens: {
         buttonsFix: '402px',
-        tall: { raw: '(min-height: 420px)' },
+        tall: { raw: '(min-height: 650px)' },
         'min-mobile-menu-height': { raw: '(max-height: 650px)' },
       },
       minHeight: {

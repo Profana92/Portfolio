@@ -19,7 +19,7 @@ const HeroSection = () => {
       id="home"
       className="bg-home-hero-pattern min-h-dvh bg-cover bg-no-repeat bg-bottom pt-12 flex justify-center items-center"
     >
-      <ContainerWithContent additionalClasses="w-[100%] lg:flex-col lg:items-start ">
+      <ContainerWithContent additionalClasses="w-[100%] lg:flex-col lg:items-start">
         <HeadingMain decorationInternal={false} textSource="HomePage.heroHeading" />
         <Paragraph
           decoration="partial"
@@ -28,7 +28,12 @@ const HeroSection = () => {
           textContent="HomePage.heroParagraph"
         />
         <div className="w-full">
-          <Button type="primary" textSource={t('HomePage.buttonOne')} link="/#magic" />
+          <Button
+            type="primary"
+            textSource={t('HomePage.buttonOne')}
+            link="/#magic"
+            additionalClasses="mb-6 lg:mb-auto"
+          />
           <Button type="secondary" textSource={t('HomePage.buttonTwo')} link="/my-work/#projects" />
         </div>
       </ContainerWithContent>

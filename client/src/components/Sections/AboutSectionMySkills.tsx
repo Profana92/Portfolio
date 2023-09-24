@@ -23,8 +23,18 @@ import TypeScriptIcon from '../Icons/TypeScriptIcon'
 import UbuntuIcon from '../Icons/UbuntuIcon'
 import WooCommerceIcon from '../Icons/WooCommerceIcon'
 import WordpressIcon from '../Icons/WordpressIcon'
+import ButtonForTechnologies from '../UI/Buttons/ButtonForTechnologies'
+import ContainerWithContent from '../UI/Containers/ContainerWithContent'
+import Paragraph from '../UI/Paragraph/Paragraph'
+
+interface TechnologiesIF {
+  [key: string]: {
+    technology: string
+    icon: any
+  }[]
+}
 const AboutSectionMySkills = () => {
-  const technologies = {
+  const technologies: TechnologiesIF = {
     frontEnd: [
       { technology: 'HTML', icon: HTMLIcon },
       { technology: 'CSS', icon: CSSIcon },
@@ -61,62 +71,42 @@ const AboutSectionMySkills = () => {
   const { t } = useTranslation()
   return (
     <section id="skills" className="bg-gradient-to-b from-[#1E0E32] to-[#440B7E] text-center lg:px-12 pt-12">
-      <div className="flex flex-col bg-[#D9D9D90D] max-w-[90vw] mx-auto rounded-md shadow-lg  pt-12 pb-6 lg:max-w-[1920px]">
+      <ContainerWithContent additionalClasses="bg-[#D9D9D90D] lg:flex-col">
         <div className="flex flex-col md:flex-row items-center md:justify-center gap-3 md:gap-6">
-          <div className="w-[162px] inline-block rounded-[5px] bg-gradient-to-r from-pink to-orange p-[1px]">
-            <button
-              className={`inline-block w-40 ${
-                activeCategory === 'frontEnd' ? 'bg-buttonOrange' : ' bg-buttonBlue'
-              } buttonsFix:mr-2 md:mr-8 text-center leading-[50px] rounded-[5px] text-sm md:text-base md:leading-[50px]`}
-              onClick={() => {
-                setActiveTechnology('HTML')
-                setActiveCategory('frontEnd')
-              }}
-            >
-              {t('mySkills.buttonOne')}
-            </button>
-          </div>
-          <div className="w-[162px] inline-block rounded-[5px] bg-gradient-to-r from-pink to-orange p-[1px]">
-            <button
-              className={`inline-block w-40 ${
-                activeCategory === 'backEnd' ? 'bg-buttonOrange' : ' bg-buttonBlue'
-              } buttonsFix:mr-2 md:mr-8 text-center leading-[50px] rounded-[5px] text-sm md:text-base md:leading-[50px]`}
-              onClick={() => {
-                setActiveTechnology('NodeJs')
-                setActiveCategory('backEnd')
-              }}
-            >
-              {t('mySkills.buttonTwo')}
-            </button>
-          </div>
-          <div className="w-[162px] inline-block rounded-[5px] bg-gradient-to-r from-pink to-orange p-[1px]">
-            <button
-              className={`inline-block w-40 ${
-                activeCategory === 'design' ? 'bg-buttonOrange' : ' bg-buttonBlue'
-              } buttonsFix:mr-2 md:mr-8 text-center leading-[50px] rounded-[5px] text-sm md:text-base md:leading-[50px]`}
-              onClick={() => {
-                setActiveTechnology('Figma')
-                setActiveCategory('design')
-              }}
-            >
-              {t('mySkills.buttonThree')}
-            </button>
-          </div>
-          <div className="w-[162px] inline-block rounded-[5px] bg-gradient-to-r from-pink to-orange p-[1px]">
-            <button
-              className={`inline-block w-40 ${
-                activeCategory === 'servers' ? 'bg-buttonOrange' : ' bg-buttonBlue'
-              } buttonsFix:mr-2 md:mr-8 text-center leading-[50px] rounded-[5px] text-sm md:text-base md:leading-[50px]`}
-              onClick={() => {
-                setActiveTechnology('Nginx')
-                setActiveCategory('servers')
-              }}
-            >
-              {t('mySkills.buttonFour')}
-            </button>
-          </div>
+          <ButtonForTechnologies
+            textContent={t('mySkills.buttonOne')}
+            activeCategory={activeCategory}
+            setActiveTechnology={setActiveTechnology}
+            setActiveCategory={setActiveCategory}
+            technologyToSet="HTML"
+            categoryToSet="frontEnd"
+          />
+          <ButtonForTechnologies
+            textContent={t('mySkills.buttonTwo')}
+            activeCategory={activeCategory}
+            setActiveTechnology={setActiveTechnology}
+            setActiveCategory={setActiveCategory}
+            technologyToSet="NodeJs"
+            categoryToSet="backEnd"
+          />
+          <ButtonForTechnologies
+            textContent={t('mySkills.buttonThree')}
+            activeCategory={activeCategory}
+            setActiveTechnology={setActiveTechnology}
+            setActiveCategory={setActiveCategory}
+            technologyToSet="Figma"
+            categoryToSet="design"
+          />
+          <ButtonForTechnologies
+            textContent={t('mySkills.buttonFour')}
+            activeCategory={activeCategory}
+            setActiveTechnology={setActiveTechnology}
+            setActiveCategory={setActiveCategory}
+            technologyToSet="Nginx"
+            categoryToSet="servers"
+          />
         </div>
-        <div className="bg-[#2D1349] my-6 mx-3 flex flex-col justify-center items-center">
+        <div className="w-full bg-[#2D1349] my-6 mx-3 flex flex-col justify-center items-center">
           {technologies[activeCategory].map((item, index) => {
             return item.technology === activeTechnology ? (
               <motion.div
@@ -126,8 +116,8 @@ const AboutSectionMySkills = () => {
                 transition={{ duration: 1 }}
                 key={index}
               >
-                <item.icon fill={'#fff'} />
-                <p className="max-w-xl">{t(`mySkills.${activeTechnology}.Description`)}</p>
+                <item.icon fill="#fff" />
+                <Paragraph decoration="none" textContent={t(`mySkills.${activeTechnology}.Description`)} />
                 <Link
                   target="_blank"
                   rel="noopener noreferrer"
@@ -143,7 +133,7 @@ const AboutSectionMySkills = () => {
           })}
         </div>
         <div className="m-auto w-[90%] h-[1px] bg-[#D9D9D940]"></div>
-        <div className="bg-[#2D1349] my-6 mx-3 flex flex-wrap justify-center items-center p-6 gap-2">
+        <div className="w-full bg-[#2D1349] my-6 mx-3 flex flex-wrap justify-center items-center p-6 gap-2">
           {technologies[activeCategory].map((item, index) => {
             return (
               <div
@@ -157,7 +147,7 @@ const AboutSectionMySkills = () => {
             )
           })}
         </div>
-      </div>
+      </ContainerWithContent>
     </section>
   )
 }

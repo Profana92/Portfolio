@@ -32,23 +32,15 @@ const About = () => {
   }, [])
 
   return (
-    <div>
+    <>
       <ReactHelmet
         title={t('helmet.aboutTitle')}
         description={t('helmet.aboutDescription')}
         contentLanguage={t('helmet.code')}
       />
-      <HeroSection
-        buttonOne={t('aboutPage.buttonOne')}
-        buttonTwo={t('aboutPage.buttonTwo')}
-        heroParagraphOne={t('aboutPage.heroParagraphOne')}
-        heroParagraphTwo={t('aboutPage.heroParagraphTwo')}
-        heroParagraphThree={t('aboutPage.heroParagraphThree')}
-        heroParagraphFour={t('aboutPage.heroParagraphFour')}
-        heroParagraphAccent={t('aboutPage.heroParagraphAccent')}
-      />
+      <HeroSection />
       <AboutSectionMySkills />
-    </div>
+    </>
   )
 }
 
