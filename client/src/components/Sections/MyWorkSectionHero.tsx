@@ -1,24 +1,23 @@
-import bottomDivider from '../../assets/myWorkdivider.svg'
-import HeadingMain from '../UI/Heading/HeadingMain'
-interface Props {
-  heroParagraphOne: string
-  heroParagraphAccent: string
-}
+import { useTranslation } from 'react-i18next'
 
-const MyWorkSectionHero = (props: Props) => {
+import bottomDivider from '../../assets/myWorkdivider.svg'
+import ContainerWithContent from '../UI/Containers/ContainerWithContent'
+import HeadingMain from '../UI/Heading/HeadingMain'
+import Paragraph from '../UI/Paragraph/Paragraph'
+
+const MyWorkSectionHero = () => {
+  const { t } = useTranslation()
+
   return (
     <section
       id="hero"
       className="relative bg-myWork-hero-pattern lg:bg-myWork-hero-pattern-desktop min-h-dvh bg-cover bg-no-repeat pt-12 flex justify-center lg:justify-end items-center"
     >
-      <div className="p-12 text-center lg:text-left max-w-[1920px] lg:mr-[10vw] 2xl:mr-[20vw]">
+      <ContainerWithContent additionalClasses="lg:flex-col lg:items-end">
         <HeadingMain decorationInternal={false} textSource="myWorkPage.heroHeading" additionalExternalClasses="" />
-
-        <p className="my-5 max-w-xl leading-normal text-sm md:text-base">{props.heroParagraphOne}</p>
-        <p className="my-5 max-w-xl leading-normal text-sm md:text-base text-transparent bg-clip-text bg-gradient-to-r from-pink to-orange p-[1px]  font-black">
-          {props.heroParagraphAccent}
-        </p>
-      </div>
+        <Paragraph decoration="none" textContent={t('myWorkPage.heroParagraphOne')} />
+        <Paragraph decoration="full" textContent={t('myWorkPage.heroParagraphAccent')} />
+      </ContainerWithContent>
       <img
         src={bottomDivider}
         alt="Section bottom divider image"

@@ -42,10 +42,7 @@ const MyWork = () => {
         description={t('helmet.myWorkDescription')}
         contentLanguage={t('helmet.code')}
       />
-      <HeroSection
-        heroParagraphOne={t('myWorkPage.heroParagraphOne')}
-        heroParagraphAccent={t('myWorkPage.heroParagraphAccent')}
-      />
+      <HeroSection />
       <MyWorkSectionProjects />
       <MyWorkSectionServices />
       <MyWorkSectionBlog />

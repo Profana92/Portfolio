@@ -1,4 +1,4 @@
-import { Trans, useTranslation } from 'react-i18next'
+import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 
 import Hands from '../../assets/Hands.png'
@@ -7,6 +7,9 @@ import LinkedInIcon from '../../assets/LinkedInIcon.svg'
 // import MessangerIcon from '../../assets/MessangerIcon.svg'
 import TwitterIcon from '../../assets/TwitterIcon.svg'
 import LanguageSwitcherMobile from '../Header/LanguageSwitcherMobile'
+import HeadingSecondary from '../UI/Heading/HeadingSecondary'
+import Paragraph from '../UI/Paragraph/Paragraph'
+import ParagraphUppercase from '../UI/Paragraph/ParagraphUppercase'
 
 import FooterForm from './FooterForm'
 const Footer = () => {
@@ -15,25 +18,9 @@ const Footer = () => {
     <footer className="bg-gradient-to-b from-[#440B7E] to-[#090120] lg:px-12">
       <div className="grid grid-cols-1 lg:grid-cols-3 bg-[#D9D9D90D] max-w-[90vw] mx-auto rounded-md shadow-lg lg:gap-x-6 xl:gap-x-12 my-12 lg:max-w-[1920px] relative">
         <div className="row-start-1 row-end-2 lg:row-start-1 lg:row-end-4 p-6 ">
-          <p className="text-center lg:text-left uppercase font-light text-xs text-[#ffffffBF] my-5 max-w-[70vw] m-auto">
-            {t('Footer.Description')}
-          </p>
-          <Trans i18nKey={'Footer.Heading'}>
-            <h2 className="text-center lg:text-left font-display text-2xl md:text-5xl font-medium my-5 max-w-[70vw] m-auto">
-              This is a dummy text. If you can see it contact
-              <span className="text-transparent bg-gradient-to-br bg-clip-text from-pink to-orange">
-                The Administrator
-              </span>
-            </h2>
-          </Trans>
-          <Trans i18nKey={'Footer.Paragraph'}>
-            <p className="text-sm md:text-base">
-              This is a dummy text. If you can see it contact
-              <span className="text-transparent bg-gradient-to-br bg-clip-text from-pink to-orange">
-                The Administrator
-              </span>
-            </p>
-          </Trans>
+          <ParagraphUppercase textContent={t('Footer.Description')} />
+          <HeadingSecondary decoration="partial" transKey="Footer.Heading" />
+          <Paragraph decoration="partial" decorationInternal={true} textKey="Footer.Paragraph" />
         </div>
         <div className="row-start-4 row-end-5 px-6 flex justify-between">
           <div className="flex gap-3 my-5 flex-wrap max-w-[40%]">
@@ -62,7 +49,7 @@ const Footer = () => {
             errorMaxLength={t('Footer.errorMaxLength')}
             formEmailPlaceholder={t('Footer.formEmailPlaceholder')}
           />
-          <p className="text-center lg:text-left font-light text-sm lg:text-base my-5">{t('Footer.formUnderText')}</p>
+          <Paragraph decoration="none" textContent={t('Footer.formUnderText')} />
         </div>
         <div className="lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:row-end-5">
           <div className="m-6 lg:my-6">

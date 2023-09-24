@@ -46,7 +46,7 @@ const Paragraph = (props: Props) => {
     <p
       className={`my-5 max-w-xl leading-normal text-sm md:text-base text-transparent bg-clip-text bg-gradient-to-r from-pink to-orange p-[1px] font-black ${props.additionalExternalClasses}`}
     >
-      This is a sample text. Contact administrator if You can see it!
+      {props.textContent}
     </p>
   )
 }

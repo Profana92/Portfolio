@@ -26,6 +26,7 @@ import TypeScriptIcon from '../Icons/TypeScriptIcon'
 import UbuntuIcon from '../Icons/UbuntuIcon'
 import WooCommerceIcon from '../Icons/WooCommerceIcon'
 import WordpressIcon from '../Icons/WordpressIcon'
+import ContainerWithContent from '../UI/Containers/ContainerWithContent'
 import FourButtonsRow from '../UI/FourButtonsRow'
 import SliderElement from '../UI/Slider'
 const MyWorkSectionProjects = () => {
@@ -73,9 +74,9 @@ const MyWorkSectionProjects = () => {
 
   return (
     <section id="projects" className="bg-gradient-to-b from-[#33091D] to-[#9B1536] text-center px-12 py-12 relative">
-      <div className="max-w-[1920px] mx-auto mb-[10vh]">
+      <ContainerWithContent additionalClasses="mb-[10vh] !block">
         <Trans i18nKey="myWorkPage.ProjectsTitle">
-          <h2 className="font-display text-2xl md:text-5xl font-medium">
+          <h2 className="font-display text-2xl md:text-5xl font-medium ">
             My <span className="text-transparent bg-gradient-to-br bg-clip-text from-pink to-orange">Skills</span>
           </h2>
         </Trans>
@@ -180,7 +181,7 @@ const MyWorkSectionProjects = () => {
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}></motion.div>
           )}
         </AnimatePresence>
-      </div>
+      </ContainerWithContent>
       <img
         src={divider}
         alt="Section bottom divider image"
