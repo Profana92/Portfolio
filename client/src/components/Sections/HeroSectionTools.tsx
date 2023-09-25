@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next'
 
-import BeforeFooterBottomDivider from '../../assets/BeforeFooterBottomDivider.svg'
+// import BeforeFooterBottomDivider from '../../assets/BeforeFooterBottomDivider.svg'
 import HeroBook from '../../assets/HeroBook.svg'
 import Mask from '../../assets/Mask.svg'
 import Potion from '../../assets/Potion.svg'
@@ -18,7 +18,7 @@ const HeroSectionTools = () => {
       <div className="bg-gradient-to-b from-[#33091D] to-[#9B1536] text-center gap-12">
         <ContainerWithContent additionalClasses="lg:flex-col gap-0">
           <div className="flex flex-col lg:flex-row mx-auto gap-12 justify-center items-start">
-            <div className="flex flex-col lg:flex-row items-center justify-center gap-12">
+            <div className="flex flex-col lg:flex-row items-center justify-center gap-12 w-full">
               <MagicItemIcon description="A Spellbook, magical item" image={HeroBook} />
               <div>
                 <ParagraphUppercase textContent={t('HomePage.SectionTwoElementOneDescription')} />
@@ -26,7 +26,7 @@ const HeroSectionTools = () => {
                 <Paragraph decoration="none" textContent={t('HomePage.SectionTwoElementOneParagraph')} />
               </div>
             </div>
-            <div className="flex flex-col lg:flex-row items-center justify-center gap-12">
+            <div className="flex flex-col lg:flex-row items-center justify-center gap-12 w-full">
               <MagicItemIcon description="A Potion, magical item" image={Potion} />
               <div>
                 <ParagraphUppercase textContent={t('HomePage.SectionTwoElementTwoDescription')} />
@@ -35,8 +35,8 @@ const HeroSectionTools = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col lg:flex-row max-w-[1920px] mx-auto gap-12 justify-center items-start pb-12">
-            <div className="flex flex-col lg:flex-row items-center justify-center gap-12">
+          <div className="flex flex-col lg:flex-row mx-auto gap-12 justify-center items-start">
+            <div className="flex flex-col lg:flex-row items-center justify-center gap-12 w-full">
               <MagicItemIcon description="A Scroll, magical item" image={Scroll} />
               <div>
                 <ParagraphUppercase textContent={t('HomePage.SectionTwoElementThreeDescription')} />
@@ -44,10 +44,9 @@ const HeroSectionTools = () => {
                 <Paragraph decoration="none" textContent={t('HomePage.SectionTwoElementThreeParagraph')} />
               </div>
             </div>
-
-            <div className="flex flex-col lg:flex-row items-center justify-center gap-12">
+            <div className="flex flex-col lg:flex-row items-center justify-center gap-12 w-full">
               <MagicItemIcon description="A Mask, magical item" image={Mask} />
-              <div>
+              <div className="max-w-xl">
                 <ParagraphUppercase textContent={t('HomePage.SectionTwoElementFourDescription')} />
                 <HeadingSecondary transKey="HomePage.SectionTwoElementFourHeading" decoration="partial" />
                 <Paragraph decoration="none" textContent={t('HomePage.SectionTwoElementFourParagraph')} />
@@ -55,7 +54,7 @@ const HeroSectionTools = () => {
             </div>
           </div>
         </ContainerWithContent>
-        <img src={BeforeFooterBottomDivider} alt="Section bottom divider image" className="w-full" />
+        {/* <img src={BeforeFooterBottomDivider} alt="Section bottom divider image" className="w-full" /> */}
       </div>
     </section>
   )

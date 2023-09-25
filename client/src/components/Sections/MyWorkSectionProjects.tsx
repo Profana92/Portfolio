@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Trans, useTranslation } from 'react-i18next'
+import { useTranslation } from 'react-i18next'
 import Slider from 'react-slick'
 import { AnimatePresence, motion } from 'framer-motion'
 
@@ -28,6 +28,7 @@ import WooCommerceIcon from '../Icons/WooCommerceIcon'
 import WordpressIcon from '../Icons/WordpressIcon'
 import ContainerWithContent from '../UI/Containers/ContainerWithContent'
 import FourButtonsRow from '../UI/FourButtonsRow'
+import HeadingSecondary from '../UI/Heading/HeadingSecondary'
 import SliderElement from '../UI/Slider'
 const MyWorkSectionProjects = () => {
   const technologies = {
@@ -75,11 +76,11 @@ const MyWorkSectionProjects = () => {
   return (
     <section id="projects" className="bg-gradient-to-b from-[#33091D] to-[#9B1536] text-center px-12 py-12 relative">
       <ContainerWithContent additionalClasses="mb-[10vh] !block">
-        <Trans i18nKey="myWorkPage.ProjectsTitle">
-          <h2 className="font-display text-2xl md:text-5xl font-medium ">
-            My <span className="text-transparent bg-gradient-to-br bg-clip-text from-pink to-orange">Skills</span>
-          </h2>
-        </Trans>
+        <HeadingSecondary
+          transKey="myWorkPage.ProjectsTitle"
+          decoration="partial"
+          additionalClasses="mx-auto text-center"
+        />
         <FourButtonsRow setactiveCategory={setactiveCategory} activeCategory={activeCategory} />
         <AnimatePresence>
           {activeCategory === 'frontEnd' && (

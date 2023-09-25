@@ -1,4 +1,4 @@
-import { Trans, useTranslation } from 'react-i18next'
+import { useTranslation } from 'react-i18next'
 
 import divider from '../../assets/myWorkServicesDivider.svg'
 import FigmaIcon from '../Icons/FigmaIcon'
@@ -6,20 +6,22 @@ import MJMLIcon from '../Icons/MJMLIconWhite'
 import ReactIcon from '../Icons/ReactIcon'
 import WooCommerceIcon from '../Icons/WooCommerceIcon'
 import WordpressIcon from '../Icons/WordpressIcon'
+import ContainerWithContent from '../UI/Containers/ContainerWithContent'
+import HeadingSecondary from '../UI/Heading/HeadingSecondary'
 import Service from '../UI/Service'
 const MyWorkSectionServices = () => {
   const { t } = useTranslation()
   return (
     <section
       id="services"
-      className="bg-gradient-to-b from-[#170126] to-[#050A44] relative px-9 pt-12 pb-[10vh] md:pb-[20vh] lg:pb-[30vh]"
+      className="bg-gradient-to-b from-[#170126] to-[#050A44] relative px-9 pt-12 pb-[10vh] md:pb-[20vh] lg:pb-[30vh] just"
     >
-      <Trans i18nKey="myWorkPage.ServicesTitle">
-        <h2 className="mx-auto font-display text-2xl md:text-5xl font-medium text-center mb-20">
-          My <span className="text-transparent bg-gradient-to-br bg-clip-text from-pink to-orange">Skills</span>
-        </h2>
-      </Trans>
-      <div className="flex gap-12 flex-wrap max-w-[1920px] mx-auto justify-center">
+      <HeadingSecondary
+        transKey="myWorkPage.ServicesTitle"
+        decoration="partial"
+        additionalClasses="mx-auto text-center !my-12"
+      />
+      <ContainerWithContent additionalClasses="flex-wrap !justify-center gap-x-12 gap-y-16">
         <Service
           icon={ReactIcon}
           heading={t('myWorkPage.ServiceOneHeading')}
@@ -45,7 +47,7 @@ const MyWorkSectionServices = () => {
           heading={t('myWorkPage.ServiceFiveHeading')}
           paragraph={t('myWorkPage.ServiceFiveParagraph')}
         />
-      </div>
+      </ContainerWithContent>
       <img
         src={divider}
         alt="Section bottom divider image not-sr-only"
