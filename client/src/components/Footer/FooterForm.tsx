@@ -1,8 +1,11 @@
+import { useState } from 'react'
 import { SubmitHandler, useForm } from 'react-hook-form'
-import { IconContext } from 'react-icons'
-import { MdErrorOutline } from 'react-icons/md'
-import { AnimatePresence, motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
+import { TailSpin } from 'react-loader-spinner'
 
+import FormErrorField from '../UI/Blocks/FormErrorField'
+import InputForm from '../UI/InputForm'
+import Paragraph from '../UI/Paragraph/Paragraph'
 type Inputs = {
   firstName: string
   lastName: string
@@ -10,170 +13,115 @@ type Inputs = {
   message: string
 }
 
-interface Props {
-  formMessagePlaceholder: string
-  formSummonButton: string
-  formFirstNamePlaceholder: string
-  formLastNamePlaceholder: string
-  errorRequired: string
-  errorMaxLength: string
-  formEmailPlaceholder: string
-}
-export default function FooterForm(props: Props) {
+export default function FooterForm() {
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm<Inputs>()
+  const [messageStatus, setmessageStatus] = useState('')
+  const [spinnerActive, setspinnerActive] = useState(false)
 
-  const onSubmit: SubmitHandler<Inputs> = () => {}
+  const onSubmit: SubmitHandler<Inputs> = (inputs) => {
+    setspinnerActive(true)
+    ;(window as any).Email.send({
+      SecureToken: '3b67f0c8-ba53-4b5d-a34b-cd695fcfcae7',
+      To: 'contact@wizdev.de',
+      From: 'contact@wizdev.de',
+      Subject: `Contact Form from ${inputs.firstName} ${inputs.lastName} - ${inputs.eMail}`,
+      Body: inputs.message,
+    }).then((message: string) => {
+      setspinnerActive(false)
+      setmessageStatus(message)
+    })
+  }
+  const { t } = useTranslation()
 
   return (
     <form className="flex flex-col gap-6" onSubmit={handleSubmit(onSubmit)}>
       <div className="flex gap-6">
         <div className="w-1/2 flex flex-col gap-6">
-          <div className="p-[1px] bg-gradient-to-br from-pink to-orange rounded-sm flex flec-col ">
-            <input
-              className="w-full bg-white rounded-sm text-xs px-2 h-10 text-gray-700"
-              placeholder={props.formFirstNamePlaceholder}
-              {...register('firstName', { required: true, maxLength: 20 })}
-            />
-          </div>
-          <AnimatePresence>
-            {errors.firstName?.type === 'required' && (
-              <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-                <div className="flex gap-3 items-center text-sm">
-                  <IconContext.Provider value={{ className: 'text-3xl text-pink' }}>
-                    <div>
-                      <MdErrorOutline />
-                    </div>
-                  </IconContext.Provider>
-                  {props.errorRequired}
-                </div>
-              </motion.div>
-            )}
-          </AnimatePresence>
-          <AnimatePresence>
-            {errors.firstName?.type === 'maxLength' && (
-              <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-                <div className="flex gap-3 items-center text-sm">
-                  <IconContext.Provider value={{ className: 'text-3xl text-pink' }}>
-                    <div>
-                      <MdErrorOutline />
-                    </div>
-                  </IconContext.Provider>
-                  {props.errorMaxLength}
-                </div>
-              </motion.div>
-            )}
-          </AnimatePresence>
+          <InputForm register={register} fieldName="firstName" textContent={t('Footer.formFirstNamePlaceholder')} />
+          <FormErrorField
+            condition="required"
+            errors={errors}
+            textContent={t('Footer.errorRequired')}
+            fieldName="firstName"
+          />
+          <FormErrorField
+            condition="maxLength"
+            errors={errors}
+            textContent={t('Footer.errorMaxLength')}
+            fieldName="firstName"
+          />
         </div>
         <div className="w-1/2 flex flex-col gap-6">
-          <div className="p-[1px] bg-gradient-to-br from-pink to-orange rounded-sm flex flec-col ">
-            <input
-              className="w-full bg-white rounded-sm text-xs px-2 h-10 text-gray-700"
-              placeholder={props.formLastNamePlaceholder}
-              {...register('lastName', { required: true, maxLength: 20 })}
-            />
-          </div>
-          <AnimatePresence>
-            {errors.lastName?.type === 'required' && (
-              <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-                <div className="flex gap-3 items-center text-sm">
-                  <IconContext.Provider value={{ className: 'text-3xl text-pink' }}>
-                    <div>
-                      <MdErrorOutline />
-                    </div>
-                  </IconContext.Provider>
-                  {props.errorRequired}
-                </div>
-              </motion.div>
-            )}
-          </AnimatePresence>
-          <AnimatePresence>
-            {errors.lastName?.type === 'maxLength' && (
-              <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-                <div className="flex gap-3 items-center text-sm">
-                  <IconContext.Provider value={{ className: 'text-3xl text-pink' }}>
-                    <div>
-                      <MdErrorOutline />
-                    </div>
-                  </IconContext.Provider>
-                  {props.errorMaxLength}
-                </div>
-              </motion.div>
-            )}
-          </AnimatePresence>
+          <InputForm register={register} fieldName="lastName" textContent={t('Footer.formLastNamePlaceholder')} />
+          <FormErrorField
+            condition="required"
+            errors={errors}
+            textContent={t('Footer.errorRequired')}
+            fieldName="lastName"
+          />
+          <FormErrorField
+            condition="maxLength"
+            errors={errors}
+            textContent={t('Footer.errorMaxLength')}
+            fieldName="lastName"
+          />
         </div>
       </div>
 
       <div className="w-full flex flex-col gap-6">
-        <div className="p-[1px] bg-gradient-to-br from-pink to-orange rounded-sm flex flec-col ">
-          <input
-            className="w-full bg-white rounded-sm text-xs px-2 h-10 text-gray-700"
-            placeholder={props.formEmailPlaceholder}
-            {...register('eMail', { required: true, maxLength: 20 })}
-          />
-        </div>
-        <AnimatePresence>
-          {errors.eMail?.type === 'required' && (
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-              <div className="flex gap-3 items-center text-sm">
-                <IconContext.Provider value={{ className: 'text-3xl text-pink' }}>
-                  <div>
-                    <MdErrorOutline />
-                  </div>
-                </IconContext.Provider>
-                {props.errorRequired}
-              </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
-        <AnimatePresence>
-          {errors.eMail?.type === 'maxLength' && (
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-              <div className="flex gap-3 items-center text-sm">
-                <IconContext.Provider value={{ className: 'text-3xl text-pink' }}>
-                  <div>
-                    <MdErrorOutline />
-                  </div>
-                </IconContext.Provider>
-                {props.errorMaxLength}
-              </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
+        <InputForm register={register} fieldName="eMail" textContent={t('Footer.formEmailPlaceholder')} />
+        <FormErrorField
+          condition="required"
+          errors={errors}
+          textContent={t('Footer.errorRequired')}
+          fieldName="eMail"
+        />
+        <FormErrorField
+          condition="maxLength"
+          errors={errors}
+          textContent={t('Footer.errorMaxLength')}
+          fieldName="eMail"
+        />
       </div>
 
       <div className="w-full flex flex-col gap-6">
-        <div className="p-[1px] bg-gradient-to-br from-pink to-orange rounded-sm flex flec-col ">
-          <textarea
-            className="w-full bg-white rounded-sm text-xs p-2 text-gray-700 h-52"
-            placeholder={props.formMessagePlaceholder}
-            {...register('message', { required: true })}
-          />
-        </div>
-        <AnimatePresence>
-          {errors.message?.type === 'required' && (
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-              <div className="flex gap-3 items-center text-sm">
-                <IconContext.Provider value={{ className: 'text-3xl text-pink' }}>
-                  <div>
-                    <MdErrorOutline />
-                  </div>
-                </IconContext.Provider>
-                {props.errorRequired}
-              </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
+        <InputForm
+          register={register}
+          fieldName="message"
+          textContent={t('Footer.formMessagePlaceholder')}
+          type="textArea"
+        />
+        <FormErrorField
+          condition="required"
+          errors={errors}
+          textContent={t('Footer.errorRequired')}
+          fieldName="message"
+        />
       </div>
-
-      <input
-        type="submit"
-        value={props.formSummonButton}
-        className="m-auto inline-block w-40 bg-buttonOrange md:mr-8 text-center leading-[50px] rounded-[5px] text-sm md:text-base md:leading-[50px] lg:leading-[50px] "
-      />
+      <div className="flex justify-between items-center">
+        <TailSpin
+          height="40"
+          width="40"
+          color="#090120"
+          ariaLabel="tail-spin-loading"
+          radius="1"
+          wrapperStyle={{}}
+          wrapperClass=""
+          visible={spinnerActive}
+        />
+        <InputForm register={register} fieldName="message" textContent={t('Footer.formSummonButton')} type="submit" />
+      </div>
+      {messageStatus === 'OK' ? (
+        <Paragraph decoration="none" textContent={t('Footer.messageStatus.ok')} />
+      ) : messageStatus === '' ? (
+        ''
+      ) : (
+        <Paragraph decoration="none" textContent={t('Footer.messageStatus.error')} />
+      )}
     </form>
   )
 }

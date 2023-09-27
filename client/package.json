@@ -23,6 +23,7 @@
     "react-hook-form": "^7.45.4",
     "react-i18next": "^13.1.2",
     "react-icons": "^4.10.1",
+    "react-loader-spinner": "^5.4.5",
     "react-router-dom": "^6.15.0",
     "react-slick": "^0.29.0",
     "react-world-flags": "^1.5.1",

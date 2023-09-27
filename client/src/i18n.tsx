@@ -282,6 +282,10 @@ i18n
               'In the world of web, every line of code is a strand of magic, and every pixel a canvas for creation.',
             errorRequired: 'This field is required',
             errorMaxLength: 'Exceeded 20 letters limit',
+            messageStatus: {
+              ok: 'Message sent successfully',
+              error: 'An error has occurred, try again later',
+            },
           },
         },
       },
@@ -345,7 +349,7 @@ i18n
             Description: 'Niech szept cyfrowego wiatru poniesie Twoją wiadomość do mnie.',
             Heading: '<0>Przywołaj <1>Mnie!</1></0>',
             Paragraph:
-              '<0>W krainie internetowych czarów <1>Twoja podróż ma znaczenie</1>. Jeśli będziesz szukać mojej rady, nie obawiaj się, bo jestem w odległości jednego zaklęcia. Prześlij swoje zapytania, propozycje, a nawet przyjazne pozdrowienia do mojego cyfrowego eteru. Po machnięciu kursorem i wyrecytowaniu zaklęcia tajemne formy przekażą twoją wiadomość do mojego królestwa. Połączmy się, towarzyszu podróży, i wymieńmy mądrość i zaklęcia w cyfrowej przestrzeni.</0>',
+              '<0>W krainie internetowej magii <1>Twoja podróż ma znaczenie</1>. Jeśli będziesz szukać mojej rady, nie obawiaj się, bo jestem w odległości jednego zaklęcia. Prześlij swoje zapytania, propozycje, a nawet przyjazne pozdrowienia do mojego cyfrowego eteru. Po machnięciu kursorem i wyrecytowaniu zaklęcia tajemne formy przekażą twoją wiadomość do mojego królestwa. Połączmy się, towarzyszu podróży, i wymieńmy mądrość i zaklęcia w cyfrowej przestrzeni.</0>',
             formFirstNamePlaceholder: 'Imię',
             formLastNamePlaceholder: 'Nazwisko',
             formEmailPlaceholder: 'E-mail',
@@ -357,6 +361,10 @@ i18n
               'W świecie internetu, każda linijka kodu stanowi nić magii, a każdy piksel płótno do tworzenia.',
             errorRequired: 'To pole jest wymagane',
             errorMaxLength: 'Przekroczono limit 20 znaków',
+            messageStatus: {
+              ok: 'Wiadomość wysłana pomyślnie',
+              error: 'Wystąpił błąd, spróbuj ponownie później',
+            },
           },
           aboutPage: {
             heroHeading: '<0>Kim więc <1>jestem</1>?</0>',
@@ -547,8 +555,8 @@ i18n
             HeroParagraph:
               'Niezależnie od tego, czy wyruszasz w cyfrową podróż, szukasz współpracy, czy po prostu chcesz się przywitać, skontaktuj się ze mną za pomocą poniższego formularza kontaktowego lub napisz do mnie e-mail.',
             HeroAccent: 'Zaczarujmy coś razem!',
-            FormHeading: '<0>Niech <1>magia</1> się rozpoczniegi!</0>',
-            FormSubHeading: 'Skontaktuj się ze mną poprzez dowolną z mistycznych form.',
+            FormHeading: '<0>Niech <1>magia</1> się rozpocznie!</0>',
+            FormSubHeading: 'Skontaktuj się ze mną poprzez dowolną z poniższych mistycznych form.',
             FormListItemOne: 'Wyślij mi wiadomość email',
             FormListItemTwo: 'Przywołaj mnie przez LinkedIn',
             FormListItemThree: 'Rzuć czar komunikacji WhatsApp',

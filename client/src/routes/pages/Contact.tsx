@@ -34,22 +34,15 @@ const Contact = () => {
   }, [])
 
   return (
-    <div>
+    <>
       <ReactHelmet
         title={t('helmet.contactTitle')}
         description={t('helmet.contactDescription')}
         contentLanguage={t('helmet.code')}
       />
-      <HeroSection HeroParagraph={t('ContactPage.HeroParagraph')} HeroAccent={t('ContactPage.HeroAccent')} />
-      <ContactSectionOptions
-        FormSubHeading={t('ContactPage.FormSubHeading')}
-        FormEndingAccent={t('ContactPage.FormEndingAccent')}
-        FormListItemOne={t('ContactPage.FormListItemOne')}
-        FormListItemTwo={t('ContactPage.FormListItemTwo')}
-        FormListItemThree={t('ContactPage.FormListItemThree')}
-        FormListItemFour={t('ContactPage.FormListItemFour')}
-      />
-    </div>
+      <HeroSection />
+      <ContactSectionOptions />
+    </>
   )
 }
 
