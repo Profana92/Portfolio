@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next'
 import { TailSpin } from 'react-loader-spinner'
 
 import FormErrorField from '../UI/Blocks/FormErrorField'
+import ContainerHalf from '../UI/Containers/ContainerHalf'
 import InputForm from '../UI/InputForm'
 import Paragraph from '../UI/Paragraph/Paragraph'
 type Inputs = {
@@ -40,7 +41,7 @@ export default function FooterForm() {
   return (
     <form className="flex flex-col gap-6" onSubmit={handleSubmit(onSubmit)}>
       <div className="flex gap-6">
-        <div className="w-1/2 flex flex-col gap-6">
+        <ContainerHalf>
           <InputForm register={register} fieldName="firstName" textContent={t('Footer.formFirstNamePlaceholder')} />
           <FormErrorField
             condition="required"
@@ -54,8 +55,8 @@ export default function FooterForm() {
             textContent={t('Footer.errorMaxLength')}
             fieldName="firstName"
           />
-        </div>
-        <div className="w-1/2 flex flex-col gap-6">
+        </ContainerHalf>
+        <ContainerHalf>
           <InputForm register={register} fieldName="lastName" textContent={t('Footer.formLastNamePlaceholder')} />
           <FormErrorField
             condition="required"
@@ -69,10 +70,9 @@ export default function FooterForm() {
             textContent={t('Footer.errorMaxLength')}
             fieldName="lastName"
           />
-        </div>
+        </ContainerHalf>
       </div>
-
-      <div className="w-full flex flex-col gap-6">
+      <ContainerHalf additionalClasses="w-full">
         <InputForm register={register} fieldName="eMail" textContent={t('Footer.formEmailPlaceholder')} />
         <FormErrorField
           condition="required"
@@ -86,9 +86,9 @@ export default function FooterForm() {
           textContent={t('Footer.errorMaxLength')}
           fieldName="eMail"
         />
-      </div>
+      </ContainerHalf>
 
-      <div className="w-full flex flex-col gap-6">
+      <ContainerHalf additionalClasses="w-full">
         <InputForm
           register={register}
           fieldName="message"
@@ -101,7 +101,7 @@ export default function FooterForm() {
           textContent={t('Footer.errorRequired')}
           fieldName="message"
         />
-      </div>
+      </ContainerHalf>
       <div className="flex justify-between items-center">
         <TailSpin
           height="40"

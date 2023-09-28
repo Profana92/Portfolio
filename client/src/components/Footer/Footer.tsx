@@ -40,15 +40,7 @@ const Footer = () => {
           <LanguageSwitcherMobile />
         </div>
         <div className="row-start-2 row-end-3 lg:row-start-1 lg:row-end-5 lg:col-start-2 lg:col-end-3 px-6 lg:p-6">
-          <FooterForm
-            formMessagePlaceholder={t('Footer.formMessagePlaceholder')}
-            formSummonButton={t('Footer.formSummonButton')}
-            formFirstNamePlaceholder={t('Footer.formFirstNamePlaceholder')}
-            formLastNamePlaceholder={t('Footer.formLastNamePlaceholder')}
-            errorRequired={t('Footer.errorRequired')}
-            errorMaxLength={t('Footer.errorMaxLength')}
-            formEmailPlaceholder={t('Footer.formEmailPlaceholder')}
-          />
+          <FooterForm />
           <Paragraph decoration="none" textContent={t('Footer.formUnderText')} />
         </div>
         <div className="lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:row-end-5">
