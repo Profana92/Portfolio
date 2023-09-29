@@ -56,6 +56,7 @@ const HeroSectionTools = () => {
         </ContainerWithContent>
         {/* <img src={BeforeFooterBottomDivider} alt="Section bottom divider image" className="w-full" /> */}
       </div>
+      <div className="h-[100px] bg-gradient-to-b from-[#9B1536] to-[#440B7E]"></div>
     </section>
   )
 }

@@ -75,7 +75,7 @@ const MyWorkSectionProjects = () => {
 
   return (
     <section id="projects" className="bg-gradient-to-b from-[#33091D] to-[#9B1536] text-center px-12 py-12 relative">
-      <ContainerWithContent additionalClasses="mb-[10vh] !block">
+      <ContainerWithContent additionalClasses="mb-[10vh] !block px-0">
         <HeadingSecondary
           transKey="myWorkPage.ProjectsTitle"
           decoration="partial"

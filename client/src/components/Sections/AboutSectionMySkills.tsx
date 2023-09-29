@@ -137,6 +137,7 @@ const AboutSectionMySkills = () => {
           {technologies[activeCategory].map((item, index) => {
             return (
               <div
+                className="clickable"
                 key={index}
                 onClick={() => {
                   setActiveTechnology(item.technology)
