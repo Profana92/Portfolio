@@ -11,7 +11,7 @@ const MyWorkSectionHero = () => {
   return (
     <section
       id="hero"
-      className="relative bg-myWork-hero-pattern lg:bg-myWork-hero-pattern-desktop min-h-dvh bg-cover bg-no-repeat pt-12 flex justify-center lg:justify-end items-center"
+      className="relative bg-center bg-myWork-hero-pattern-desktop min-h-dvh bg-cover bg-no-repeat pt-12 flex justify-center lg:justify-end items-center"
     >
       <ContainerWithContent additionalClasses="lg:flex-col lg:items-end">
         <HeadingMain decorationInternal={false} textSource="myWorkPage.heroHeading" additionalExternalClasses="" />

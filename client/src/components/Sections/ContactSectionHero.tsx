@@ -16,7 +16,12 @@ const ContactSectionHero = () => {
         <div>
           <HeadingMain decorationInternal={false} textSource="ContactPage.HeroHeading" additionalExternalClasses="" />
           <Paragraph decoration="none" textContent={t('ContactPage.HeroParagraph')} />
-          <Paragraph decoration="full" textContent={t('ContactPage.HeroAccent')} />
+          <Paragraph
+            decoration="full"
+            textContent={t('ContactPage.HeroAccent')}
+            link="#contact-options"
+            additionalExternalClasses="underline"
+          />
         </div>
       </ContainerWithContent>
       <img src={bottomDivider} alt="Section bottom divider image" className="w-full absolute bottom-0" />

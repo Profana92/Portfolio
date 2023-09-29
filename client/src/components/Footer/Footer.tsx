@@ -15,7 +15,7 @@ import FooterForm from './FooterForm'
 const Footer = () => {
   const { t } = useTranslation()
   return (
-    <footer className="bg-gradient-to-b from-[#440B7E] to-[#090120] lg:px-12">
+    <footer id="contact-form" className="bg-gradient-to-b from-[#440B7E] to-[#090120] lg:px-12">
       <div className="grid grid-cols-1 lg:grid-cols-3 bg-[#D9D9D90D] max-w-[90vw] mx-auto rounded-md shadow-lg lg:gap-x-6 xl:gap-x-12 my-12 lg:max-w-[1440px] relative">
         <div className="row-start-1 row-end-2 lg:row-start-1 lg:row-end-4 p-6 ">
           <Quote decoration="none" textContent={t('Footer.Description')} />

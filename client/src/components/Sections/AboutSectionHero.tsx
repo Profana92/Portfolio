@@ -21,7 +21,12 @@ const AboutSectionHero = () => {
           <Paragraph decoration="none" textContent={t('aboutPage.heroParagraphFour')} />
           <Paragraph decoration="full" textContent={t('aboutPage.heroParagraphAccent')} />
           <div className="relative z-10">
-            <Button type="primary" textSource={t('aboutPage.buttonOne')} link="/my-work/#projects" />
+            <Button
+              type="primary"
+              textSource={t('aboutPage.buttonOne')}
+              link="/my-work/#projects"
+              additionalClasses="mb-3"
+            />
             <Button type="secondary" textSource={t('aboutPage.buttonTwo')} link="/my-work/#projects" />
           </div>
         </div>

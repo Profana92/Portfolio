@@ -23,7 +23,9 @@ const MobileNavigation = (props: Props) => {
       >
         <div className="flex px-6 justify-between min-h-[3.5rem] items-center z-10">
           <p className="text-3xl text-transparent font-black bg-gradient-to-br bg-clip-text from-pink to-orange">
-            <NavLink to="/">WIZdev.</NavLink>
+            <NavLink to="/">
+              <span class="text-white">WIZ</span>dev.
+            </NavLink>
           </p>
           <p
             onClick={() => {
@@ -150,7 +152,7 @@ const MobileNavigation = (props: Props) => {
             <li className="my-1 w-full">
               <NavLink
                 className="w-full flex px-5 justify-center items-center hover:bg-gradient-to-br hover:bg-clip-text hover:from-pink hover:to-orange hover:text-transparent"
-                to={`/#tools`}
+                to={`my-work/#projects`}
                 onClick={() => {
                   props.setmenuOpen((prevState) => !prevState)
                 }}
