@@ -10,7 +10,9 @@ interface Props {
 const Quote = (props: Props) => {
   if (props.decoration === 'none') {
     return (
-      <q className={`my-5 max-w-xl leading-normal text-sm md:text-base ${props.additionalExternalClasses}`}>
+      <q
+        className={`text-[#ffffffBF] my-5 max-w-xl leading-normal text-sm md:text-base italic ${props.additionalExternalClasses}`}
+      >
         {props.textContent}
       </q>
     )
@@ -19,10 +21,12 @@ const Quote = (props: Props) => {
     if (props.decorationInternal === true)
       return (
         <Trans i18nKey={props.textKey}>
-          <q className={`my-5 max-w-xl leading-normal text-sm md:text-base ${props.additionalExternalClasses}`}>
+          <q
+            className={`text-[#ffffffBF] my-5 max-w-xl leading-normal text-sm md:text-base italic ${props.additionalExternalClasses}`}
+          >
             This is a sample text.
             <span
-              className={`text-transparent bg-gradient-to-br bg-clip-text from-pink to-orange font-black${props.additionalInternalClasses}`}
+              className={`text-transparent bg-gradient-to-br bg-clip-text from-pink to-orange font-black ${props.additionalInternalClasses}`}
             >
               Contact administrator
             </span>

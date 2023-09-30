@@ -12,11 +12,11 @@ const HeroSectionMySpells = () => {
     <section id="magic">
       <div className="h-[100px] bg-gradient-to-b from-[#130C6C] to-[#170126]"></div>
       <div className="bg-gradient-to-b from-[#170126] to-[#33091D]">
-        <ContainerWithContent>
+        <ContainerWithContent additionalClasses="mb-12">
           <div>
-            <ParagraphUppercase textContent={t('HomePage.sectionOneDescription')} />
             <HeadingSecondary transKey="HomePage.sectionOneHeading" decoration="partial" />
             <Paragraph decoration="none" textContent={t('HomePage.sectionOneParagraph')} />
+            <ParagraphUppercase textContent={t('HomePage.sectionOneParagraphToolkit')} />
           </div>
           <img
             src={floatingItems}
@@ -24,6 +24,7 @@ const HeroSectionMySpells = () => {
             className="w-[70%] lg:w-[40%]"
           />
         </ContainerWithContent>
+        <div className="w-[80%] max-w-[1440px] h-[1px] bg-[#D9D9D940] mx-auto "></div>
       </div>
     </section>
   )

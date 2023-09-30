@@ -25,6 +25,7 @@ import WooCommerceIcon from '../Icons/WooCommerceIcon'
 import WordpressIcon from '../Icons/WordpressIcon'
 import ButtonForTechnologies from '../UI/Buttons/ButtonForTechnologies'
 import ContainerWithContent from '../UI/Containers/ContainerWithContent'
+import HeadingSecondary from '../UI/Heading/HeadingSecondary'
 import Paragraph from '../UI/Paragraph/Paragraph'
 
 interface TechnologiesIF {
@@ -72,6 +73,7 @@ const AboutSectionMySkills = () => {
   return (
     <section id="skills" className="bg-gradient-to-b from-[#1E0E32] to-[#440B7E] text-center lg:px-12 pt-12">
       <ContainerWithContent additionalClasses="bg-[#D9D9D90D] lg:flex-col">
+        <HeadingSecondary decoration="partial" transKey="mySkills.mySkills" additionalClasses="mt-0" />
         <div className="flex flex-col md:flex-row items-center md:justify-center gap-3 md:gap-6">
           <ButtonForTechnologies
             textContent={t('mySkills.buttonOne')}
