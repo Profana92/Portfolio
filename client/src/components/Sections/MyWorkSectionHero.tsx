@@ -14,9 +14,11 @@ const MyWorkSectionHero = () => {
       className="relative bg-center bg-myWork-hero-pattern-desktop min-h-dvh bg-cover bg-no-repeat pt-12 flex justify-center lg:justify-end items-center"
     >
       <ContainerWithContent additionalClasses="lg:flex-col lg:items-end">
-        <HeadingMain decorationInternal={false} textSource="myWorkPage.heroHeading" additionalExternalClasses="" />
-        <Paragraph decoration="none" textContent={t('myWorkPage.heroParagraphOne')} />
-        <Paragraph decoration="full" textContent={t('myWorkPage.heroParagraphAccent')} />
+        <div>
+          <HeadingMain decorationInternal={false} textSource="myWorkPage.heroHeading" additionalExternalClasses="" />
+          <Paragraph decoration="none" textContent={t('myWorkPage.heroParagraphOne')} />
+          <Paragraph decoration="full" textContent={t('myWorkPage.heroParagraphAccent')} />
+        </div>
       </ContainerWithContent>
       <img
         src={bottomDivider}

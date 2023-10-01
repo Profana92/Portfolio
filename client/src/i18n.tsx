@@ -42,16 +42,17 @@ i18n
             contact: 'Contact',
           },
           HomePage: {
-            heroHeading: '<0>Welcome here, where dreams <1>DO COME</1> alive!</0>',
+            heroHeading: '<0>Welcome here, where dreams <1>COME ALIVE</1>!</0>',
             heroParagraph:
-              "<0>Hello! I'm <1>Wojciech Marczak</1>, a Front-End Wizard based in a magical city of Leipzig, in the realm of Germany! I'm fervently devoted to crafting top-tier websites, infusing a touch of magic into each creation for unparalleled experiences.</0>",
+              "<0>Hello! I'm <1>Wojciech Marczak</1>, a Front-End Wizard based in a magical city of Leipzig, in the realm of Germany! I'm fervently devoted to crafting top-tier websites, infusing a touch of magic into each of my creations.</0>",
             buttonOne: 'My Spells',
             buttonTwo: 'My creations',
             callToAction: 'See The Magic!',
-            sectionOneDescription: 'HTML CSS JAVASCRIPT REACT',
             sectionOneHeading: '<0>Those are my <1>Spells</1></0>',
             sectionOneParagraph:
               'In this dimension, I wield not wands and staffs, but rather completly other tools to create magical online experiences.',
+            sectionOneParagraphToolkit:
+              'My toolkit comprises HTML incantations, CSS elixirs, JavaScript parchments, and React enchantments.',
             SectionTwoElementOneDescription: 'SPELLS',
             SectionTwoElementTwoDescription: 'Potions',
             SectionTwoElementThreeDescription: 'Scrolls',
@@ -73,12 +74,6 @@ i18n
             heroHeading: '<0>So, <1>Who Am I</1>?</0>',
             heroParagraphOne:
               'I’m a passionate front-end developer with a creative flair for crafting seamless user experiences. I utilize HTML, CSS, JS, and React for website construction, and employ Figma, Adobe XD, Adobe Illustrator, and Photoshop for design. Deploying websites is achieved through Ubuntu, Nginx, and Apache. Moreover, I bring ecommerce websites to life using Wordpress, Divi, and Woocommerce.',
-            heroParagraphTwo:
-              'I remain committed to staying updated with the latest industry trends and delivering visually captivating and responsive web solutions.',
-            heroParagraphThree:
-              'During my leisure hours, I engage in flying drones, 3D printing, and repairing electronics, revitalizing the old to breathe new life into them. I also absolutly love the idea of three.js!',
-            heroParagraphFour:
-              'I take immense pleasure in witnessing my websites generate fresh sales and leads for my clients, leading to the flourishing growth of their businesses.',
             heroParagraphAccent: "Let's collaborate and bring ideas to life through elegant code.",
             buttonOne: 'My Work',
             buttonTwo: 'Contact Me',
@@ -208,13 +203,13 @@ i18n
             buttonTwo: 'Back-End',
             buttonThree: 'Design',
             buttonFour: 'Servers',
+            mySkills: '<0>My <1>Skills</1></0>',
           },
           myWorkPage: {
             heroHeading: '<0>Step into the gallery of <1>my creations</1>.</0>',
             heroParagraphOne:
-              'Here, where the arcane art of front-end development intertwines with imagination. Behold, a tapestry of web wonders woven with HTML spells, CSS potions, JavaScript scrolls and React enchantments.',
-            heroParagraphAccent:
-              'These projects are the manifestation of my digital sorcery, inviting you to witness the magic forged through pixels and code.',
+              "Welcome to the world of creations! Here, you'll find a collection of projects that I've poured my heart and soul into. There's no need for formalities – just dive in and enjoy the journey. Your curiosity will be the greatest guide, so feel free to explore and discover the stories behind my creations.",
+            heroParagraphAccent: 'Have fun!',
             ProjectsTitle: '<0>My <1>Projects</1></0>',
             ProjectType: 'Type',
             ProjectsUsedTechnologies: 'Used technologies',
@@ -322,14 +317,15 @@ i18n
           HomePage: {
             heroHeading: '<0>Witam Cię tu, w miejscu gdzie marzenia <1>OŻYWAJĄ</1>!</0>',
             heroParagraph:
-              '<0>Cześć! Nazywam się <1>Wojciech Marczak</1> i jestem Front-End Developerem mieszkającym w magicznym mieście Lipsk, w Niemczech. tem żarliwie oddany tworzeniu najlepszych stron internetowych, dodając odrobinę magii do każdego dzieła by zapewnić niezrównane doświadczenia.</0>',
+              '<0>Cześć! Nazywam się <1>Wojciech Marczak</1> i jestem Front-End Developerem mieszkającym w magicznym mieście Lipsk, w Niemczech. Jestem żarliwie oddany tworzeniu najlepszych stron internetowych, dodając odrobinę magii do każdego swojego dzieła.</0>',
             buttonOne: 'Moje Czary',
             buttonTwo: 'Moje dzieła',
             callToAction: 'Zobacz magię!',
-            sectionOneDescription: 'HTML CSS JAVASCRIPT REACT',
             sectionOneHeading: '<0>To są moje <1>Czary</1></0>',
             sectionOneParagraph:
               'W tym wymiarze nie władam różdżkami czy laskami, ale raczej zupełnie innymi narzędziami do tworzenia magicznych doświadczeń.',
+            sectionOneParagraphToolkit:
+              'Na zestaw moich magicznych narzędzi składają się inkantacje HTML, eliksiry CSS, zwoje Javascript oraz czary React.',
             SectionTwoElementOneDescription: 'Czary',
             SectionTwoElementTwoDescription: 'Mikstury',
             SectionTwoElementThreeDescription: 'Zwoje',
@@ -371,13 +367,7 @@ i18n
           aboutPage: {
             heroHeading: '<0>Kim więc <1>jestem</1>?</0>',
             heroParagraphOne:
-              'Jestem zapalonym programistą front-end z kreatywnym zacięciem do tworzenia nieskazitelnych doświadczeń dla użytkownika. Do budowy stron internetowych wykorzystuję HTML, CSS, JS i React, a do projektowania Figmę, Adobe XD, Adobe Illustrator i Photoshop. Wdrażanie stron internetowych odbywa się za pośrednictwem Ubuntu, Nginx i Apache. Ponadto tworzę witryny e-commerce za pomocą Wordpress, Divi i Woocommerce.',
-            heroParagraphTwo:
-              'Pozostaję na bieżąco z najnowszymi trendami w branży,by dostarczać atrakcyjne wizualnie i responsywne rozwiązania internetowe.',
-            heroParagraphThree:
-              'W wolnym czasie zajmuję się lataniem dronami, drukiem 3D i naprawą elektroniki, odnawiając stare, aby tchnąć w nie nowe życie. Bardzo ciekawi mnie też Three.js!',
-            heroParagraphFour:
-              'Z ogromną przyjemnością obserwuję, jak moje strony internetowe generują nową sprzedaż i potencjalnych klientów dla moich kontrahentów, co prowadzi do rozwoju ich firm.',
+              'Jestem zapalonym programistą z kreatywnym zacięciem do tworzenia nieskazitelnych doświadczeń użytkownika. Do budowy stron internetowych wykorzystuję HTML, CSS, JS i React, a do projektowania Figmę, Adobe XD, Adobe Illustrator i Photoshop. Wdrażanie stron internetowych odbywa się za pośrednictwem Ubuntu, Nginx i Apache. Ponadto tworzę witryny e-commerce za pomocą Wordpress, Divi i Woocommerce.',
             heroParagraphAccent: 'Powspółpracujmy i powcielajmy nowe pomysły w życie poprzez elegancki kod.',
             buttonOne: 'Moje Prace',
             buttonTwo: 'Skontaktuj się',
@@ -507,13 +497,13 @@ i18n
             buttonTwo: 'Back-End',
             buttonThree: 'Design',
             buttonFour: 'Servers',
+            mySkills: '<0>Moje <1>umiejętności</1></0>',
           },
           myWorkPage: {
             heroHeading: '<0>Wstąp do galerii <1>moich dzieł</1>.</0>',
             heroParagraphOne:
-              'Tutaj, gdzie tajna sztuka front-end developmentu splata się z wyobraźnią. Oto gobelin cudów sieci utkany z zaklęć HTML, mikstur CSS, zwojów JavaScript i zaklęć React.',
-            heroParagraphAccent:
-              'Te projekty są manifestacją mojej cyfrowej magii i zapraszają Cię do bycia świadkiem czarów wykutych w pikselach i kodzie.',
+              'Pragnę przywitać Cię w świecie moich dzieł! Znajdziesz tu kolekcję projektów, w które włożyłem swoje serce i duszę. Nie ma potrzeby na formalności - po prostu zanurz się w przygodzie i ciesz się nią. Twoja ciekawość będzie najlepszym przewodnikiem, więć nię krępuj się eksplorować i odkrywać historię moich dzieł.',
+            heroParagraphAccent: 'Dobrej zabawy!',
             ProjectsTitle: '<0>Moje <1>Projekty</1></0>',
             ProjectType: 'Typ',
             ProjectsUsedTechnologies: 'Użyte technologie',

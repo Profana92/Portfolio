@@ -16,9 +16,6 @@ const AboutSectionHero = () => {
         <div>
           <HeadingMain decorationInternal={false} textSource="aboutPage.heroHeading" additionalExternalClasses="" />
           <Paragraph decoration="none" textContent={t('aboutPage.heroParagraphOne')} />
-          <Paragraph decoration="none" textContent={t('aboutPage.heroParagraphTwo')} />
-          <Paragraph decoration="none" textContent={t('aboutPage.heroParagraphThree')} />
-          <Paragraph decoration="none" textContent={t('aboutPage.heroParagraphFour')} />
           <Paragraph decoration="full" textContent={t('aboutPage.heroParagraphAccent')} />
           <div className="relative z-10">
             <Button

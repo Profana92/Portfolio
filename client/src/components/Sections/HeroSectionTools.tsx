@@ -15,7 +15,7 @@ const HeroSectionTools = () => {
   const { t } = useTranslation()
   return (
     <section id="tools">
-      <div className="bg-gradient-to-b from-[#33091D] to-[#9B1536] text-center gap-12">
+      <div className="bg-gradient-to-b from-[#33091D] to-[#9B1536] text-center gap-12 pt-12">
         <ContainerWithContent additionalClasses="lg:flex-col gap-0">
           <div className="flex flex-col lg:flex-row mx-auto gap-12 justify-center items-start">
             <div className="flex flex-col lg:flex-row items-center justify-center gap-12 w-full">
