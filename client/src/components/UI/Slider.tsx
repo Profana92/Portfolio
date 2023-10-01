@@ -27,7 +27,7 @@ const SliderElement = (props: Props) => {
       <div className="max-w-[70vw] mx-auto flex flex-col md:flex-row gap-6 p-2 bg-[#2D1349] ">
         <img src={props.image} alt={props.imageAlt} className="max-w-[clamp(200px,550px)] md:self-start self-center" />
         <div className="p-2 md:p-6 text-left lg:text-center">
-          <h3 className="text-base md:text-2xl">{props.heading}</h3>
+          <h3 className="text-base md:text-2xl italic">{props.heading}</h3>
           <p className="text-left my-6">{props.description}</p>
           <Link
             to={props.link}
