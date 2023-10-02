@@ -21,7 +21,8 @@ const MyWorkSectionServices = () => {
         decoration="partial"
         additionalClasses="mx-auto text-center !my-12"
       />
-      <ContainerWithContent additionalClasses="flex-wrap !justify-center gap-x-12 gap-y-16">
+      <div className="w-[80%] max-w-[1440px] h-[1px] bg-[#D9D9D940] mx-auto my-24"></div>
+      <ContainerWithContent additionalClasses="flex-wrap !justify-center gap-x-12 gap-y-16 !pt-0">
         <Service
           icon={ReactIcon}
           heading={t('myWorkPage.ServiceOneHeading')}

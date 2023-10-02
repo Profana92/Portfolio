@@ -228,13 +228,13 @@ i18n
             ServicesTitle: '<0>My <1>Services</1></0>',
             ServiceOneHeading: 'Apps',
             ServiceOneParagraph:
-              "I infuse the digital canvas with the enchanting power of React, crafting applications that dance to the rhythm of interactivity. Through mystical components and spells of state management, I bestow websites with fluid interactions, ensuring they adapt seamlessly to every user's incantation.",
+              "I infuse the digital canvas with the enchanting power of React, crafting applications that dance to the rhythm of interactivity. Through components and spells of state management, I bestow websites with fluid interactions, ensuring they adapt seamlessly to every user's incantation.",
             ServiceTwoHeading: 'Online Shops',
             ServiceTwoParagraph:
-              "With the enchanting combination of Divi's captivating design wizardry and WooCommerce's mystical e-commerce powers, I weave online shops that are nothing short of magical.",
+              "With the enchanting combination of Divi's design wizardry and WooCommerce's e-commerce powers, I create online shops that are nothing short of magical.",
             ServiceThreeHeading: 'Websites',
             ServiceThreeParagraph:
-              "As a digital sorcerer, my craft is the art of enchanting websites upon the sacred scrolls of WordPress. With spells of customization and a wizard's touch, I conjure online realms that beckon visitors with irresistible allure and mystical functionality",
+              "As a digital sorcerer, my craft is the art of enchanting websites with the powers of WordPress. With spells of customization and a wizard's touch, I build websites tailored for every taste.",
             ServiceFourHeading: 'E-Mails',
             ServiceFourParagraph:
               "I harness the power of MJML to conjure responsive emails, employing its transformative spells to transmute mere code into visually stunning messages. This bewitching alchemy not only grants them a touch of elegance but also unlocks the unique advantages of MJML's efficiency and compatibility.",
@@ -520,17 +520,17 @@ i18n
             ProjectTwoWebsite: 'WizDev.de',
             ProjectTwoLink: 'https://wizdev.de/',
             ProjectTwoType: 'Hobby',
-            ServicesTitle: '<0>My <1>Services</1></0>',
-            ServiceOneHeading: 'Apps',
+            ServicesTitle: '<0>Moje <1>Usługi</1></0>',
+            ServiceOneHeading: 'Aplikacje',
             ServiceOneParagraph:
-              'Wypełniam cyfrowe płótno czarującą mocą React, tworząc aplikacje, które tańczą w rytmie interaktywności. Poprzez mistyczne komponenty i zaklęcia zarządzania stanem, nadaję stronom płynnych interakcji, zapewniając, że dostosowują się do zaklęć każdego użytkownika.',
-            ServiceTwoHeading: 'Online Shops',
+              'Wypełniam cyfrowe płótno czarującą mocą React, tworząc aplikacje, które tańczą w rytmie interaktywności. Poprzez komponenty i zaklęcia zarządzania stanem, nadaję stronom płynnych interakcji, zapewniając, że dostosowują się do zaklęć każdego użytkownika.',
+            ServiceTwoHeading: 'Sklepy internetowe',
             ServiceTwoParagraph:
-              'Dzięki połączeniu magii projektowania Divi i mistycznych mocy WooCommerce, tworzę sklepy internetowe, które są po prostu magiczne.',
-            ServiceThreeHeading: 'Websites',
+              'Dzięki połączeniu magii projektowania Divi i mocy WooCommerce, tworzę po prostu magiczne sklepy internetowe.',
+            ServiceThreeHeading: 'Strony internetowe',
             ServiceThreeParagraph:
-              'Jako cyfrowy czarodziej zajmuję się sztuką zaklinania stron internetowych na świętych zwojach WordPressa. Zaklęciami dostosowywania wyczarowuję krainy online, które przyciągają gości nieodpartym urokiem i mistyczną funkcjonalnością',
-            ServiceFourHeading: 'E-Mails',
+              'Jako cyfrowy czarodziej zajmuję się sztuką zaklinania stron internetowych mocami WordPressa. Dzięki zaklęciom customizacji i czarodziejskiemu dotykowi tworzę strony internetowe na każdego gustu.',
+            ServiceFourHeading: 'E-Maile',
             ServiceFourParagraph:
               'Wykorzystuję moc MJML do tworzenia responsywnych e-maili, używając jego zaklęcia transformacyjnego do przekształcania zwykłego kodu w oszałamiające wizualnie wiadomości. Ta urzekająca alchemia nie tylko nadaje im odrobinę elegancji, ale także odblokowuje unikalne zalety wydajności i kompatybilności.',
             ServiceFiveHeading: 'Design',
