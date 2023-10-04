@@ -73,7 +73,7 @@ i18n
           aboutPage: {
             heroHeading: '<0>So, <1>Who Am I</1>?</0>',
             heroParagraphOne:
-              'I’m a passionate front-end developer with a creative flair for crafting seamless user experiences. I utilize HTML, CSS, JS, and React for website construction, and employ Figma, Adobe XD, Adobe Illustrator, and Photoshop for design. Deploying websites is achieved through Ubuntu, Nginx, and Apache. Moreover, I bring ecommerce websites to life using Wordpress, Divi, and Woocommerce.',
+              'I’m a passionate front-end developer with a creative flair for crafting magical user experiences. I utilize HTML, CSS, JS, and React for website development, and employ Figma, Adobe XD, Adobe Illustrator, and Photoshop for design. Deploying websites is achieved through Ubuntu, Nginx, and Apache. Moreover, I bring online shops to life using Wordpress, Divi, and Woocommerce.',
             heroParagraphAccent: "Let's collaborate and bring ideas to life through elegant code.",
             buttonOne: 'My Work',
             buttonTwo: 'Contact Me',
@@ -237,13 +237,13 @@ i18n
               "As a digital sorcerer, my craft is the art of enchanting websites with the powers of WordPress. With spells of customization and a wizard's touch, I build websites tailored for every taste.",
             ServiceFourHeading: 'E-Mails',
             ServiceFourParagraph:
-              "I harness the power of MJML to conjure responsive emails, employing its transformative spells to transmute mere code into visually stunning messages. This bewitching alchemy not only grants them a touch of elegance but also unlocks the unique advantages of MJML's efficiency and compatibility.",
+              'I harness the power of MJML Framework to conjure responsive emails, employing its spells to transmute code into visually stunning messages. This sorcery not only grants them a touch of elegance but also unlocks the unique advantage of compatibility with multiple mail clients.',
             ServiceFiveHeading: 'Design',
             ServiceFiveParagraph:
-              "I craft captivating websites with precision and creativity in Figma. From pixel-perfect designs to seamless user experiences, I bring your digital vision to life with the power of Figma's versatile design tools.",
+              'I build websites with attention to detail and creativity using Figma. From pixel-perfect designs to seamless user experiences, I bring your digital vision to life with the power of versatile design tools.',
             MyBlogHeading: '<0>My <1>Blog</1></0>',
             MyBlogParagraph:
-              'Join me on a mystical journey through my Blog, where technology and wizardry collide to illuminate the wonders of the digital realm.',
+              'Join me on a journey through my Blog, where technology and wizardry converge to illuminate the wonders and endless possibilities of the digital realm.',
             MyBlogCallButton: "Let's go!",
             MyBlogCommingSoon: 'Comming soon...',
           },
@@ -367,7 +367,7 @@ i18n
           aboutPage: {
             heroHeading: '<0>Kim więc <1>jestem</1>?</0>',
             heroParagraphOne:
-              'Jestem zapalonym programistą z kreatywnym zacięciem do tworzenia nieskazitelnych doświadczeń użytkownika. Do budowy stron internetowych wykorzystuję HTML, CSS, JS i React, a do projektowania Figmę, Adobe XD, Adobe Illustrator i Photoshop. Wdrażanie stron internetowych odbywa się za pośrednictwem Ubuntu, Nginx i Apache. Ponadto tworzę witryny e-commerce za pomocą Wordpress, Divi i Woocommerce.',
+              'Jestem zapalonym programistą z kreatywnym zacięciem do tworzenia magicznych doświadczeń użytkownika. Do budowy stron internetowych wykorzystuję HTML, CSS, JS i React, a do projektowania Figmę, Adobe XD, Adobe Illustrator i Photoshop. Wdrażanie stron internetowych odbywa się za pośrednictwem Ubuntu, Nginx i Apache. Ponadto tworzę sklepy internetowe za pomocą Wordpress, Divi i Woocommerce.',
             heroParagraphAccent: 'Powspółpracujmy i powcielajmy nowe pomysły w życie poprzez elegancki kod.',
             buttonOne: 'Moje Prace',
             buttonTwo: 'Skontaktuj się',
@@ -532,10 +532,10 @@ i18n
               'Jako cyfrowy czarodziej zajmuję się sztuką zaklinania stron internetowych mocami WordPressa. Dzięki zaklęciom customizacji i czarodziejskiemu dotykowi tworzę strony internetowe na każdego gustu.',
             ServiceFourHeading: 'E-Maile',
             ServiceFourParagraph:
-              'Wykorzystuję moc MJML do tworzenia responsywnych e-maili, używając jego zaklęcia transformacyjnego do przekształcania zwykłego kodu w oszałamiające wizualnie wiadomości. Ta urzekająca alchemia nie tylko nadaje im odrobinę elegancji, ale także odblokowuje unikalne zalety wydajności i kompatybilności.',
+              'Wykorzystuję moc frameworka MJML do tworzenia responsywnych e-maili, używając jego zaklęć do przekształcania zwykłego kodu w oszałamiające wizualnie wiadomości. Ta magia nie tylko nadaje im odrobinę elegancji, ale także odblokowuje unikalną zaletę kompatybilności z wieloma klientami pocztowymi.',
             ServiceFiveHeading: 'Design',
             ServiceFiveParagraph:
-              'Tworzę wciągające strony internetowe z precyzją i kreatywnością w Figmie. Od projektów "pixel-perfect" po bezproblemowe doświadczenia użytkownika, ożywiam Twoją cyfrową wizję dzięki mocy wszechstronnych narzędzi Figmy.',
+              'Tworzę strony internetowe z przywiązaniem do detali i kreatywnością przy pomocy programu Figma. Od projektów "pixel-perfect" po bezproblemowe doświadczenia użytkownika, ożywiam Twoją cyfrową wizję dzięki mocy wszechstronnych narzędzi projektowych.',
             MyBlogHeading: '<0>Mój <1>Blog</1></0>',
             MyBlogParagraph:
               'Dołącz do mnie w mistycznej podróży po moim blogu, gdzie technologia i magia zderzają się, aby rzucić światło na cuda cyfrowej rzeczywistości.',
