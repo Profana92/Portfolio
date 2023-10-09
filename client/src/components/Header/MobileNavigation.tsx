@@ -24,7 +24,7 @@ const MobileNavigation = (props: Props) => {
         <div className="flex px-6 justify-between min-h-[3.5rem] items-center z-10">
           <p className="text-3xl text-transparent font-black bg-gradient-to-br bg-clip-text from-pink to-orange">
             <NavLink to="/">
-              <span class="text-white">WIZ</span>dev.
+              <span className="text-white">WIZ</span>dev.
             </NavLink>
           </p>
           <p

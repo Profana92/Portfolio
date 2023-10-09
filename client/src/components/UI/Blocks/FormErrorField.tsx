@@ -2,8 +2,9 @@ import { FieldErrors } from 'react-hook-form'
 import { IconContext } from 'react-icons'
 import { MdErrorOutline } from 'react-icons/md'
 import { AnimatePresence, motion } from 'framer-motion'
+
 interface Props {
-  errors: { [key: string]: { type: string; message: string; ref: HTMLInputElement } } | FieldErrors<Inputs>
+  errors: { [key: string]: { type: string; message: string; ref: HTMLInputElement } } | FieldErrors<any>
   textContent: string
   fieldName: string
   condition?: string
