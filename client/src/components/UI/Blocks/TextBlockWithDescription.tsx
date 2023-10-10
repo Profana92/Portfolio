@@ -9,7 +9,7 @@ const TextBlockWithDescription = () => {
   return (
     <div>
       <ParagraphUppercase textContent={t('HomePage.sectionOneDescription')} />
-      <HeadingSecondary transKey="HomePage.sectionOneHeading" />
+      <HeadingSecondary decoration="none" transKey="HomePage.sectionOneHeading" />
       <Paragraph decoration="none" textContent={t('HomePage.sectionOneParagraph')} />
       {/* <p className="mt-5 lg:max-w-xl leading-normal text-sm md:text-base">{props.sectionParagraph}</p> */}
     </div>

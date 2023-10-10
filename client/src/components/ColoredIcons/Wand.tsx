@@ -1,4 +1,4 @@
-function Icon() {
+function Wand() {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 365 544">
       <g clipPath="url(#clip0_347_184)">
@@ -688,4 +688,4 @@ function Icon() {
   )
 }
 
-export default Icon
+export default Wand

@@ -11,7 +11,11 @@ const MyWorkSectionBlog = () => {
       <section id="blog" className="bg-gradient-to-b from-[#15081B] to-[#3C052D]">
         <ContainerWithContent additionalClasses="lg:flex-col">
           <HeadingSecondary decoration="partial" transKey="myWorkPage.MyBlogHeading" />
-          <Paragraph decoration="none" textContent={t('myWorkPage.MyBlogParagraph')} />
+          <Paragraph
+            decoration="none"
+            textContent={t('myWorkPage.MyBlogParagraph')}
+            additionalExternalClasses="text-center"
+          />
           <Paragraph
             decoration="none"
             textContent={t('myWorkPage.MyBlogCommingSoon')}

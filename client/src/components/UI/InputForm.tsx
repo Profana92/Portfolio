@@ -1,4 +1,10 @@
-const InputForm = (props) => {
+interface Props {
+  type?: 'textArea' | 'submit'
+  textContent?: string
+  fieldName?: string
+  register: any
+}
+const InputForm = (props: Props) => {
   if (props.type === 'textArea')
     return (
       <div className="p-[1px] bg-gradient-to-br from-pink to-orange rounded-sm flex flec-col">

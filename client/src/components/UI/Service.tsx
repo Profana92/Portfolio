@@ -11,7 +11,6 @@ const Service = (props: Props) => {
     <div className="flex flex-col justify-start items-center text-center max-w-[100%] md:max-w-[45%]">
       {<props.icon />}
       <HeadingTetriary decoration="full" textContent={props.heading} />
-
       <Paragraph decoration="none" textContent={props.paragraph} />
     </div>
   )
