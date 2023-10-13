@@ -222,9 +222,15 @@ i18n
             ProjectTwoTitle: 'My portfolio website based on React, designed in Figma',
             ProjectTwoParagraph:
               'By the magic of code and artistry, I crafted a digital grimoire – my front-end portfolio website. It reveals the essence of my sorcery, showcasing spells of design and enchantments of interactivity. With every click, visitors journey deeper into the mystic realm of my creations, where I, the web wizard, thru them - introduce myself.',
-            ProjectTwoWebsite: 'WizDev.de',
+            ProjectTwoWebsite: 'WIZdev.de',
             ProjectTwoLink: 'https://wizdev.de/',
             ProjectTwoType: 'Hobby',
+            ProjectThreeTitle: 'Customer Relationship Management website project designed in Figma',
+            ProjectThreeParagraph:
+              "Crafted with the enchanting tools of Vite, React, React Icons, React Router, Redux Toolkit, and the mystical Express.js. It boasts the EJ2 UI library's arcane elegance and is adorned with the ethereal beauty of Tailwind CSS.",
+            ProjectThreeWebsite: 'crm.WIZdev.de',
+            ProjectThreeLink: 'https://crm.wizdev.de/',
+            ProjectThreeType: 'Hobby',
             ServicesTitle: '<0>My <1>Services</1></0>',
             ServiceOneHeading: 'Apps',
             ServiceOneParagraph:
@@ -520,6 +526,13 @@ i18n
             ProjectTwoWebsite: 'WizDev.de',
             ProjectTwoLink: 'https://wizdev.de/',
             ProjectTwoType: 'Hobby',
+            ProjectThreeTitle:
+              'Projekt strony internetowej do zarządzania relacjami z klientami zaprojektowany w Figmie',
+            ProjectThreeParagraph:
+              'Stworzony przy użyciu Vite, React, React Icons, React Router, Redux Toolkit i mistycznego Express.js. Może poszczycić się tajemniczą elegancją biblioteki EJ2 UI i eterycznym pięknem i prostotą Tailwind CSS.',
+            ProjectThreeWebsite: 'crm.WIZdev.de',
+            ProjectThreeLink: 'https://crm.wizdev.de/',
+            ProjectThreeType: 'Hobby',
             ServicesTitle: '<0>Moje <1>Usługi</1></0>',
             ServiceOneHeading: 'Aplikacje',
             ServiceOneParagraph:

@@ -5,6 +5,7 @@ import Hands from '../../assets/Hands.png'
 import InstagramIcon from '../../assets/InstagramIcon.svg'
 import LinkedInIcon from '../../assets/LinkedInIcon.svg'
 import TwitterIcon from '../../assets/TwitterIcon.svg'
+import WhatsAppIcon from '../../assets/WhatsAppIcon.svg'
 import LanguageSwitcherMobile from '../Header/LanguageSwitcherMobile'
 import HeadingSecondary from '../UI/Heading/HeadingSecondary'
 import LinksColumn from '../UI/LinksColumn'
@@ -24,16 +25,16 @@ const Footer = () => {
         </div>
         <div className="row-start-4 row-end-5 px-6 flex justify-between">
           <div className="flex gap-3 my-5 flex-wrap max-w-[40%]">
-            <Link to="https://www.instagram.com/wizdevlabs/">
+            <Link to="https://www.instagram.com/wizdevlabs/" target="_blank">
               <img src={InstagramIcon} alt="Instagram Icon with link" className="w-8 h-8 lg:w-10 lg:h-10" />
             </Link>
-            <Link to="https://twitter.com/WIZdevLabs">
+            <Link to="https://twitter.com/WIZdevLabs" target="_blank">
               <img src={TwitterIcon} alt="Twitter Icon with link" className="w-8 h-8 lg:w-10 lg:h-10" />
             </Link>
-            {/* <Link to="">
-              <img src={MessangerIcon} alt="MessangerIcon Icon with link" className="w-8 h-8 lg:w-10 lg:h-10" />
-            </Link> */}
-            <Link to="https://www.linkedin.com/in/wojciech-marczak-39bb89104/">
+            <Link to="https://wa.me/4917631256056" target="_blank">
+              <img src={WhatsAppIcon} alt="MessangerIcon Icon with link" className="w-8 h-8 lg:w-10 lg:h-10" />
+            </Link>
+            <Link to="https://www.linkedin.com/in/wojciech-marczak/" target="_blank">
               <img src={LinkedInIcon} alt="LinkedInIcon Icon with link" className="w-8 h-8 lg:w-10 lg:h-10" />
             </Link>
           </div>
