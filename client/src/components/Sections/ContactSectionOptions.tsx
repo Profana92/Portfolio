@@ -28,7 +28,7 @@ const ContactSectionOptions = () => {
               { link: '#contact-form', textContent: 'ContactPage.FormListItemSix' },
               { link: 'mailto:abc@example.com', textContent: 'ContactPage.FormListItemOne' },
               {
-                link: 'https://www.linkedin.com/in/wojciech-marczak-39bb89104/',
+                link: 'https://www.linkedin.com/in/wojciech-marczak/',
                 textContent: 'ContactPage.FormListItemTwo',
                 target: '_blank',
               },
@@ -37,9 +37,9 @@ const ContactSectionOptions = () => {
                 textContent: 'ContactPage.FormListItemFive',
                 target: '_blank',
               },
-              { link: 'https://wa.me/1XXXXXXXXXX', textContent: 'ContactPage.FormListItemThree', target: '_blank' },
+              { link: 'https://wa.me/4917631256056', textContent: 'ContactPage.FormListItemThree', target: '_blank' },
               {
-                link: 'https://username.t.me',
+                link: 'https://WIZdevLabs.t.me',
                 textContent: 'ContactPage.FormListItemFour',
                 target: '_blank',
               },

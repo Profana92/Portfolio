@@ -44,7 +44,9 @@ const SliderElement = (props: Props) => {
           {props.figma && (
             <Link
               className="box-border my-6 py-2 px-5 bg-buttonOrange mr-auto text-center leading-[50px] rounded-[5px] text-sm md:text-base md:leading-[50px]"
-              to="https://www.figma.com/file/imXuoBkK0z5RC6c6iNKRA6/Portfolio-W.Marczak?node-id=90%3A4875&mode=dev"
+              to={props.figma}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Figma
             </Link>

@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import Slider from 'react-slick'
 import { AnimatePresence, motion } from 'framer-motion'
 
+import CRM from '../../assets/crm.png'
 import divider from '../../assets/myWorkProjectsBottomDivider.svg'
 import Portfolio from '../../assets/Portfolio.jpg'
 import Symbios from '../../assets/symbios.jpg'
@@ -123,6 +124,31 @@ const MyWorkSectionProjects = () => {
                   ProjectType={t('myWorkPage.ProjectType')}
                 />
                 <SliderElement
+                  image={CRM}
+                  imageAlt="Customer Relationship Management website project image"
+                  heading={t('myWorkPage.ProjectThreeTitle')}
+                  description={t('myWorkPage.ProjectThreeParagraph')}
+                  website={t('myWorkPage.ProjectThreeWebsite')}
+                  link={t('myWorkPage.ProjectThreeLink')}
+                  type={t('myWorkPage.ProjectThreeType')}
+                  projectsUsedTechnologies={t('myWorkPage.ProjectsUsedTechnologies')}
+                  technologiesUsed={['React', 'TypeScript', 'Figma', 'Expressjs', 'npm']}
+                  technologies={technologies}
+                  figma="https://www.figma.com/file/VUOE6SdlOxugWH2sYAZFr1/CRM?type=design&node-id=0%3A1&mode=design&t=qSkBVt8B3hgxMOvk-1"
+                  ProjectType={t('myWorkPage.ProjectType')}
+                />
+              </Slider>
+            </motion.div>
+          )}
+          {activeCategory === 'backEnd' && (
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+              <Slider></Slider>
+            </motion.div>
+          )}
+          {activeCategory === 'design' && (
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+              <Slider>
+                <SliderElement
                   image={Portfolio}
                   imageAlt="Portfolio website project image"
                   heading={t('myWorkPage.ProjectTwoTitle')}
@@ -145,37 +171,21 @@ const MyWorkSectionProjects = () => {
                   figma="https://www.figma.com/file/imXuoBkK0z5RC6c6iNKRA6/Portfolio-W.Marczak?node-id=90%3A4875&mode=dev"
                   ProjectType={t('myWorkPage.ProjectType')}
                 />
+                <SliderElement
+                  image={CRM}
+                  imageAlt="Customer Relationship Management website project image"
+                  heading={t('myWorkPage.ProjectThreeTitle')}
+                  description={t('myWorkPage.ProjectThreeParagraph')}
+                  website={t('myWorkPage.ProjectThreeWebsite')}
+                  link={t('myWorkPage.ProjectThreeLink')}
+                  type={t('myWorkPage.ProjectThreeType')}
+                  projectsUsedTechnologies={t('myWorkPage.ProjectsUsedTechnologies')}
+                  technologiesUsed={['React', 'TypeScript', 'Figma', 'Expressjs', 'npm']}
+                  technologies={technologies}
+                  figma="https://www.figma.com/file/VUOE6SdlOxugWH2sYAZFr1/CRM?type=design&node-id=0%3A1&mode=design&t=qSkBVt8B3hgxMOvk-1"
+                  ProjectType={t('myWorkPage.ProjectType')}
+                />
               </Slider>
-            </motion.div>
-          )}
-          {activeCategory === 'backEnd' && (
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}></motion.div>
-          )}
-          {activeCategory === 'design' && (
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-              <SliderElement
-                image={Portfolio}
-                imageAlt="Portfolio website project image"
-                heading={t('myWorkPage.ProjectTwoTitle')}
-                description={t('myWorkPage.ProjectTwoParagraph')}
-                website={t('myWorkPage.ProjectTwoWebsite')}
-                link={t('myWorkPage.ProjectTwoLink')}
-                type={t('myWorkPage.ProjectTwoType')}
-                projectsUsedTechnologies={t('myWorkPage.ProjectsUsedTechnologies')}
-                technologiesUsed={[
-                  'React',
-                  'TypeScript',
-                  'Figma',
-                  'AdobeIllustrator',
-                  'GIMP',
-                  'npm',
-                  'Nginx',
-                  'Ubuntu',
-                ]}
-                technologies={technologies}
-                figma="https://www.figma.com/file/imXuoBkK0z5RC6c6iNKRA6/Portfolio-W.Marczak?node-id=90%3A4875&mode=dev"
-                ProjectType={t('myWorkPage.ProjectType')}
-              />
             </motion.div>
           )}
           {activeCategory === 'servers' && (
