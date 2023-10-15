@@ -7,7 +7,7 @@ interface lngsInterface {
 const lngs: lngsInterface = {
   en: { nativeName: 'English' },
   // de: { nativeName: 'Deutsch' },
-  pl: { nativeName: 'Polski' },
+  pl: { nativeName: 'Polish' },
 }
 
 const LanguageSwitcherMobile = () => {
