@@ -4,7 +4,7 @@ import { IoIosClose } from 'react-icons/io'
 import { NavLink } from 'react-router-dom'
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
 
-import hat from '../../assets/Hat_tiny.png'
+import hat from '../../assets/hat_tiny.png'
 
 import LanguageSwitcherMobile from './LanguageSwitcherMobile'
 interface Props {
